@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Μη Επεμβατικές Θεραπείες — Dr. T. Papadopoulos</title>
+  <meta name="description" content="Ιστοσελίδα πλαστικού χειρουργού με έμφαση στην ασφάλεια, την εμπιστοσύνη και τα φυσικά αποτελέσματα.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Αρχική">
+      <img src="https://picsum.photos/seed/logo/72/72" alt="Λογότυπο">
+      <strong>Dr. T. Papadopoulos</strong>
+      <span class="badge">Plastic Surgeon</span>
+    </a>
+    <nav class="navlinks">
+      <button id="menuToggle" class="menu-toggle button secondary" aria-label="Menu">Μενού</button>
+      <div class="links">
+        <a href="index.html">Αρχική</a>
+        <a href="about.html">Ο Γιατρός</a>
+        <a href="procedures.html">Επεμβάσεις</a>
+        <a href="non-invasive.html">Μη Επεμβατικές</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main>
+<section class="hero">
+  <div class="container">
+    <h1>Μη επεμβατικές θεραπείες</h1>
+    <p class="lead">Διακριτική ανανέωση χωρίς χειρουργείο.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container grid cols-3">
+    <article class="card"><div class="p">
+      <h3>Botox/Dysport</h3>
+      <p class="muted">Δυναμικές ρυτίδες (μεσόφρυο, πόδι χήνας κ.ά.) και υπεριδρωσία. Γρήγορη συνεδρία, χωρίς αποχή.</p>
+    </div></article>
+    <article class="card"><div class="p">
+      <h3>Fillers υαλουρονικού</h3>
+      <p class="muted">Όγκος/ενυδάτωση για χείλη, ρινοχειλικές, ζυγωματικά. Άμεσα, αναστρέψιμα αποτελέσματα.</p>
+    </div></article>
+    <article class="card"><div class="p">
+      <h3>Chemical Peels</h3>
+      <p class="muted">AHA/BHA/TCA/Phenol — βελτίωση υφής, δυσχρωμιών και λεπτών ρυτίδων.</p>
+    </div></article>
+    <article class="card"><div class="p">
+      <h3>Microneedling</h3>
+      <p class="muted">Διέγερση κολλαγόνου για ουλές ακμής, ραγάδες, λεπτές ρυτίδες.</p>
+    </div></article>
+    <article class="card"><div class="p">
+      <h3>Microdermabrasion</h3>
+      <p class="muted">Ήπια απολέπιση με διαμάντι ή μικροκρυστάλλους για άμεση λάμψη.</p>
+    </div></article>
+    <article class="card"><div class="p">
+      <h3>Laser</h3>
+      <p class="muted">Αποτρίχωση, ευρυαγγείες, καφέ κηλίδες. Απαιτούνται πολλαπλές συνεδρίες.</p>
+    </div></article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container grid cols-3">
+    <div>
+      <div class="kicker">Ιατρική Φιλοσοφία</div>
+      <p class="stack-s">Ασφάλεια, εμπιστοσύνη και ανθρώπινη προσέγγιση με φυσικά, διακριτικά αποτελέσματα από το 1991.</p>
+    </div>
+    <div>
+      <div class="kicker">Πλοήγηση</div>
+      <p class="stack-xs"><a href="about.html">Ο Γιατρός</a> · <a href="procedures.html">Επεμβάσεις</a> · <a href="non-invasive.html">Μη Επεμβατικές</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Επικοινωνία</a></p>
+    </div>
+    <div>
+      <div class="kicker">Θεσσαλονίκη</div>
+      <p class="stack-xs">Ιδιωτικό ιατρείο · Κέντρο Θεσσαλονίκης<br>Τηλ: +30 2310 000000 · Email: info@example.com</p>
+    </div>
+  </div>
+  <div class="container stack-s" style="text-align:center;font-size:.85rem;color:#8b93a3">
+    © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

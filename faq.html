@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Συχνές Ερωτήσεις — Dr. T. Papadopoulos</title>
+  <meta name="description" content="Ιστοσελίδα πλαστικού χειρουργού με έμφαση στην ασφάλεια, την εμπιστοσύνη και τα φυσικά αποτελέσματα.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Αρχική">
+      <img src="https://picsum.photos/seed/logo/72/72" alt="Λογότυπο">
+      <strong>Dr. T. Papadopoulos</strong>
+      <span class="badge">Plastic Surgeon</span>
+    </a>
+    <nav class="navlinks">
+      <button id="menuToggle" class="menu-toggle button secondary" aria-label="Menu">Μενού</button>
+      <div class="links">
+        <a href="index.html">Αρχική</a>
+        <a href="about.html">Ο Γιατρός</a>
+        <a href="procedures.html">Επεμβάσεις</a>
+        <a href="non-invasive.html">Μη Επεμβατικές</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Επικοινωνία</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <main>
+<section class="hero">
+  <div class="container">
+    <h1>Συχνές ερωτήσεις (FAQ)</h1>
+    <p class="lead">Απαντάμε στις πιο συνηθισμένες απορίες με απλό, κατανοητό τρόπο.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <div class="grid cols-2">
+      <div class="card"><div class="p">
+        <h3>Ποια είναι η κατάλληλη ηλικία για κάθε επέμβαση;</h3>
+        <p class="muted">Από παιδικές συγγενείς ανωμαλίες έως ώριμες ηλικίες με θεραπείες προσώπου/σώματος — η ένδειξη καθορίζεται εξατομικευμένα.</p>
+      </div></div>
+      <div class="card"><div class="p">
+        <h3>Θα μείνουν ουλές;</h3>
+        <p class="muted">Οι τομές σχεδιάζονται διακριτικά (π.χ. βλεφαρίδες, πτυχές). Γίνεται ενημέρωση για τη φροντίδα και την ωρίμανση ουλών.</p>
+      </div></div>
+      <div class="card"><div class="p">
+        <h3>Πόσο διαρκεί η ανάρρωση;</h3>
+        <p class="muted">Ανά πράξη. Ενδεικτικά, βλεφαροπλαστική 7–10 ημέρες, ρινοπλαστική 1–2 εβδομάδες, κοιλιοπλαστική 2–4 εβδομάδες.</p>
+      </div></div>
+      <div class="card"><div class="p">
+        <h3>Είναι ασφαλείς οι επεμβάσεις μαστών;</h3>
+        <p class="muted">Η ασφάλεια είναι προτεραιότητα. Παρέχεται αναλυτική ενημέρωση για ενθέματα, θέσεις, παρακολούθηση.</p>
+      </div></div>
+      <div class="card"><div class="p">
+        <h3>Θα είναι το αποτέλεσμα όπως το φαντάζομαι;</h3>
+        <p class="muted">Θέτουμε ρεαλιστικές προσδοκίες και συζητάμε αναλυτικά ώστε να ευθυγραμμίσουμε τους στόχους σας με τις ιατρικές ενδείξεις.</p>
+      </div></div>
+      <div class="card"><div class="p">
+        <h3>Τι είδους αναισθησία χρησιμοποιείται;</h3>
+        <p class="muted">Από τοπική/μέθη έως γενική — ανάλογα με την πράξη και το ιατρικό ιστορικό.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container grid cols-3">
+    <div>
+      <div class="kicker">Ιατρική Φιλοσοφία</div>
+      <p class="stack-s">Ασφάλεια, εμπιστοσύνη και ανθρώπινη προσέγγιση με φυσικά, διακριτικά αποτελέσματα από το 1991.</p>
+    </div>
+    <div>
+      <div class="kicker">Πλοήγηση</div>
+      <p class="stack-xs"><a href="about.html">Ο Γιατρός</a> · <a href="procedures.html">Επεμβάσεις</a> · <a href="non-invasive.html">Μη Επεμβατικές</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Επικοινωνία</a></p>
+    </div>
+    <div>
+      <div class="kicker">Θεσσαλονίκη</div>
+      <p class="stack-xs">Ιδιωτικό ιατρείο · Κέντρο Θεσσαλονίκης<br>Τηλ: +30 2310 000000 · Email: info@example.com</p>
+    </div>
+  </div>
+  <div class="container stack-s" style="text-align:center;font-size:.85rem;color:#8b93a3">
+    © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
