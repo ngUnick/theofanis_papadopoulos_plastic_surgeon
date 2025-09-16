@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Επικοινωνία — Dr. T. Papadopoulos</title>
-  <meta name="description" content="Ιστοσελίδα πλαστικού χειρουργού με έμφαση στην ασφάλεια, την εμπιστοσύνη και τα φυσικά αποτελέσματα.">
+  <meta name="description" content="Στοιχεία επικοινωνίας δύο ιατρείων στη Θεσσαλονίκη. Καλέστε για ραντεβού ή για ιατρικές ερωτήσεις.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,88 +23,116 @@
         <a href="about.html">Ο Γιατρός</a>
         <a href="procedures.html">Επεμβάσεις</a>
         <a href="non-invasive.html">Μη Επεμβατικές</a>
-        <a href="faq.html">FAQ</a>
+        <a href="faq.html">Συχνές Ερωτήσεις</a>
         <a href="contact.html">Επικοινωνία</a>
       </div>
     </nav>
   </div>
 </header>
 
-  <main>
-<section class="hero">
-  <div class="container wrap">
-    <div>
-      <h1>Επικοινωνία & ραντεβού</h1>
-      <p class="lead">Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας για να κλείσουμε την πρώτη σας επίσκεψη.</p>
-      <form class="stack" onsubmit="event.preventDefault(); alert('Ευχαριστούμε! Θα επικοινωνήσουμε σύντομα.');">
-        <div class="row">
-          <div class="input"><label>Ονοματεπώνυμο</label><input required placeholder="Πλήρες ονοματεπώνυμο"></div>
-          <div class="input"><label>Τηλέφωνο</label><input required placeholder="+30"></div>
-        </div>
-        <div class="row">
-          <div class="input"><label>Email</label><input required type="email" placeholder="you@example.com"></div>
-          <div class="input"><label>Ενδιαφέρον</label>
-            <select required>
-              <option value="">Επιλέξτε</option>
-              <option>Βλεφαροπλαστική</option>
-              <option>Λίφτινγκ προσώπου</option>
-              <option>Επεμβάσεις μαστών</option>
-              <option>Λιποαναρρόφηση</option>
-              <option>Κοιλιοπλαστική</option>
-              <option>Μη επεμβατικές θεραπείες</option>
-              <option>Άλλο</option>
-            </select>
+<main>
+  <!-- Intro / Guidance -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <h1>Επικοινωνία</h1>
+        <div class="icon-list stack">
+          <div class="icon-item">
+            <span class="dot"></span>
+            <div>Για να κλείσετε <strong>ραντεβού</strong>, καλέστε το τηλέφωνο του <strong>Ιατρείου Αγίας Τριάδος</strong>.</div>
+          </div>
+          <div class="icon-item">
+            <span class="dot"></span>
+            <div>Για <strong>ιατρικές ερωτήσεις</strong> ή πληροφορίες σχετικά με επεμβάσεις και θεραπείες, προτιμήστε το <strong>Ιδιωτικό ιατρείο</strong>.</div>
           </div>
         </div>
-        <div class="input"><label>Μήνυμα</label><textarea rows="5" placeholder="Πείτε μας με λίγα λόγια τι έχετε στο μυαλό σας…"></textarea></div>
-        <button class="button">Αποστολή</button>
-      </form>
+      </div>
+      <div class="photo">
+        <img src="https://picsum.photos/seed/contact-map/900/675" alt="Χάρτης Θεσσαλονίκης (placeholder)">
+      </div>
     </div>
-    <div class="photo">
-      <img src="https://picsum.photos/seed/map/900/675" alt="Χάρτης περιοχής (placeholder)">
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="alt">
-  <div class="container grid cols-3">
-    <div class="card"><div class="p">
-      <h3>Διεύθυνση</h3>
-      <p class="muted">Κέντρο Θεσσαλονίκης (ενδεικτικά). Θα προστεθεί ακριβής διεύθυνση.</p>
-    </div></div>
-    <div class="card"><div class="p">
-      <h3>Τηλέφωνο</h3>
-      <p class="muted">+30 2310 000000</p>
-    </div></div>
-    <div class="card"><div class="p">
-      <h3>Email</h3>
-      <p class="muted">info@example.com</p>
-    </div></div>
-  </div>
-</section>
+  <!-- Locations only -->
+  <section class="alt">
+    <div class="container grid cols-2">
+      <!-- Location 1 -->
+      <article class="clinic-block">
+        <strong>Ιατρεία Αγίας Τριάδος</strong>
+        <p class="muted stack-xs">
+          Λεωφ. Βασιλέως Γεωργίου 44, Θεσσαλονίκη 546 40<br>
+          (Περιοχή Αγίας Τριάδος – στάση Φάληρο)
+        </p>
+        <p class="stack-xs">Τηλέφωνο: 2310 836600</p>
+        <p class="stack-xs">Φαξ: 2310 836600</p>
+        <p class="stack-xs">
+          <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank" rel="noopener">Οδηγίες</a>
+        </p>
+      </article>
+
+      <!-- Location 2 -->
+      <article class="clinic-block">
+        <strong>Ιδιωτικό ιατρείο</strong>
+        <p class="muted stack-xs">
+          Μητροπόλεως 96, Θεσσαλονίκη 546 22
+        </p>
+        <p class="stack-xs">Τηλέφωνο: +30 2310 261039</p>
+        <p class="stack-xs">Email: <a href="mailto:papfanis2003@yahoo.gr">papfanis2003@yahoo.gr</a></p>
+        <p class="stack-xs">
+          <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank" rel="noopener">Οδηγίες</a>
+        </p>
+      </article>
+    </div>
+  </section>
 </main>
 
 <footer>
-  <div class="container grid cols-3">
-    <div>
+  <!-- keep your existing footer as-is -->
+  <div class="container footer-grid">
+    <div class="footer-col footer-desktop-only">
       <div class="kicker">Ιατρική Φιλοσοφία</div>
-      <p class="stack-s">Ασφάλεια, εμπιστοσύνη και ανθρώπινη προσέγγιση με φυσικά, διακριτικά αποτελέσματα από το 1991.</p>
+      <p class="stack-s">
+        Ασφάλεια, εμπιστοσύνη και ανθρώπινη προσέγγιση με φυσικά, διακριτικά αποτελέσματα από το 1991.
+      </p>
     </div>
-    <div>
+
+    <div class="footer-col footer-desktop-only">
       <div class="kicker">Πλοήγηση</div>
-      <p class="stack-xs"><a href="about.html">Ο Γιατρός</a> · <a href="procedures.html">Επεμβάσεις</a> · <a href="non-invasive.html">Μη Επεμβατικές</a> · <a href="faq.html">FAQ</a> · <a href="contact.html">Επικοινωνία</a></p>
+      <p class="stack-xs">
+        <a href="index.html">Αρχική</a><br>
+        <a href="about.html">Ο Γιατρός</a><br>
+        <a href="procedures.html">Επεμβάσεις</a><br>
+        <a href="non-invasive.html">Μη Επεμβατικές</a><br>
+        <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a><br>
+        <a href="contact.html">Επικοινωνία</a>
+      </p>
     </div>
-    <div>
-      <div class="kicker">Θεσσαλονίκη</div>
-      <p class="stack-xs">Ιδιωτικό ιατρείο · Κέντρο Θεσσαλονίκης<br>Τηλ: +30 2310 000000 · Email: info@example.com</p>
+
+    <div class="footer-col clinic-block">
+      <strong>Ιατρεία Αγίας Τριάδος</strong>
+      Λεωφ. Βασιλέως Γεωργίου 44,<br>
+      Θεσσαλονίκη 546 40<br><br>
+      Τηλέφωνο: 2310 836600<br>
+      Fax: 2310 836600<br>
+      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank">Οδηγίες</a>
+    </div>
+
+    <div class="footer-col clinic-block">
+      <strong>Ιδιωτικό ιατρείο</strong>
+      Μητροπόλεως 96,<br>
+      Θεσσαλονίκη 546 22<br><br>
+      Τηλέφωνο: 2310 261039<br>
+      Email: papfanis2003@yahoo.gr<br>
+      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank">Οδηγίες</a>
     </div>
   </div>
+
   <div class="container stack-s" style="text-align:center;font-size:.85rem;color:#8b93a3">
     © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
