@@ -113,6 +113,13 @@ a.button.secondary {
 .muted { color: var(--muted); }
 .kicker { font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 
+.card-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
 section { padding: 3.2rem 0; }
 section.alt { background: var(--bg-alt); }
 
@@ -129,6 +136,7 @@ h2 { font-size: clamp(1.4rem, 2vw, 2rem); margin-bottom: 1.2rem; }
   background: color-mix(in oklab, var(--bg) 80%, transparent);
   backdrop-filter: saturate(140%) blur(10px);
   border-bottom: 1px solid var(--border);
+  padding: 0 .2rem !important;
 }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: .8rem 0; }
 .brand { display: flex; align-items: center; gap: .6rem; }
