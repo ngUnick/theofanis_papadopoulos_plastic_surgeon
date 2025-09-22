@@ -4,31 +4,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Μη Επεμβατικές Θεραπείες — Dr. T. Papadopoulos</title>
-  <meta name="description" content="Ιστοσελίδα πλαστικού χειρουργού με έμφαση στην ασφάλεια, την εμπιστοσύνη και τα φυσικά αποτελέσματα.">
+  <meta name="description" content="Ουδέτερη, τεκμηριωμένη ενημέρωση για μη επεμβατικές/ελάχιστα επεμβατικές θεραπείες: ενέσιμα, laser, δερμοαπόξεση, χημικό peeling, microneedling, διαχείριση ουλών, αφαίρεση τατουάζ. Ενδείξεις, διαδικασία, κίνδυνοι και περιορισμοί.">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="procedures.css">
 </head>
 <body>
 
-  
 <header class="header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Αρχική">
-      <img src="https://picsum.photos/seed/logo/72/72" alt="Λογότυπο">
+      <img src="photos/logo.png" alt="Λογότυπο ιατρείου">
       <strong>Dr. T. Papadopoulos</strong>
       <span class="badge">Plastic Surgeon</span>
     </a>
-    <nav class="navlinks">
+    <nav class="navlinks" aria-label="Κύρια πλοήγηση">
       <button id="menuToggle" class="menu-toggle button secondary" aria-label="Μενού">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-</button>
-
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
       <div class="links">
         <a href="index.html">Αρχική</a>
         <a href="about.html">Ο Γιατρός</a>
         <a href="procedures.html">Επεμβάσεις</a>
-        <a href="non-invasive.html">Μη Επεμβατικές</a>
+        <a href="non-invasive.html" aria-current="page">Μη Επεμβατικές</a>
+        <a href="reconstructive.html">Ανακατασκευαστική</a>
         <a href="faq.html">Συχνές Ερωτήσεις</a>
         <a href="contact.html">Επικοινωνία</a>
       </div>
@@ -36,94 +36,310 @@
   </div>
 </header>
 
-  <main>
-<section class="hero">
-  <div class="container">
-    <h1>Μη επεμβατικές θεραπείες</h1>
-    <p class="lead">Διακριτική ανανέωση χωρίς χειρουργείο.</p>
-  </div>
-</section>
+<main>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Μη επεμβατικές & ελάχιστα επεμβατικές θεραπείες</h1>
+      <p class="lead">
+        Ουδέτερη ενημέρωση για ενέσιμα, laser και δερματικές τεχνικές ανανέωσης. Περιλαμβάνονται ενδείξεις,
+        γενική διαδικασία, πιθανοί κίνδυνοι/περιορισμοί και εναλλακτικές.
+      </p>
+      <p class="muted stack-s">Σημείωση: Οι πληροφορίες είναι γενικές και δεν υποκαθιστούν εξατομικευμένη ιατρική συμβουλή.</p>
+    </div>
+  </section>
 
-<section class="alt">
-  <div class="container grid cols-3">
-    <article class="card"><div class="p">
-      <h3>Botox/Dysport</h3>
-      <p class="muted">Δυναμικές ρυτίδες (μεσόφρυο, πόδι χήνας κ.ά.) και υπεριδρωσία. Γρήγορη συνεδρία, χωρίς αποχή.</p>
-    </div></article>
-    <article class="card"><div class="p">
-      <h3>Fillers υαλουρονικού</h3>
-      <p class="muted">Όγκος/ενυδάτωση για χείλη, ρινοχειλικές, ζυγωματικά. Άμεσα, αναστρέψιμα αποτελέσματα.</p>
-    </div></article>
-    <article class="card"><div class="p">
-      <h3>Chemical Peels</h3>
-      <p class="muted">AHA/BHA/TCA/Phenol — βελτίωση υφής, δυσχρωμιών και λεπτών ρυτίδων.</p>
-    </div></article>
-    <article class="card"><div class="p">
-      <h3>Microneedling</h3>
-      <p class="muted">Διέγερση κολλαγόνου για ουλές ακμής, ραγάδες, λεπτές ρυτίδες.</p>
-    </div></article>
-    <article class="card"><div class="p">
-      <h3>Microdermabrasion</h3>
-      <p class="muted">Ήπια απολέπιση με διαμάντι ή μικροκρυστάλλους για άμεση λάμψη.</p>
-    </div></article>
-    <article class="card"><div class="p">
-      <h3>Laser</h3>
-      <p class="muted">Αποτρίχωση, ευρυαγγείες, καφέ κηλίδες. Απαιτούνται πολλαπλές συνεδρίες.</p>
-    </div></article>
-  </div>
-</section>
+  <!-- Live Search -->
+  <section class="proc-search-wrap">
+    <div class="container">
+      <div class="proc-searchbar" role="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="procSearch" class="proc-input" type="search" placeholder="Αναζήτηση θεραπειών..." aria-label="Αναζήτηση μη επεμβατικών θεραπειών και περιγραφών">
+      </div>
+      <div class="proc-search-meta" aria-live="polite">
+        <span id="resultCount">Εμφάνιση όλων των θεραπειών</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΕΝΕΣΙΜΑ -->
+  <section class="alt proc-section" data-section="injectables" id="injectables">
+    <div class="container">
+      <h2 class="proc-heading">Ενέσιμα</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Botox/Dysport -->
+        <article class="card proc-card" id="botox">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/6/64/Syringe_icon.svg" alt="Εικονίδιο σύριγγας — ενέσιμη θεραπεία">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Botox / Dysport</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> δυναμικές ρυτίδες (μέτωπο, μεσόφρυο, «πόδι χήνας»), υπεριδρωσία.<br>
+              <strong>Διαδικασία:</strong> μικροενέσεις σε στοχευμένους μύες· διάρκεια συνεδρίας λίγα λεπτά, έναρξη αποτελέσματος 3–7 ημέρες.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> εκχυμώσεις, παροδική αδυναμία γειτονικών μυών, διάρκεια ~3–4 μήνες.<br>
+              <strong>Εναλλακτικές:</strong> συσκευές ενέργειας ή skincare με ηπιότερο αποτέλεσμα.
+            </p>
+          </div>
+        </article>
+
+        <!-- Fillers υαλουρονικού -->
+        <article class="card proc-card" id="fillers">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Hyaluronic_acid.svg" alt="Δομή υαλουρονικού οξέος — εκπαιδευτική απεικόνιση">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Fillers υαλουρονικού</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> όγκος/ενυδάτωση σε χείλη, ζυγωματικά, ρινοπαρειακές αύλακες, πηγούνι.<br>
+              <strong>Διαδικασία:</strong> στοχευμένη έγχυση, άμεσο αποτέλεσμα· αναστρέψιμα με υαλουρονιδάση.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> οίδημα/εκχυμώσεις, σπάνια αγγειακά συμβάματα· διάρκεια 6–18 μήνες.<br>
+              <strong>Εναλλακτικές:</strong> λιπομεταφορά (αυτόλογο λίπος) ή συσκευές ενέργειας ανά ένδειξη.
+            </p>
+          </div>
+        </article>
+
+        <!-- Fat injections (ελάχιστα επεμβατικό) -->
+        <article class="card proc-card" id="fat-grafting">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/6/65/Adipocyte_icon.svg" alt="Εικονίδιο λιποκυττάρου — λιπομεταφορά">
+          </div>
+          <div class="p">
+            <span class="pill" aria-hidden="true">Ελάχιστα επεμβατική</span>
+            <h3 class="proc-title">Λιπομεταφορά (fat grafting)</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> ήπια αύξηση όγκου/βελτίωση ποιότητας ιστών σε πρόσωπο/χείλη/χέρια.<br>
+              <strong>Διαδικασία:</strong> λήψη, καθαρισμός και έγχυση αυτόλογου λίπους· ενδέχεται να απαιτηθούν επαναλήψεις.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> απορρόφηση μέρους του όγκου, ασυμμετρίες, ασβεστώσεις.<br>
+              <strong>Εναλλακτικές:</strong> fillers υαλουρονικού (προσωρινά).
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LASER -->
+  <section class="proc-section" data-section="laser" id="laser">
+    <div class="container">
+      <h2 class="proc-heading">Laser</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Laser αποτρίχωση -->
+        <article class="card proc-card" id="laser-hair">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Laser_icon.svg" alt="Εικονίδιο laser — εκπαιδευτική απεικόνιση">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Αποτρίχωση laser</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> ανεπιθύμητη τριχοφυΐα.<br>
+              <strong>Διαδικασία:</strong> στοχεύει τη μελανίνη του θύλακα· απαιτούνται πολλαπλές συνεδρίες.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> ερύθημα/οίδημα, ανάγκη φωτοπροστασίας· μειωμένη απόκριση σε ανοιχτόχρωμες τρίχες/σκούρους φωτότυπους.<br>
+              <strong>Εναλλακτικές:</strong> κερί/νήμα/ηλεκτρόλυση.
+            </p>
+          </div>
+        </article>
+
+        <!-- Laser για ευρυαγγείες -->
+        <article class="card proc-card" id="laser-veins">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Vein_icon.svg" alt="Εικονίδιο φλεβικών αγγείων — εκπαιδευτική απεικόνιση">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Laser για ευρυαγγείες</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> επιφανειακές ευρυαγγείες/τηλεαγγειεκτασίες (συμπερ. προσώπου).<br>
+              <strong>Διαδικασία:</strong> επιλεκτική φωτοθερμόλυση· συχνά πολλαπλές συνεδρίες.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> μελανιά/αποχρωματισμοί, όχι κατάλληλο για όλες τις βλάβες· αποφυγή έντονης δραστηριότητας 24 ώρες.<br>
+              <strong>Εναλλακτικές:</strong> σκληροθεραπεία σε κατάλληλες περιπτώσεις.
+            </p>
+          </div>
+        </article>
+
+        <!-- Laser για καφέ κηλίδες/υπερμελαγχρώσεις -->
+        <article class="card proc-card" id="laser-pigment">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Sunspot_icon.svg" alt="Εικονίδιο κηλίδων — εκπαιδευτική απεικόνιση">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Laser για καφέ κηλίδες</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> φακίδες/ηλιακές κηλίδες και επιλεγμένες υπερμελαγχρώσεις.<br>
+              <strong>Διαδικασία:</strong> στοχευμένη ενέργεια στο χρωστικό· πιθανή ανάγκη επανάληψης.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> υπερ/υπο-χρωμία, αυστηρή φωτοπροστασία, υποτροπές.<br>
+              <strong>Εναλλακτικές:</strong> τοπικά σκευάσματα, χημικά peels.
+            </p>
+          </div>
+        </article>
+
+        <!-- Laser αφαίρεσης τατουάζ -->
+        <article class="card proc-card" id="laser-tattoo">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Laser_icon.svg" alt="Εικονίδιο laser — αφαίρεση τατουάζ">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Αφαίρεση τατουάζ (laser)</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> πολύχρωμα τατουάζ· καλύτερη απόκριση σε σκούρα χρώματα.<br>
+              <strong>Διαδικασία:</strong> παλμοί laser που κατακερματίζουν την χρωστική· συνήθως ≥5 συνεδρίες ανά 6–8 εβδομάδες.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> ερύθημα/σκουρόχρωμες ή ανοικτόχρωμες μεταβολές, ποικίλει η ανταπόκριση ανά χρώμα/βάθος.<br>
+              <strong>Εναλλακτικές:</strong> δερμοαπόξεση ή χειρουργική εκτομή (επεμβατικά).
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΔΕΡΜΑ: Peels / Microdermabrasion / Microneedling / Ουλές -->
+  <section class="alt proc-section" data-section="skin" id="skin">
+    <div class="container">
+      <h2 class="proc-heading">Δερματικές τεχνικές</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Chemical Peel -->
+        <article class="card proc-card" id="chemical-peel">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/1/19/Beaker_icon.svg" alt="Εικονίδιο δοχείου εργαστηρίου — χημικό peeling">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Χημικό Peeling</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> ανομοιόμορφη υφή, δυσχρωμίες, λεπτές ρυτίδες (AHA/BHA/TCA/Phenol).<br>
+              <strong>Διαδικασία:</strong> ελεγχόμενη απολέπιση με πρωτόκολλο προετοιμασίας/φροντίδας.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> ερύθημα, απολέπιση, διαταραχές χρώσης· ανάγκη φωτοπροστασίας.<br>
+              <strong>Εναλλακτικές:</strong> laser ανανέωσης ή microdermabrasion.
+            </p>
+          </div>
+        </article>
+
+        <!-- Microdermabrasion -->
+        <article class="card proc-card" id="microdermabrasion">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Polish_icon.svg" alt="Εικονίδιο λείανσης — microdermabrasion">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Microdermabrasion</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> ήπια ανομοιομορφία υφής, φωτογήρανση, ραγάδες (ήπια βελτίωση).<br>
+              <strong>Διαδικασία:</strong> μηχανική απολέπιση (άκρο διαμαντιού/μικροκρυστάλλων).<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> παροδικός ερεθισμός, χρειάζονται επαναλήψεις για συντήρηση.<br>
+              <strong>Εναλλακτικές:</strong> ήπια peels ή συνδυασμός με skincare.
+            </p>
+          </div>
+        </article>
+
+        <!-- Microneedling -->
+        <article class="card proc-card" id="microneedling">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Dermaroller_icon.svg" alt="Εικονίδιο dermaroller — microneedling">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Microneedling (Skin Needling)</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> ουλές ακμής, ραγάδες, λεπτές ρυτίδες, ήπια χαλάρωση.<br>
+              <strong>Διαδικασία:</strong> μικροτραυματισμοί για διέγερση κολλαγόνου· ρολά/συσκευές έως ~2mm ανά ένδειξη.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> ερύθημα/οίδημα λίγων ημερών· αποφυγή ηλίου/ερεθιστικών προϊόντων.<br>
+              <strong>Εναλλακτικές:</strong> fractional laser, peels.
+            </p>
+          </div>
+        </article>
+
+        <!-- Διαχείριση ουλών (μη χειρουργική) -->
+        <article class="card proc-card" id="scar-management">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Bandage_icon.svg" alt="Εικονίδιο επιδέσμου — διαχείριση ουλών">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3 class="proc-title">Διαχείριση ουλών (laser/ενέσιμα)</h3>
+            <p class="muted proc-desc">
+              <strong>Ενδείξεις:</strong> υπερτροφικές/δυσχρωμικές ουλές με αισθητικούς περιορισμούς.<br>
+              <strong>Διαδικασία:</strong> εξατομίκευση με laser και/ή ενέσιμα· μπορεί να συνδυαστεί με τοπικά μέσα πίεσης/σιλικόνης.<br>
+              <strong>Κίνδυνοι/Περιορισμοί:</strong> ποικίλλουσα ανταπόκριση, πιθανή ανάγκη πολλαπλών συνεδριών· ορισμένοι τύποι ουλών απαιτούν χειρουργική αναθεώρηση.<br>
+              <strong>Εναλλακτικές:</strong> χειρουργική αναθεώρηση ουλής όπου ενδείκνυται.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <p class="muted stack">
+        📌 Το τελικό αποτέλεσμα ποικίλλει ανάλογα με τον οργανισμό και δεν μπορεί να εγγυηθεί.
+      </p>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="container footer-grid">
-    <!-- Ιατρική Φιλοσοφία -->
     <div class="footer-col footer-desktop-only">
       <div class="kicker">Ιατρική Φιλοσοφία</div>
       <p class="stack-s">
-        Ασφάλεια, εμπιστοσύνη και ανθρώπινη προσέγγιση με φυσικά, διακριτικά αποτελέσματα από το 1991.
+        Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη και ουδέτερη πληροφόρηση
+        για πράξεις της ειδικότητας.
       </p>
     </div>
 
-    <!-- Πλοήγηση -->
     <div class="footer-col footer-desktop-only">
       <div class="kicker">Πλοήγηση</div>
-      <p class="stack-xs">
+      <p class="stack-xs footer-links">
         <a href="index.html">Αρχική</a><br>
         <a href="about.html">Ο Γιατρός</a><br>
         <a href="procedures.html">Επεμβάσεις</a><br>
         <a href="non-invasive.html">Μη Επεμβατικές</a><br>
+        <a href="reconstructive.html">Ανακατασκευαστική</a><br>
         <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a><br>
         <a href="contact.html">Επικοινωνία</a>
       </p>
     </div>
 
-    <!-- Location 1 -->
-    <div class="footer-col clinic-block">
+    <div class="footer-col clinic-block" aria-label="Στοιχεία ιατρείου Αγίας Τριάδος">
       <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
       Λεωφ. Βασιλέως Γεωργίου 44,<br>
       Θεσσαλονίκη 546 40<br><br>
       Τηλέφωνο: 2310 836600<br>
       Fax: 2310 836600<br><br>
-      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank">Οδηγίες</a>
+      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank" rel="noopener">Οδηγίες</a>
     </div>
 
-    <!-- Location 2 -->
-    <div class="footer-col clinic-block">
+    <div class="footer-col clinic-block" aria-label="Στοιχεία ιδιωτικού ιατρείου">
       <strong>Ιδιωτικό ιατρείο</strong>
       Μητροπόλεως 96,<br>
       Θεσσαλονίκη 546 22<br><br>
       Τηλέφωνο: 2310 261039<br>
       Email: papfanis2003@yahoo.gr<br><br>
-      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank">Οδηγίες</a>
+      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank" rel="noopener">Οδηγίες</a>
     </div>
   </div>
 
-  <div class="container stack-s" style="text-align:center;font-size:.85rem;color:#8b93a3">
-    © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.
+  <div class="container stack-s center">
+    <p class="muted" aria-live="polite">
+      Τελευταία ενημέρωση: <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time> —
+      Δήλωση ουδετερότητας: Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής Δεοντολογίας (Ν.3418/2005).
+      <br>
+      Δήλωση σύγκρουσης συμφερόντων: Δεν υφίσταται.
+      <br>
+      Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη ιατρική συμβουλή.
+    </p>
+    <p class="muted">© <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.</p>
   </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+  <script src="procedures.js"></script>
+  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const dt = document.getElementById('lastUpdated');
+    if (dt) dt.setAttribute('datetime', '2025-09-21');
+  </script>
 </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>

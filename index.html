@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Αρχική — Dr. T. Papadopoulos</title>
-  <meta name="description" content="Ιστοσελίδα πλαστικού χειρουργού με έμφαση στην ασφάλεια, την εμπιστοσύνη και τα φυσικά αποτελέσματα.">
+  <meta name="description" content="Ενημερωτικός ιστότοπος πλαστικού χειρουργού με έμφαση στην ασφάλεια, τη διαφάνεια και την ουδέτερη παρουσίαση των πράξεων.">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,22 +12,24 @@
 <header class="header">
   <div class="container nav">
     <a class="brand" href="index.html" aria-label="Αρχική">
-      <img src="https://picsum.photos/seed/logo/72/72" alt="Λογότυπο">
+      <img src="https://picsum.photos/seed/logo/72/72" alt="Λογότυπο ιατρείου">
       <strong>Dr. T. Papadopoulos</strong>
       <span class="badge">Plastic Surgeon</span>
     </a>
-    <nav class="navlinks">
+    <nav class="navlinks" aria-label="Κύρια πλοήγηση">
       <button id="menuToggle" class="menu-toggle button secondary" aria-label="Μενού">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-</button>
-
+        <!-- menu icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
       <div class="links">
-        <a href="index.html">Αρχική</a>
+        <a href="index.html" aria-current="page">Αρχική</a>
         <a href="about.html">Ο Γιατρός</a>
         <a href="procedures.html">Επεμβάσεις</a>
         <a href="non-invasive.html">Μη Επεμβατικές</a>
+        <a href="reconstructive.html">Ανακατασκευαστική</a>
+        <a href="media.html">Social</a>
         <a href="faq.html">Συχνές Ερωτήσεις</a>
         <a href="contact.html">Επικοινωνία</a>
       </div>
@@ -35,110 +37,126 @@
   </div>
 </header>
 
-  <main>
-<section class="hero">
-  <div class="container wrap">
-    <div>
-      <h1>Ασφάλεια, εμπιστοσύνη και φυσικό αποτέλεσμα <br> Από το 1991</h1>
-      <p class="lead stack">Ο Δρ. Θεοφάνης Ι. Παπαδόπουλος προσφέρει εξατομικευμένες λύσεις στην αισθητική και επανορθωτική χειρουργική με ζεστή, ανθρώπινη προσέγγιση.</p>
-      <div class="stack">
-        <a class="button" href="contact.html">Κλείστε ραντεβού</a>
+<main>
+  <!-- Hero: ουδέτερη ενημέρωση + σαφής CTA προς επικοινωνία -->
+  <section class="hero">
+    <div class="container wrap">
+      <div>
+        <h1>Ενημερωτική προσέγγιση στην Αισθητική & Ανακατασκευαστική Χειρουργική</h1>
+        <p class="lead stack">
+          Από το 1991, ο Δρ. Θεοφάνης Ι. Παπαδόπουλος παρέχει ιατρική φροντίδα με προτεραιότητα στην
+          ασφάλεια, τη διαφάνεια και τις ρεαλιστικές προσδοκίες.
+        </p>
+        <div class="stack">
+          <a class="button" href="contact.html" aria-label="Μετάβαση στη σελίδα επικοινωνίας">Επικοινωνήστε για ραντεβού</a>
+        </div>
+        <div class="icon-list stack-l" aria-label="Βασικές αρχές λειτουργίας">
+          <div class="icon-item"><span class="dot"></span><div>Τεκμηριωμένη ενημέρωση χωρίς προτροπές</div></div>
+          <div class="icon-item"><span class="dot"></span><div>Έμφαση στη <strong>ασφάλεια</strong> και τη <strong>διακριτικότητα</strong></div></div>
+          <div class="icon-item"><span class="dot"></span><div>Στόχος: αρμονικό, φυσικό αποτέλεσμα</div></div>
+        </div>
       </div>
-      <div class="icon-list stack-l">
-        <div class="icon-item"><span class="dot"></span><div>Προτεραιότητα στην <strong>ασφάλεια</strong> και την <strong>εμπιστοσύνη</strong></div></div>
-        <div class="icon-item"><span class="dot"></span><div><strong>Φυσικό</strong>, διακριτικό αποτέλεσμα</div></div>
-        <div class="icon-item"><span class="dot"></span><div>Προσωπική επαφή & ρεαλιστικές προσδοκίες</div></div>
+      <div class="photo" aria-hidden="true">
+        <img src="photos/main-4_3.png" alt="Ουδέτερη φωτογραφία ιατρικού χώρου">
       </div>
     </div>
-    <div class="photo">
-      <img src="photos/main-4_3.png" alt="Φωτογραφία ιατρού (placeholder)">
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="alt">
+  <!-- Ενημερωτικά blocks (playbook νόμιμου περιεχομένου) -->
+  <section class="alt">
+    <div class="container">
+      <h2>Τι θα βρείτε στον ιστότοπο</h2>
+      <p class="lead">Ουδέτερες, κατανοητές πληροφορίες για πράξεις της ειδικότητας — χωρίς testimonials, «πριν–μετά» ή συγκρίσεις.</p>
+
+      <div class="grid cols-3 stack">
+        <!-- Μη επεμβατικές -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/noninvasive/900/600" alt="Σχηματικό διάγραμμα μη επεμβατικών θεραπειών" class="card-img">
+          </div>
+          <div class="p">
+            <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+            <h3>Ενέσιμα & Δερματολογικές τεχνικές</h3>
+            <p class="muted">Botox, υαλουρονικό, peeling, μικροβελονισμός. Πότε ενδείκνυνται, περιορισμοί και συχνές απορίες.</p>
+            <a class="button secondary stack" href="non-invasive.html">Περισσότερα</a>
+          </div>
+        </article>
+
+        <!-- Επεμβάσεις -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/surgery-arts/900/600" alt="Σχηματικό διάγραμμα επεμβατικής πράξης" class="card-img">
+          </div>
+          <div class="p">
+            <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
+            <h3>Πρόσωπο, Μαστός, Σώμα</h3>
+            <p class="muted">Ουδέτερες περιγραφές: ενδείξεις, αναισθησία, διάρκεια, ανάρρωση, κίνδυνοι & εναλλακτικές.</p>
+            <a class="button secondary stack" href="procedures.html">Περισσότερα</a>
+          </div>
+        </article>
+
+        <!-- Ανακατασκευαστική -->
+        <article class="card">
+          <div class="card-media">
+            <img src="https://picsum.photos/seed/reconstructive/900/600" alt="Σχηματική απεικόνιση επανορθωτικής χειρουργικής" class="card-img">
+          </div>
+          <div class="p">
+            <span class="pill pill--surgery" aria-hidden="true">Ανακατασκευαστική</span>
+            <h3>Εγκαύματα, Όγκοι Δέρματος, Χειρουργική Χεριού</h3>
+            <p class="muted">Καθαρά ενημερωτική παρουσίαση θεραπευτικών πράξεων και σταδίων αποκατάστασης.</p>
+            <a class="button secondary stack" href="reconstructive.html">Περισσότερα</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
   <div class="container">
-    <h2>Δημοφιλείς επεμβάσεις</h2>
-    <p class="lead">Επιλεγμένες πράξεις που ζητούν συχνότερα οι ασθενείς μας.</p>
-
-    <div class="grid cols-3 stack">
-      <!-- 1) Botox — Μη-Επεμβατικές -->
-      <article class="card">
+    <h2>Ενημερωτικά Βίντεο</h2>
+    <p class="muted stack-s">
+      Συνεντεύξεις και τηλεοπτικές εμφανίσεις με καθαρά ενημερωτικό χαρακτήρα.
+    </p>
+    <div class="grid cols-3">
+      <!-- Card 1 -->
+      <article class="card media-teaser">
         <div class="card-media">
-          <img src="https://picsum.photos/seed/botox/900/600" alt="Botox" class="card-img">
+          <img class="card-img" loading="lazy" decoding="async"
+               src="https://upload.wikimedia.org/wikipedia/commons/7/78/Video_font_awesome.svg"
+               alt="Εικονίδιο βίντεο">
         </div>
         <div class="p">
-          <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
-          <h3>Botox</h3>
-          <p class="muted">Λείανση ρυτίδων έκφρασης σε μέτωπο, μεσόφρυο και «πόδι της χήνας», με φυσικό αποτέλεσμα.</p>
-          <a class="button secondary stack" href="non-invasive.html#botox">Μάθετε περισσότερα</a>
+          <h3 class="h4">Εκπομπή 15 — 15/02/2020</h3>
+          <p class="muted">Liquid Facelift — ενέσιμες τεχνικές όγκου/αναζωογόνησης. Ενδείξεις, περιορισμοί, διάρκεια.</p>
+          <a class="button secondary" href="media.html">Δείτε όλα τα βίντεο</a>
         </div>
       </article>
 
-      <!-- 2) Υαλουρονικό — Μη-Επεμβατικές -->
-      <article class="card">
+      <!-- Card 2 -->
+      <article class="card media-teaser">
         <div class="card-media">
-          <img src="https://picsum.photos/seed/fillers/900/600" alt="Υαλουρονικό" class="card-img">
+          <img class="card-img" loading="lazy" decoding="async"
+               src="https://upload.wikimedia.org/wikipedia/commons/7/78/Video_font_awesome.svg"
+               alt="Εικονίδιο βίντεο">
         </div>
         <div class="p">
-          <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
-          <h3>Υαλουρονικό</h3>
-          <p class="muted">Fillers για όγκο/σχήμα σε χείλη, ζυγωματικά και ρινοπαρειακές αύλακες, με άμεσο αποτέλεσμα.</p>
-          <a class="button secondary stack" href="non-invasive.html#fillers">Μάθετε περισσότερα</a>
+          <h3 class="h4">Εκπομπή 14 — 01/2015</h3>
+          <p class="muted">Ρινοπλαστική & Ωτοπλαστική — βασικές αρχές, ενδείξεις, γενική διαδικασία.</p>
+          <a class="button secondary" href="media.html">Δείτε όλα τα βίντεο</a>
         </div>
       </article>
 
-      <!-- 3) Λιποαναρρόφηση — Επεμβάσεις -->
-      <article class="card">
+      <!-- Card 3 -->
+      <article class="card media-teaser">
         <div class="card-media">
-          <img src="https://drkerastaris.gr/wp-content/uploads/2022/07/%CE%BB%CE%B9%CF%80%CE%BF%CE%B1%CE%BD%CE%B1%CF%81%CF%81%CF%8C%CF%86%CE%B7%CF%83%CE%B7-%CE%BA%CE%BF%CE%B9%CE%BB%CE%B9%CE%AC%CF%82-%CE%BA%CF%8C%CF%83%CF%84%CE%BF%CF%82-scaled.jpg" alt="Λιποαναρρόφηση" class="card-img">
+          <img class="card-img" loading="lazy" decoding="async"
+               src="https://upload.wikimedia.org/wikipedia/commons/7/78/Video_font_awesome.svg"
+               alt="Εικονίδιο βίντεο">
         </div>
         <div class="p">
-          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
-          <h3>Λιποαναρρόφηση</h3>
-          <p class="muted">Σμίλευση περιοχών με επίμονο τοπικό λίπος (όχι μέθοδος απώλειας βάρους).</p>
-          <a class="button secondary stack" href="procedures.html#lipo">Μάθετε περισσότερα</a>
-        </div>
-      </article>
-    </div>
-
-    <div class="grid cols-3 stack">
-      <!-- 4) Λίφτινγκ — Επεμβάσεις -->
-      <article class="card">
-        <div class="card-media">
-          <img src="https://abh-medicalgroup.com/sites/default/files/2024-11/facelift2500x1400.jpg" alt="Λίφτινγκ προσώπου" class="card-img">
-        </div>
-        <div class="p">
-          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
-          <h3>Λίφτινγκ</h3>
-          <p class="muted">Βελτίωση χαλάρωσης σε πρόσωπο/λαιμό με στόχο φυσικό, αναζωογονημένο αποτέλεσμα.</p>
-          <a class="button secondary stack" href="procedures.html#facelift">Μάθετε περισσότερα</a>
-        </div>
-      </article>
-
-      <!-- 5) Μαστός — Επεμβάσεις -->
-      <article class="card">
-        <div class="card-media">
-          <img src="https://www.plasticsurgery-plasis.gr/wp-content/uploads/2021/11/%CE%B1%CF%85%CE%BE%CE%B7%CF%84%CE%B9%CE%BA%CE%B7%CC%81-%CF%83%CF%84%CE%AE%CE%B8%CE%BF%CF%82.jpeg" alt="Επεμβάσεις μαστού" class="card-img">
-        </div>
-        <div class="p">
-          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
-          <h3>Μαστός</h3>
-          <p class="muted">Αυξητική, ανόρθωση, μειωτική — με έμφαση στη συμμετρία και το φυσικό σχήμα.</p>
-          <a class="button secondary stack" href="procedures.html#breast">Μάθετε περισσότερα</a>
-        </div>
-      </article>
-
-      <!-- 6) Βλεφαροπλαστική — Επεμβάσεις -->
-      <article class="card">
-        <div class="card-media">
-          <img src="https://plastikos-gravvanis.gr/wp-content/uploads/2021/03/vlefaroplastiki-3-1024x580.jpeg" alt="Βλεφαροπλαστική" class="card-img">
-        </div>
-        <div class="p">
-          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
-          <h3>Βλεφαροπλαστική</h3>
-          <p class="muted">Αφαίρεση περίσσειας δέρματος/λίπους με διακριτικές τομές. Επιστροφή σε 7–10 ημέρες.</p>
-          <a class="button secondary stack" href="procedures.html#bleph">Μάθετε περισσότερα</a>
+          <h3 class="h4">Εκπομπή 11 — 12/2014</h3>
+          <p class="muted">Γυναικομαστία — τι είναι, επιλογές αντιμετώπισης, ανάρρωση.</p>
+          <a class="button secondary" href="media.html">Δείτε όλα τα βίντεο</a>
         </div>
       </article>
     </div>
@@ -147,25 +165,30 @@
 
 
 
-
-
-<section>
-  <div class="container grid cols-2">
-    <div>
-      <h2>Η πρώτη επίσκεψη</h2>
-      <p class="muted">Προσωπική συζήτηση για στόχους, ιατρικό ιστορικό και ρεαλιστικές προσδοκίες. Σχεδιάζουμε μαζί το πλάνο σας.</p>
-      <div class="icon-list stack">
-        <div class="icon-item"><span class="dot"></span><div>Ακούμε προσεκτικά τι έχετε φανταστεί</div></div>
-        <div class="icon-item"><span class="dot"></span><div>Εξηγούμε απλά τη διαδικασία & την ανάρρωση</div></div>
-        <div class="icon-item"><span class="dot"></span><div>Δίνουμε προτεραιότητα στη διακριτικότητα</div></div>
+  <!-- Σύντομο FAQ prompt -->
+  <section>
+    <div class="container grid cols-2">
+      <div>
+        <h2>Πριν αποφασίσετε</h2>
+        <p class="muted">
+          Στη σελίδα Συχνών Ερωτήσεων θα βρείτε απαντήσεις για ηλικίες, είδη αναισθησίας, χρόνο ανάρρωσης,
+          καθώς και τι να ρωτήσετε στην πρώτη επίσκεψη.
+        </p>
+        <div class="icon-list stack">
+          <div class="icon-item"><span class="dot"></span><div>Ενημέρωση για <strong>κινδύνους & επιπλοκές</strong></div></div>
+          <div class="icon-item"><span class="dot"></span><div>Παρουσίαση <strong>εναλλακτικών επιλογών</strong></div></div>
+          <div class="icon-item"><span class="dot"></span><div>Ουδέτερη γλώσσα, χωρίς υποσχέσεις αποτελέσματος</div></div>
+        </div>
+        <div class="stack">
+          <a class="button" href="faq.html">Δείτε τις Συχνές Ερωτήσεις</a>
+          <a class="button secondary" href="contact.html">Επικοινωνία</a>
+        </div>
       </div>
-      <a class="button stack" href="contact.html">Κλείστε ραντεβού</a>
+      <div class="photo" aria-hidden="true">
+        <img src="https://picsum.photos/seed/healthspace/900/675" alt="Ουδέτερη εικόνα χώρου υγείας">
+      </div>
     </div>
-    <div class="photo">
-      <img src="https://picsum.photos/seed/clinic/900/675" alt="Χώρος ιατρείου (placeholder)">
-    </div>
-  </div>
-</section>
+  </section>
 </main>
 
 <footer>
@@ -174,52 +197,68 @@
     <div class="footer-col footer-desktop-only">
       <div class="kicker">Ιατρική Φιλοσοφία</div>
       <p class="stack-s">
-        Ασφάλεια, εμπιστοσύνη και ανθρώπινη προσέγγιση με φυσικά, διακριτικά αποτελέσματα από το 1991.
+        Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη και ουδέτερη πληροφόρηση
+        για πράξεις της ειδικότητας.
       </p>
     </div>
 
     <!-- Πλοήγηση -->
     <div class="footer-col footer-desktop-only">
       <div class="kicker">Πλοήγηση</div>
-      <p class="stack-xs">
+      <p class="stack-xs footer-links">
         <a href="index.html">Αρχική</a><br>
         <a href="about.html">Ο Γιατρός</a><br>
         <a href="procedures.html">Επεμβάσεις</a><br>
         <a href="non-invasive.html">Μη Επεμβατικές</a><br>
+        <a href="reconstructive.html">Ανακατασκευαστική</a><br>
         <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a><br>
         <a href="contact.html">Επικοινωνία</a>
       </p>
     </div>
 
     <!-- Location 1 -->
-    <div class="footer-col clinic-block">
+    <div class="footer-col clinic-block" aria-label="Στοιχεία ιατρείου Αγίας Τριάδος">
       <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
       Λεωφ. Βασιλέως Γεωργίου 44,<br>
       Θεσσαλονίκη 546 40<br><br>
       Τηλέφωνο: 2310 836600<br>
       Fax: 2310 836600<br><br>
-      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank">Οδηγίες</a>
+      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank" rel="noopener">Οδηγίες</a>
     </div>
 
     <!-- Location 2 -->
-    <div class="footer-col clinic-block">
+    <div class="footer-col clinic-block" aria-label="Στοιχεία ιδιωτικού ιατρείου">
       <strong>Ιδιωτικό ιατρείο</strong>
       Μητροπόλεως 96,<br>
       Θεσσαλονίκη 546 22<br><br>
       Τηλέφωνο: 2310 261039<br>
       Email: papfanis2003@yahoo.gr<br><br>
-      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank">Οδηγίες</a>
+      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank" rel="noopener">Οδηγίες</a>
     </div>
   </div>
 
-  <div class="container stack-s" style="text-align:center;font-size:.85rem;color:#8b93a3">
-    © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.
+  <div class="container stack-s center">
+    <p class="muted" aria-live="polite">
+      Τελευταία ενημέρωση: <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
+      <br>
+      Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής Δεοντολογίας (Ν.3418/2005).
+      <br>
+      Δεν υφίσταται σύγκρουση συμφερόντων.
+      <br>
+      Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη ιατρική συμβουλή.
+    </p>
+    <p class="muted">© <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.</p>
   </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</footer>
-
-
 
   <script src="script.js"></script>
+  <script>
+    // Footer years
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Keep machine-readable datetime correct (already printed human form)
+    const dt = document.getElementById('lastUpdated');
+    if (dt) dt.setAttribute('datetime', '2025-09-21');
+  </script>
+</footer>
+
 </body>
 </html>

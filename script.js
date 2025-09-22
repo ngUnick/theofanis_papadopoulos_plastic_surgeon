@@ -111,3 +111,127 @@
   // Initial layout check (no search)
   onSearch();
 })();
+
+
+
+
+
+
+
+
+
+
+
+// Mobile nav toggle & basic utilities
+(function(){
+  const nav = document.querySelector('.navlinks');
+  const toggle = document.querySelector('#menuToggle');
+  if (toggle && nav) {
+    const links = nav.querySelector('.links');
+
+    const setExpanded = (open) => {
+      if (!toggle) return;
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      setExpanded(nav.classList.contains('open'));
+    });
+
+    // Close on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        setExpanded(false);
+      }
+    });
+
+    // Close if clicking outside the menu
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target) && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        setExpanded(false);
+      }
+    });
+
+    // Close if we resize back above the burger breakpoint (1120px)
+    const closeIfDesktop = () => {
+      if (window.innerWidth > 1120 && nav.classList.contains('open')) {
+        nav.classList.remove('open');
+        setExpanded(false);
+      }
+    };
+    window.addEventListener('resize', closeIfDesktop);
+  }
+
+  // Highlight active link
+  const path = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.links a').forEach(a => {
+    const href = a.getAttribute('href');
+    if (href === path) a.classList.add('active');
+  });
+})();
+
+
+
+
+
+// media.js
+// (function () {
+//   const q = document.getElementById('mediaSearch');
+//   const count = document.getElementById('mediaCount');
+//   const grid = document.getElementById('mediaGrid');
+//   const cards = Array.from(grid.querySelectorAll('.media-card'));
+//   const chips = Array.from(document.querySelectorAll('.chipbar .chip'));
+//   let tag = 'all';
+
+//   function applyFilter() {
+//     const term = (q?.value || '').trim().toLowerCase();
+//     let visible = 0;
+
+//     cards.forEach(card => {
+//       const matchesText = !term || (card.dataset.title || '').toLowerCase().includes(term);
+//       const matchesTag = tag === 'all' || (card.dataset.tags || '').split(' ').includes(tag);
+//       const show = matchesText && matchesTag;
+//       card.style.display = show ? '' : 'none';
+//       visible += show ? 1 : 0;
+//     });
+
+//     if (count) {
+//       count.textContent = visible === cards.length
+//         ? 'Εμφάνιση όλων των βίντεο'
+//         : `Εμφάνιση ${visible} από ${cards.length} βίντεο`;
+//     }
+//   }
+
+//   q?.addEventListener('input', applyFilter);
+
+//   chips.forEach(c => {
+//     c.addEventListener('click', () => {
+//       chips.forEach(x => { x.classList.remove('is-active'); x.setAttribute('aria-selected', 'false'); });
+//       c.classList.add('is-active'); c.setAttribute('aria-selected', 'true');
+//       tag = c.dataset.mediaFilter || 'all';
+//       applyFilter();
+//     });
+//   });
+
+//   applyFilter();
+// })();
+
+
+
+// media.js
+// (function () {
+//   const cards = document.querySelectorAll('.media-card[data-ytid]');
+//   cards.forEach(card => {
+//     const id = card.getAttribute('data-ytid');
+//     const img = card.querySelector('img.card-img');
+//     if (!id || !img) return;
+//     img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+//     // Optional: 16:9 ratio via existing CSS classes; alt text already set in HTML.
+//     img.referrerPolicy = 'no-referrer';
+//     img.loading = 'lazy';
+//     img.decoding = 'async';
+//   });
+// })();
