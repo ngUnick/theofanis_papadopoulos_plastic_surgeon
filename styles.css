@@ -281,6 +281,133 @@ footer { border-top: 1px solid var(--border); padding: 2rem 0; color: var(--mute
 
 
 
+/* =====================
+   Cards with image + pill
+   ===================== */
+/* media wrapper */
+.card-media{
+  position: relative;
+}
+.card-media .card-img{
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  display: block;
+  border-radius: .75rem .75rem 0 0;
+}
+
+/* pill inside content */
+.pill{
+  display: inline-block;
+  font-size: .72rem;
+  line-height: 1;
+  padding: .42rem .58rem;
+  border-radius: 999px;
+  font-weight: 700;
+  user-select: none;
+  pointer-events: none;
+  white-space: nowrap;
+  margin-bottom: .5rem;
+  border: 1px solid var(--border);
+}
+
+/* colors via your palette */
+.pill--noninv{
+  color: var(--on-brand);
+  background: color-mix(in oklab, var(--brand), white 78%);
+}
+
+.pill--surgery{
+  color: var(--ink);
+  background: color-mix(in oklab, var(--accent), var(--bg) 60%);
+}
+
+/* Light mode tuning */
+@media (prefers-color-scheme: light){
+  .pill--noninv{
+    background: color-mix(in oklab, var(--brand), var(--border) 90%);
+    color: #0f1726;
+  }
+  .pill--surgery{
+    background: color-mix(in oklab, var(--accent), white 84%);
+    color: #0f1726;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Search bar */
+.proc-search-wrap {
+  background: var(--bg-alt);
+}
+.proc-searchbar {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: .6rem;
+  background: var(--field);
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  padding: .5rem .75rem;
+  color: var(--muted);
+  max-width: 520px;   /* narrower as requested */
+  margin-inline: auto;
+}
+.proc-searchbar svg { width: 24px; height: 24px; }
+.proc-input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-size: .95rem;
+}
+.proc-input::placeholder { color: color-mix(in oklab, var(--muted), transparent 20%); }
+.proc-search-meta { margin-top: .5rem; color: var(--muted); font-size: .9rem; text-align: center; }
+
+/* Card images */
+.card-media { position: relative; overflow: hidden; }
+.card-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  background: var(--card-elev);
+}
+
+/* Highlighting */
+.p mark.hl {
+  background: color-mix(in oklab, var(--accent), white 70%);
+  color: var(--on-brand);
+  padding: 0 .1em;
+  border-radius: .25em;
+}
+
+/* Hide whole section when empty (JS toggles .is-hidden) */
+.proc-section.is-hidden { display: none; }
+
+/* Responsive grid tweaks */
+@media (max-width: 900px){
+  .grid.cols-3 { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px){
+  .grid.cols-3 { grid-template-columns: 1fr; }
+}
+
+
+
+
+
+
+
 
 
 

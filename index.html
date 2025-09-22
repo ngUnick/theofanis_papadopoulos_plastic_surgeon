@@ -39,7 +39,7 @@
 <section class="hero">
   <div class="container wrap">
     <div>
-      <h1>Ασφάλεια, εμπιστοσύνη και φυσικό αποτέλεσμα — από το 1991</h1>
+      <h1>Ασφάλεια, εμπιστοσύνη και φυσικό αποτέλεσμα <br> Από το 1991</h1>
       <p class="lead stack">Ο Δρ. Θεοφάνης Ι. Παπαδόπουλος προσφέρει εξατομικευμένες λύσεις στην αισθητική και επανορθωτική χειρουργική με ζεστή, ανθρώπινη προσέγγιση.</p>
       <div class="stack">
         <a class="button" href="contact.html">Κλείστε ραντεβού</a>
@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="photo">
-      <img src="https://picsum.photos/seed/doctor/900/675" alt="Φωτογραφία ιατρού (placeholder)">
+      <img src="photos/main-4_3.png" alt="Φωτογραφία ιατρού (placeholder)">
     </div>
   </div>
 </section>
@@ -62,64 +62,92 @@
     <p class="lead">Επιλεγμένες πράξεις που ζητούν συχνότερα οι ασθενείς μας.</p>
 
     <div class="grid cols-3 stack">
+      <!-- 1) Botox — Μη-Επεμβατικές -->
       <article class="card">
-        <img src="https://plastikos-gravvanis.gr/wp-content/uploads/2021/03/vlefaroplastiki-3-1024x580.jpeg" alt="Βλεφαροπλαστική (placeholder)" style="aspect-ratio:3/2;object-fit:cover" class="card-img">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/botox/900/600" alt="Botox" class="card-img">
+        </div>
         <div class="p">
-          <h3>Βλεφαροπλαστική</h3>
-          <p class="muted">Αφαίρεση περίσσειας δέρματος/λίπους με διακριτικές τομές. Επιστροφή στις δραστηριότητες σε 7–10 μέρες.</p>
-          <a class="button secondary stack" href="procedures.html#bleph">Μάθετε περισσότερα</a>
+          <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+          <h3>Botox</h3>
+          <p class="muted">Λείανση ρυτίδων έκφρασης σε μέτωπο, μεσόφρυο και «πόδι της χήνας», με φυσικό αποτέλεσμα.</p>
+          <a class="button secondary stack" href="non-invasive.html#botox">Μάθετε περισσότερα</a>
         </div>
       </article>
 
+      <!-- 2) Υαλουρονικό — Μη-Επεμβατικές -->
       <article class="card">
-        <img src="https://abh-medicalgroup.com/sites/default/files/2024-11/facelift2500x1400.jpg" alt="Λίφτινγκ προσώπου (placeholder)" style="aspect-ratio:3/2;object-fit:cover" class="card-img">
+        <div class="card-media">
+          <img src="https://picsum.photos/seed/fillers/900/600" alt="Υαλουρονικό" class="card-img">
+        </div>
         <div class="p">
-          <h3>Λίφτινγκ προσώπου</h3>
-          <p class="muted">Βελτίωση χαλάρωσης σε πρόσωπο/λαιμό, με στόχο φυσικό, αναζωογονημένο αποτέλεσμα.</p>
-          <a class="button secondary stack" href="procedures.html#facelift">Μάθετε περισσότερα</a>
+          <span class="pill pill--noninv" aria-hidden="true">Μη-Επεμβατικές</span>
+          <h3>Υαλουρονικό</h3>
+          <p class="muted">Fillers για όγκο/σχήμα σε χείλη, ζυγωματικά και ρινοπαρειακές αύλακες, με άμεσο αποτέλεσμα.</p>
+          <a class="button secondary stack" href="non-invasive.html#fillers">Μάθετε περισσότερα</a>
         </div>
       </article>
 
+      <!-- 3) Λιποαναρρόφηση — Επεμβάσεις -->
       <article class="card">
-        <img src="https://drkerastaris.gr/wp-content/uploads/2022/07/%CE%BB%CE%B9%CF%80%CE%BF%CE%B1%CE%BD%CE%B1%CF%81%CF%81%CF%8C%CF%86%CE%B7%CF%83%CE%B7-%CE%BA%CE%BF%CE%B9%CE%BB%CE%B9%CE%AC%CF%82-%CE%BA%CF%8C%CF%83%CF%84%CE%BF%CF%82-scaled.jpg" alt="Λιποαναρρόφηση (placeholder)" style="aspect-ratio:3/2;object-fit:cover" class="card-img">
+        <div class="card-media">
+          <img src="https://drkerastaris.gr/wp-content/uploads/2022/07/%CE%BB%CE%B9%CF%80%CE%BF%CE%B1%CE%BD%CE%B1%CF%81%CF%81%CF%8C%CF%86%CE%B7%CF%83%CE%B7-%CE%BA%CE%BF%CE%B9%CE%BB%CE%B9%CE%AC%CF%82-%CE%BA%CF%8C%CF%83%CF%84%CE%BF%CF%82-scaled.jpg" alt="Λιποαναρρόφηση" class="card-img">
+        </div>
         <div class="p">
+          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
           <h3>Λιποαναρρόφηση</h3>
-          <p class="muted">Σμίλευση περιοχών με επίμονο τοπικό λίπος (όχι επέμβαση απώλειας βάρους).</p>
+          <p class="muted">Σμίλευση περιοχών με επίμονο τοπικό λίπος (όχι μέθοδος απώλειας βάρους).</p>
           <a class="button secondary stack" href="procedures.html#lipo">Μάθετε περισσότερα</a>
         </div>
       </article>
     </div>
 
     <div class="grid cols-3 stack">
+      <!-- 4) Λίφτινγκ — Επεμβάσεις -->
       <article class="card">
-        <img src="https://www.plasticsurgery-plasis.gr/wp-content/uploads/2021/11/%CE%B1%CF%85%CE%BE%CE%B7%CF%84%CE%B9%CE%BA%CE%B7%CC%81-%CF%83%CF%84%CE%B7%CC%81%CE%B8%CE%BF%CF%82.jpeg" alt="Επεμβάσεις μαστών (placeholder)" style="aspect-ratio:3/2;object-fit:cover" class="card-img">
+        <div class="card-media">
+          <img src="https://abh-medicalgroup.com/sites/default/files/2024-11/facelift2500x1400.jpg" alt="Λίφτινγκ προσώπου" class="card-img">
+        </div>
         <div class="p">
-          <h3>Μαστοί</h3>
+          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
+          <h3>Λίφτινγκ</h3>
+          <p class="muted">Βελτίωση χαλάρωσης σε πρόσωπο/λαιμό με στόχο φυσικό, αναζωογονημένο αποτέλεσμα.</p>
+          <a class="button secondary stack" href="procedures.html#facelift">Μάθετε περισσότερα</a>
+        </div>
+      </article>
+
+      <!-- 5) Μαστός — Επεμβάσεις -->
+      <article class="card">
+        <div class="card-media">
+          <img src="https://www.plasticsurgery-plasis.gr/wp-content/uploads/2021/11/%CE%B1%CF%85%CE%BE%CE%B7%CF%84%CE%B9%CE%BA%CE%B7%CC%81-%CF%83%CF%84%CE%AE%CE%B8%CE%BF%CF%82.jpeg" alt="Επεμβάσεις μαστού" class="card-img">
+        </div>
+        <div class="p">
+          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
+          <h3>Μαστός</h3>
           <p class="muted">Αυξητική, ανόρθωση, μειωτική — με έμφαση στη συμμετρία και το φυσικό σχήμα.</p>
           <a class="button secondary stack" href="procedures.html#breast">Μάθετε περισσότερα</a>
         </div>
       </article>
 
+      <!-- 6) Βλεφαροπλαστική — Επεμβάσεις -->
       <article class="card">
-        <img src="https://picsum.photos/seed/tummy/720/480" alt="Κοιλιοπλαστική (placeholder)" style="aspect-ratio:3/2;object-fit:cover">
-        <div class="p">
-          <h3>Κοιλιοπλαστική</h3>
-          <p class="muted">Αφαίρεση περίσσειας δέρματος/λίπους και σύσφιξη κοιλιακών τοιχωμάτων για επίπεδη κοιλιά.</p>
-          <a class="button secondary stack" href="procedures.html#tummy">Μάθετε περισσότερα</a>
+        <div class="card-media">
+          <img src="https://plastikos-gravvanis.gr/wp-content/uploads/2021/03/vlefaroplastiki-3-1024x580.jpeg" alt="Βλεφαροπλαστική" class="card-img">
         </div>
-      </article>
-
-      <article class="card">
-        <img src="https://picsum.photos/seed/noninv/720/480" alt="Μη επεμβατικές θεραπείες (placeholder)" style="aspect-ratio:3/2;object-fit:cover">
         <div class="p">
-          <h3>Μη επεμβατικές</h3>
-          <p class="muted">Botox, fillers, peelings, laser — για διακριτική ανανέωση χωρίς χειρουργείο.</p>
-          <a class="button secondary stack" href="non-invasive.html">Δείτε τις επιλογές</a>
+          <span class="pill pill--surgery" aria-hidden="true">Επεμβάσεις</span>
+          <h3>Βλεφαροπλαστική</h3>
+          <p class="muted">Αφαίρεση περίσσειας δέρματος/λίπους με διακριτικές τομές. Επιστροφή σε 7–10 ημέρες.</p>
+          <a class="button secondary stack" href="procedures.html#bleph">Μάθετε περισσότερα</a>
         </div>
       </article>
     </div>
   </div>
 </section>
+
+
+
+
 
 <section>
   <div class="container grid cols-2">
@@ -189,8 +217,6 @@
   </div>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
-
-
 
 
 

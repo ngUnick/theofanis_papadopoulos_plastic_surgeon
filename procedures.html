@@ -6,6 +6,8 @@
   <title>Επεμβάσεις — Dr. T. Papadopoulos</title>
   <meta name="description" content="Ιστοσελίδα πλαστικού χειρουργού με έμφαση στην ασφάλεια, την εμπιστοσύνη και τα φυσικά αποτελέσματα.">
   <link rel="stylesheet" href="styles.css">
+  <!-- Page-specific styles for procedures -->
+  <link rel="stylesheet" href="procedures.css">
 </head>
 <body>
 
@@ -18,15 +20,15 @@
     </a>
     <nav class="navlinks">
       <button id="menuToggle" class="menu-toggle button secondary" aria-label="Μενού">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
 
       <div class="links">
         <a href="index.html">Αρχική</a>
         <a href="about.html">Ο Γιατρός</a>
-        <a href="procedures.html">Επεμβάσεις</a>
+        <a href="procedures.html" aria-current="page">Επεμβάσεις</a>
         <a href="non-invasive.html">Μη Επεμβατικές</a>
         <a href="faq.html">Συχνές Ερωτήσεις</a>
         <a href="contact.html">Επικοινωνία</a>
@@ -35,98 +37,392 @@
   </div>
 </header>
 
-  <main>
-<section class="hero">
-  <div class="container">
-    <h1>Επεμβάσεις & θεραπείες</h1>
-    <p class="lead">Συνοπτική παρουσίαση των βασικών κατηγοριών. Επιλέξτε αυτό που σας ενδιαφέρει.</p>
-  </div>
-</section>
-
-<section class="alt">
-  <div class="container">
-    <h2>Πρόσωπο</h2>
-    <div class="grid cols-3">
-      <article class="card" id="bleph"><div class="p">
-        <h3>Βλεφαροπλαστική</h3>
-        <p class="muted">Αφαίρεση περίσσειας δέρματος/λίπους, κρυφές τομές κοντά στις βλεφαρίδες. Επανένταξη 7–10 ημέρες.</p>
-      </div></article>
-      <article class="card" id="facelift"><div class="p">
-        <h3>Λίφτινγκ προσώπου</h3>
-        <p class="muted">Βελτίωση χαλάρωσης σε πρόσωπο/λαιμό, με φυσικότητα. Συνδυάζεται με βλεφαροπλαστική.</p>
-      </div></article>
-      <article class="card" id="rhinoplasty"><div class="p">
-        <h3>Ρινοπλαστική</h3>
-        <p class="muted">Διόρθωση ράχης/άκρου/πτερυγίων και βελτίωση αναπνοής. Επιστροφή σε 1–2 εβδομάδες.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Ωτοπλαστική</h3>
-        <p class="muted">Διόρθωση «πεταχτών» ώτων. Ελαστικός επίδεσμος για 1 εβδομάδα.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Πηγούνι (Mentoplasty)</h3>
-        <p class="muted">Ενθέματα ή οστική τροποποίηση για ισορροπία χαρακτηριστικών.</p>
-      </div></article>
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Επεμβάσεις & θεραπείες</h1>
+      <p class="lead">Σύνοψη των βασικών χειρουργικών επιλογών που προσφέρονται. Αναζητήστε την κατάλληλη για εσάς.</p>
+      <div class="stack">
+        <a class="button" href="contact.html">Κλείστε ραντεβού</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section>
-  <div class="container" id="breast">
-    <h2>Μαστοί</h2>
-    <div class="grid cols-3">
-      <article class="card"><div class="p">
-        <h3>Αυξητική</h3>
-        <p class="muted">Ενθέματα (σχήμα/τοποθέτηση/τομή εξατομικεύονται). Ανάρρωση 3–6 εβδομάδες.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Ανόρθωση</h3>
-        <p class="muted">Αντιμετώπιση πτώσης με επανατοποθέτηση θηλής και σύσφιξη φακέλου. Μπορεί να συνδυαστεί με αύξηση.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Μειωτική</h3>
-        <p class="muted">Ανακούφιση από βάρος/πόνους και καλύτερη συμμετρία. Ενημέρωση για ουλές & θηλασμό.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Γυναικομαστία</h3>
-        <p class="muted">Λιποαναρρόφηση και/ή αφαίρεση αδένα για πιο αρμονικό θώρακα.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Αποκατάσταση/Ασυμμετρία</h3>
-        <p class="muted">Άμεση ή σταδιακή αποκατάσταση μετά μαστεκτομή (expanders/ενθέματα).</p>
-      </div></article>
+  <!-- Live Search -->
+  <section class="proc-search-wrap">
+    <div class="container">
+      <div class="proc-searchbar" role="search">
+        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="procSearch" class="proc-input" type="search" placeholder="Αναζήτηση επεμβάσεων..." aria-label="Αναζήτηση επεμβάσεων και περιγραφών">
+      </div>
+      <div class="proc-search-meta" aria-live="polite">
+        <span id="resultCount">Εμφάνιση όλων των επεμβάσεων</span>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="alt">
-  <div class="container">
-    <h2>Σώμα</h2>
-    <div class="grid cols-3">
-      <article class="card" id="lipo"><div class="p">
-        <h3>Λιποαναρρόφηση</h3>
-        <p class="muted">Τumescent τεχνική για περιοχές με επίμονο λίπος. Ελαστικό ένδυμα ~1 μήνα.</p>
-      </div></article>
-      <article class="card" id="tummy"><div class="p">
-        <h3>Κοιλιοπλαστική</h3>
-        <p class="muted">Mini ή πλήρης, σύσφιξη κοιλιακού τοιχώματος και αφαίρεση περίσσειας δέρματος/λίπους.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Βραχιονοπλαστική</h3>
-        <p class="muted">Αφαίρεση χαλαρού δέρματος βραχιόνων. Μπορεί να συνδυαστεί με λιποαναρρόφηση.</p>
-      </div></article>
-      <article class="card"><div class="p">
-        <h3>Θιγ/Γλουτ/Μηροπλαστικές</h3>
-        <p class="muted">Ανόρθωση και σύσφιξη μετά μεγάλη απώλεια βάρους.</p>
-      </div></article>
+  <!-- ΠΡΟΣΩΠΟ -->
+  <section class="alt proc-section" data-section="face">
+    <div class="container">
+      <h2 class="proc-heading">Πρόσωπο</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Βλεφαροπλαστική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://www.cosmeticdermamedicine.gr/wp-content/uploads/vlefaroplastiki-hero-1.jpg" alt="Βλεφαροπλαστική — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Βλεφαροπλαστική</h3>
+            <p class="muted proc-desc">Αφαιρεί χαλάρωση και «σακουλάκια» στα βλέφαρα με λεπτές τομές. Το βλέμμα φαίνεται ξεκούραστο, φυσικό.</p>
+          </div>
+        </article>
+
+        <!-- Λίφτινγκ προσώπου (διάγραμμα, SFW) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://myorl.gr/files/images/endoscopic-surgery/endoscopic-facelift/1a.jpg" alt="Λίφτινγκ προσώπου — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Λίφτινγκ προσώπου</h3>
+            <p class="muted proc-desc">Σύσφιξη βαθύτερων ιστών για πιο σφριγηλό περίγραμμα προσώπου και λαιμού, διατηρώντας φυσικό αποτέλεσμα.</p>
+          </div>
+        </article>
+
+        <!-- Ρινοπλαστική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://karkatzoulisorl.gr/wp-content/uploads/2023/11/kleisti-rinoplastiki_1.png" alt="Ρινοπλαστική — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Ρινοπλαστική</h3>
+            <p class="muted proc-desc">Εξισορροπεί ράχη και άκρο, βελτιώνει αναπνοή όπου χρειάζεται. Στόχος αρμονία με τα υπόλοιπα χαρακτηριστικά.</p>
+          </div>
+        </article>
+
+        <!-- Ωτοπλαστική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://www.plastic-clinic.com/wp-content/uploads/2023/02/shutterstock_2151875777-optimized.jpg" alt="Ωτοπλαστική — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Ωτοπλαστική</h3>
+            <p class="muted proc-desc">Διορθώνει «πεταχτά» αυτιά με μικρές κρυφές τομές. Βελτιώνει συμμετρία και αυτοπεποίθηση με διακριτικότητα.</p>
+          </div>
+        </article>
+
+        <!-- Γενιοπλαστική (διάγραμμα για SFW) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://spiroslazarou.com/wp-content/uploads/2017/09/Genioplasty-low.jpg" alt="Γενιοπλαστική — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Γενειοπλαστική</h3>
+            <p class="muted proc-desc">Ενίσχυση πηγουνιού με οστική μετατόπιση ή ένθεμα για ισορροπημένο προφίλ και πιο καθαρές γωνίες προσώπου.</p>
+          </div>
+        </article>
+
+        <!-- Ενίσχυση ζυγωματικών (διάγραμμα) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://cozyvibe.gr/wp-content/uploads/2023/11/cheek-b.jpg" alt="Ενίσχυση ζυγωματικών">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Ενίσχυση ζυγωματικών</h3>
+            <p class="muted proc-desc">Ένθεμα ή λιπομεταφορά για πιο έντονα ζυγωματικά. Στόχος φωτεινό μεσοπρόσωπο και ισορροπημένη αισθητική.</p>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- ΜΑΣΤΟΙ -->
+  <section class="proc-section" data-section="breast" id="breast">
+    <div class="container">
+      <h2 class="proc-heading">Μαστοί</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Αυξητική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://plastikos.gr/wp-content/uploads/2024/04/%CE%91%CF%85%CE%BE%CE%B7%CF%84%CE%B9%CE%BA%CE%AE-%CE%A3%CF%84%CE%AE%CE%B8%CE%BF%CF%85%CF%82.png" alt="Αυξητική μαστού">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Αυξητική</h3>
+            <p class="muted proc-desc">Επιλογή σχήματος και θέσης ενθέματος σύμφωνα με την ανατομία. Έμφαση σε φυσικό σχήμα και συμμετρία.</p>
+          </div>
+        </article>
+
+        <!-- Ανόρθωση -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://drlamprinaki.gr/wp-content/uploads/2024/04/anorthosi-stithous.jpg" alt="Ανόρθωση μαστών — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Ανόρθωση</h3>
+            <p class="muted proc-desc">Ανύψωση και σύσφιξη μαστού, επανατοποθέτηση θηλής. Μπορεί να συνδυαστεί με μικρό ένθεμα όπου χρειάζεται.</p>
+          </div>
+        </article>
+
+        <!-- Μειωτική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://plastikoscheirourgos.com/wp-content/uploads/2022/11/%CE%9C%CE%B5%CE%B9%CF%89%CF%84%CE%B9%CE%BA%CE%AE-%CF%83%CF%84%CE%AE%CE%B8%CE%BF%CF%85%CF%82.jpg" alt="Μειωτική μαστών">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Μειωτική</h3>
+            <p class="muted proc-desc">Μείωση όγκου και ανόρθωση για ανακούφιση πόνων και καλύτερη στάση. Προσεκτικός σχεδιασμός τομών/ουλών.</p>
+          </div>
+        </article>
+
+        <!-- Μείωση ανδρικού μαστού (Γυναικομαστία) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://pilotos.gr/wp-content/uploads/2023/08/gynaikomastia-12-1024x640.jpg" alt="Γυναικομαστία — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Μείωση ανδρικού μαστού</h3>
+            <p class="muted proc-desc">Αφαίρεση αδενικού ιστού ή/και λιποαναρρόφηση για επίπεδο, αρμονικό θώρακα με μικρές διακριτικές τομές.</p>
+          </div>
+        </article>
+
+        <!-- Αποκατάσταση/Ασυμμετρία -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/5/58/Diagram_showing_breast_reconstruction_using_the_latissimus_dorsi_muscle_and_an_implant_CRUK_405.svg" alt="Αποκατάσταση μαστού — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Αποκατάσταση/Ασυμμετρία</h3>
+            <p class="muted proc-desc">Στάδια αποκατάστασης μετά μαστεκτομή ή ασυμμετρία με expanders, ενθέματα ή κρημνούς, ανάλογα την ανάγκη.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΣΩΜΑ -->
+  <section class="alt proc-section" data-section="body">
+    <div class="container">
+      <h2 class="proc-heading">Σώμα</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Λιποαναρρόφηση -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/4/46/Dr._Placik_Liposuction.jpg" alt="Λιποαναρρόφηση — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Λιποαναρρόφηση</h3>
+            <p class="muted proc-desc">Σμίλευση περιοχών με επίμονο λίπος με κάνουλα. Όχι μέθοδος αδυνατίσματος· δίνει καθαρότερο περίγραμμα.</p>
+          </div>
+        </article>
+
+        <!-- Κοιλιοπλαστική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/7/71/Dr._Placik_Abdominoplasty.jpg" alt="Κοιλιοπλαστική — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Κοιλιοπλαστική</h3>
+            <p class="muted proc-desc">Αφαίρεση περίσσειας δέρματος και σύσφιξη κοιλιακού τοιχώματος για επίπεδη κοιλιά και καλύτερη στάση.</p>
+          </div>
+        </article>
+
+        <!-- Βραχιονοπλαστική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f4/%C2%AB%E2%80%9CBraquioplastia%E2%80%9D._Antes_y_despu%C3%A9s%C2%BB.jpg" alt="Βραχιονοπλαστική — πριν και μετά">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Βραχιονοπλαστική</h3>
+            <p class="muted proc-desc">Αφαιρεί χαλάρωση στα μπράτσα. Μπορεί να συνδυαστεί με λιποαναρρόφηση για ομαλή, φυσική γραμμή.</p>
+          </div>
+        </article>
+
+        <!-- Ανόρθωση γλουτών (διάγραμμα για SFW) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Buttock_lift_scheme.svg" alt="Ανόρθωση γλουτών — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Ανόρθωση γλουτών</h3>
+            <p class="muted proc-desc">Αφαίρεση χαλάρωσης και ανύψωση για πιο σφριγηλό περίγραμμα, με έμφαση στη φυσικότητα και τη συμμετρία.</p>
+          </div>
+        </article>
+
+        <!-- Μηροπλαστική -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/9/94/Thigh_lift_scheme.svg" alt="Μηροπλαστική — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Μηροπλαστική</h3>
+            <p class="muted proc-desc">Σύσφιξη χαλαρού δέρματος στους εσωτερικούς μηρούς. Σχεδιασμός τομών για διακριτικές ουλές.</p>
+          </div>
+        </article>
+
+        <!-- Λιπομεταφορά -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Fat_grafting_scheme.svg" alt="Λιπομεταφορά — διάγραμμα λήψης και έγχυσης">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Λιπομεταφορά</h3>
+            <p class="muted proc-desc">Λήψη αυτόλογου λίπους, επεξεργασία και έγχυση για ήπια ενίσχυση όγκου σε πρόσωπο ή σώμα, με φυσικότητα.</p>
+          </div>
+        </article>
+
+        <!-- Λαβιοπλαστική (διάγραμμα για SFW) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/8/84/Labioplasty_-_Methods.svg" alt="Λαβιοπλαστική — μέθοδοι (διάγραμμα)">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Λαβιοπλαστική</h3>
+            <p class="muted proc-desc">Διόρθωση μεγέθους ή ασυμμετρίας μικρών χειλέων με σεβασμό στη φυσιολογία και το αισθητικό αποτέλεσμα.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΕΠΑΝΟΡΘΩΤΙΚΗ & ΔΕΡΜΑ -->
+  <section class="proc-section" data-section="recon">
+    <div class="container">
+      <h2 class="proc-heading">Επανορθωτική & Δέρμα</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Όγκοι δέρματος -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/2/28/Skin_excision_elliptical_scheme.svg" alt="Εκτομή δερματικής βλάβης — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Όγκοι δέρματος</h3>
+            <p class="muted proc-desc">Χειρουργική εκτομή με ασφαλή όρια και σχεδιασμό για καλή επούλωση και όσο γίνεται πιο διακριτικές ουλές.</p>
+          </div>
+        </article>
+
+        <!-- Διόρθωση ουλών -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Z-plasty_scheme.svg" alt="Διόρθωση ουλών — Z-plasty διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Διόρθωση ουλών</h3>
+            <p class="muted proc-desc">Τεχνικές όπως Z-plasty ή εκτομή/ανακατεύθυνση για βελτιωμένη υφή, κατεύθυνση και κινητικότητα δέρματος.</p>
+          </div>
+        </article>
+
+        <!-- Κατακλίσεις -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Pressure_ulcer_stages_diagram.svg" alt="Στάδια κατακλίσεων — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Κατακλίσεις</h3>
+            <p class="muted proc-desc">Καθαρισμός, έλεγχος λοίμωξης και κάλυψη με κρημνούς όπου χρειάζεται. Συνεργασία με ομάδα αποκατάστασης.</p>
+          </div>
+        </article>
+
+        <!-- Σχιστίες χείλους/υπερώας -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Cleft_lip_repair_diagram.svg" alt="Αποκατάσταση σχιστίας χείλους — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Σχιστίες χείλους/υπερώας</h3>
+            <p class="muted proc-desc">Σταδιακή αποκατάσταση για ομιλία, σίτιση και εμφάνιση. Μακροχρόνια παρακολούθηση από διεπιστημονική ομάδα.</p>
+          </div>
+        </article>
+
+        <!-- Αφαίρεση τατουάζ (εκτομή) -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/2/23/Scalpel_icon.svg" alt="Χειρουργική εκτομή — εικονίδιο">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Αφαίρεση τατουάζ (εκτομή)</h3>
+            <p class="muted proc-desc">Για μικρά τατουάζ όταν δεν ενδείκνυται laser. Γίνεται εκτομή και προσεκτική συρραφή για διακριτική ουλή.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ΧΕΡΙ -->
+  <section class="alt proc-section" data-section="hand">
+    <div class="container">
+      <h2 class="proc-heading">Χειρουργική Χεριού</h2>
+      <div class="grid cols-3 proc-grid">
+        <!-- Καρπιαίος σωλήνας -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Carpal-Tunnel.svg" alt="Καρπιαίος σωλήνας — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Καρπιαίος σωλήνας</h3>
+            <p class="muted proc-desc">Αποσυμπίεση μέσου νεύρου με μικρή τομή ή ενδοσκοπικά. Στόχος μείωση πόνου και μουδιάσματος.</p>
+          </div>
+        </article>
+
+        <!-- Dupuytren -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Dupuytren_contracture_diagram.svg" alt="Σύσπαση Dupuytren — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Νόσος Dupuytren</h3>
+            <p class="muted proc-desc">Απελευθέρωση ινώδους ταινίας στην παλάμη ώστε τα δάχτυλα να ισιώσουν και να βελτιωθεί η λειτουργία.</p>
+          </div>
+        </article>
+
+        <!-- De Quervain -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4a/De_Quervain_tenosynovitis_scheme.svg" alt="Τενοντοελυτρίτιδα De Quervain — διάγραμμα">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">De Quervain</h3>
+            <p class="muted proc-desc">Απελευθέρωση ελύτρου εκτεινόντων αντίχειρα. Μειώνει πόνο στην κερκιδική πλευρά του καρπού.</p>
+          </div>
+        </article>
+
+        <!-- Όγκοι χειρός -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Enchondroma_of_the_phalanx_causing_spontaneous_fracture_Wellcome_L0062577.jpg" alt="Όγκοι χειρός — απεικόνιση ενχονδρώματος">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Όγκοι χειρός</h3>
+            <p class="muted proc-desc">Διερεύνηση με απεικόνιση και εκτομή καλοήθων βλαβών, διατηρώντας σταθερότητα και κινητικότητα δακτύλων.</p>
+          </div>
+        </article>
+
+        <!-- Τραύμα & επανασυγκόλληση -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Microsurgery_icon.svg" alt="Μικροχειρουργική — εικονίδιο">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Τραύμα & επανασυγκόλληση</h3>
+            <p class="muted proc-desc">Μικροχειρουργικές τεχνικές για αγγεία/νεύρα μετά από τραύματα. Στόχος λειτουργική επανένταξη.</p>
+          </div>
+        </article>
+
+        <!-- Ρευματοειδής χείρ -->
+        <article class="card proc-card">
+          <div class="card-media">
+            <img loading="lazy" decoding="async" class="card-img" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Rheumatoid_hand_scheme.svg" alt="Ρευματοειδής χείρ — σχηματική απεικόνιση">
+          </div>
+          <div class="p">
+            <h3 class="proc-title">Ρευματοειδής χείρ</h3>
+            <p class="muted proc-desc">Στοχευμένες επεμβάσεις σε τένοντες και αρθρώσεις για πόνο, ευθυγράμμιση δακτύλων και καλύτερη καθημερινότητα.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer>
   <div class="container footer-grid">
-    <!-- Ιατρική Φιλοσοφία -->
     <div class="footer-col footer-desktop-only">
       <div class="kicker">Ιατρική Φιλοσοφία</div>
       <p class="stack-s">
@@ -134,7 +430,6 @@
       </p>
     </div>
 
-    <!-- Πλοήγηση -->
     <div class="footer-col footer-desktop-only">
       <div class="kicker">Πλοήγηση</div>
       <p class="stack-xs">
@@ -147,7 +442,6 @@
       </p>
     </div>
 
-    <!-- Location 1 -->
     <div class="footer-col clinic-block">
       <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
       Λεωφ. Βασιλέως Γεωργίου 44,<br>
@@ -157,7 +451,6 @@
       <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank">Οδηγίες</a>
     </div>
 
-    <!-- Location 2 -->
     <div class="footer-col clinic-block">
       <strong>Ιδιωτικό ιατρείο</strong>
       Μητροπόλεως 96,<br>
@@ -174,6 +467,8 @@
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </footer>
 
-  <script src="script.js"></script>
+<!-- Page-specific JS -->
+<script src="procedures.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
