@@ -1,75 +1,125 @@
-// Mobile nav toggle & basic utilities
-(function(){
+/* =========================================================
+   script.js — Site behaviors (organized & documented)
+   Sections:
+   1) NAVIGATION (mobile toggle, active link)
+   2) PROCEDURES SEARCH (live filter + highlighting)
+   3) FOOTER METADATA (year + lastUpdated datetime)
+   ========================================================= */
+
+/* =========================================================
+   1) NAVIGATION — Burger toggle, a11y, and active link
+   ========================================================= */
+(() => {
   const nav = document.querySelector('.navlinks');
   const toggle = document.querySelector('#menuToggle');
-  if(toggle){
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-    });
-  }
-  // Highlight active link
+  if (!nav || !toggle) return;
+
+  const linksWrap = nav.querySelector('.links');
+
+  const setExpanded = (open) => {
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+
+  // Toggle on click
+  toggle.addEventListener('click', () => {
+    const willOpen = !nav.classList.contains('open');
+    nav.classList.toggle('open', willOpen);
+    setExpanded(willOpen);
+  });
+
+  // Close with Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      setExpanded(false);
+    }
+  });
+
+  // Close when clicking outside of the menu
+  document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target) && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      setExpanded(false);
+    }
+  });
+
+  // Close when a menu link is clicked (better UX on mobile)
+  linksWrap?.addEventListener('click', (e) => {
+    const a = e.target.closest('a');
+    if (!a) return;
+    if (nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      setExpanded(false);
+    }
+  });
+
+  // Close if we resize back above burger breakpoint (1120px)
+  const closeIfDesktop = () => {
+    if (window.innerWidth > 1120 && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+      setExpanded(false);
+    }
+  };
+  window.addEventListener('resize', closeIfDesktop);
+
+  // Highlight active link (by file name)
   const path = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.links a').forEach(a => {
+  document.querySelectorAll('.links a').forEach((a) => {
     const href = a.getAttribute('href');
-    if(href === path) a.classList.add('active');
+    if (!href) return;
+    // Match exact file (ignoring query/hash)
+    const file = href.split('/').pop().split('?')[0].split('#')[0];
+    if (file === path) a.classList.add('active');
   });
 })();
 
-
-
-
-// Live search with letter-accurate highlighting across titles & descriptions
-(function () {
+/* =========================================================
+   2) PROCEDURES SEARCH — Live filter + letter-accurate highlights
+   ========================================================= */
+(() => {
   const input = document.getElementById('procSearch');
+  if (!input) return; // not on this page
+
   const sections = Array.from(document.querySelectorAll('.proc-section'));
   const resultCount = document.getElementById('resultCount');
 
-  // Build cache of all cards
+  // Build cache of all cards once
   const cards = [];
-  sections.forEach(section => {
-    section.querySelectorAll('.proc-grid .proc-card').forEach(card => {
+  sections.forEach((section) => {
+    section.querySelectorAll('.proc-grid .proc-card').forEach((card) => {
       const titleEl = card.querySelector('.proc-title');
       const descEl  = card.querySelector('.proc-desc');
-      cards.push({
-        section,
-        card,
-        titleEl,
-        descEl,
-        titleText: titleEl?.textContent || '',
-        descText:  descEl?.textContent  || ''
-      });
+      const titleText = titleEl?.textContent || '';
+      const descText  = descEl?.textContent  || '';
+      cards.push({ section, card, titleEl, descEl, titleText, descText });
     });
   });
 
-  function escapeRegExp(str){
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
+  const escapeRegExp = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-  function highlight(text, query){
-    if(!query) return text;
-    const pattern = new RegExp(escapeRegExp(query), 'gi'); // letter-to-letter, case-insensitive
-    return text.replace(pattern, match => `<mark class="hl">${match}</mark>`);
-  }
+  const highlight = (text, query) => {
+    if (!query) return text;
+    const pattern = new RegExp(escapeRegExp(query), 'gi');
+    return text.replace(pattern, (m) => `<mark class="hl">${m}</mark>`);
+  };
 
-  function updateSectionVisibility() {
-    sections.forEach(section => {
+  const updateSectionVisibility = () => {
+    sections.forEach((section) => {
       const visibleCards = section.querySelectorAll('.proc-grid .proc-card:not([data-hidden="true"])').length;
       section.classList.toggle('is-hidden', visibleCards === 0);
     });
-  }
+  };
 
-  function onSearch(){
+  const onSearch = () => {
     const q = input.value.trim();
     let visible = 0;
 
-    cards.forEach(item => {
-      const { card, titleEl, descEl, titleText, descText } = item;
+    cards.forEach(({ card, titleEl, descEl, titleText, descText }) => {
+      // Reset to original content before applying highlights
+      if (titleEl) titleEl.innerHTML = titleText;
+      if (descEl)  descEl.innerHTML  = descText;
 
-      // reset content to original
-      titleEl.innerHTML = titleText;
-      descEl.innerHTML  = descText;
-
-      if(!q){
+      if (!q) {
         card.style.display = '';
         card.removeAttribute('data-hidden');
         visible++;
@@ -79,159 +129,48 @@
       const hay = (titleText + ' ' + descText).toLowerCase();
       const ok = hay.includes(q.toLowerCase());
 
-      if(ok){
-        titleEl.innerHTML = highlight(titleText, q);
-        descEl.innerHTML  = highlight(descText, q);
+      if (ok) {
+        if (titleEl) titleEl.innerHTML = highlight(titleText, q);
+        if (descEl)  descEl.innerHTML  = highlight(descText, q);
         card.style.display = '';
         card.removeAttribute('data-hidden');
         visible++;
-      }else{
+      } else {
         card.style.display = 'none';
-        card.setAttribute('data-hidden','true');
+        card.setAttribute('data-hidden', 'true');
       }
     });
 
     updateSectionVisibility();
 
-    resultCount.textContent = q
-      ? `${visible} αποτέλεσμα(τα) για «${q}»`
-      : 'Εμφάνιση όλων των επεμβάσεων';
-  }
+    if (resultCount) {
+      resultCount.textContent = q
+        ? `${visible} αποτέλεσμα(τα) για «${q}»`
+        : 'Εμφάνιση όλων των επεμβάσεων';
+    }
+  };
 
+  // Input listeners
   input.addEventListener('input', onSearch);
-
-  // Optional: keyboard Esc clears search
   input.addEventListener('keydown', (e) => {
-    if(e.key === 'Escape'){
+    if (e.key === 'Escape') {
       input.value = '';
       onSearch();
     }
   });
 
-  // Initial layout check (no search)
+  // Initial render (no filter)
   onSearch();
 })();
 
+/* =========================================================
+   3) FOOTER METADATA — Year & machine-readable last updated
+   ========================================================= */
+(() => {
+  const yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-
-
-
-
-
-
-
-
-
-// Mobile nav toggle & basic utilities
-(function(){
-  const nav = document.querySelector('.navlinks');
-  const toggle = document.querySelector('#menuToggle');
-  if (toggle && nav) {
-    const links = nav.querySelector('.links');
-
-    const setExpanded = (open) => {
-      if (!toggle) return;
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    };
-
-    toggle.addEventListener('click', () => {
-      nav.classList.toggle('open');
-      setExpanded(nav.classList.contains('open'));
-    });
-
-    // Close on escape
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && nav.classList.contains('open')) {
-        nav.classList.remove('open');
-        setExpanded(false);
-      }
-    });
-
-    // Close if clicking outside the menu
-    document.addEventListener('click', (e) => {
-      if (!nav.contains(e.target) && nav.classList.contains('open')) {
-        nav.classList.remove('open');
-        setExpanded(false);
-      }
-    });
-
-    // Close if we resize back above the burger breakpoint (1120px)
-    const closeIfDesktop = () => {
-      if (window.innerWidth > 1120 && nav.classList.contains('open')) {
-        nav.classList.remove('open');
-        setExpanded(false);
-      }
-    };
-    window.addEventListener('resize', closeIfDesktop);
-  }
-
-  // Highlight active link
-  const path = location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.links a').forEach(a => {
-    const href = a.getAttribute('href');
-    if (href === path) a.classList.add('active');
-  });
+  // Keep machine-readable datetime in sync (human text already printed in HTML)
+  const dt = document.getElementById('lastUpdated');
+  if (dt) dt.setAttribute('datetime', '2025-09-21');
 })();
-
-
-
-
-
-// media.js
-// (function () {
-//   const q = document.getElementById('mediaSearch');
-//   const count = document.getElementById('mediaCount');
-//   const grid = document.getElementById('mediaGrid');
-//   const cards = Array.from(grid.querySelectorAll('.media-card'));
-//   const chips = Array.from(document.querySelectorAll('.chipbar .chip'));
-//   let tag = 'all';
-
-//   function applyFilter() {
-//     const term = (q?.value || '').trim().toLowerCase();
-//     let visible = 0;
-
-//     cards.forEach(card => {
-//       const matchesText = !term || (card.dataset.title || '').toLowerCase().includes(term);
-//       const matchesTag = tag === 'all' || (card.dataset.tags || '').split(' ').includes(tag);
-//       const show = matchesText && matchesTag;
-//       card.style.display = show ? '' : 'none';
-//       visible += show ? 1 : 0;
-//     });
-
-//     if (count) {
-//       count.textContent = visible === cards.length
-//         ? 'Εμφάνιση όλων των βίντεο'
-//         : `Εμφάνιση ${visible} από ${cards.length} βίντεο`;
-//     }
-//   }
-
-//   q?.addEventListener('input', applyFilter);
-
-//   chips.forEach(c => {
-//     c.addEventListener('click', () => {
-//       chips.forEach(x => { x.classList.remove('is-active'); x.setAttribute('aria-selected', 'false'); });
-//       c.classList.add('is-active'); c.setAttribute('aria-selected', 'true');
-//       tag = c.dataset.mediaFilter || 'all';
-//       applyFilter();
-//     });
-//   });
-
-//   applyFilter();
-// })();
-
-
-
-// media.js
-// (function () {
-//   const cards = document.querySelectorAll('.media-card[data-ytid]');
-//   cards.forEach(card => {
-//     const id = card.getAttribute('data-ytid');
-//     const img = card.querySelector('img.card-img');
-//     if (!id || !img) return;
-//     img.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
-//     // Optional: 16:9 ratio via existing CSS classes; alt text already set in HTML.
-//     img.referrerPolicy = 'no-referrer';
-//     img.loading = 'lazy';
-//     img.decoding = 'async';
-//   });
-// })();
