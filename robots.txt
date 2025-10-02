@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://theofanispapadopoulos.gr/sitemap.xml

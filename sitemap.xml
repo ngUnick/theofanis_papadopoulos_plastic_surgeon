@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://theofanispapadopoulos.gr/photos/main-4_3.webp</image:loc>
+      <image:title>Ουδέτερη φωτογραφία ιατρικού χώρου</image:title>
+      <image:caption>Κύρια φωτογραφία στην αρχική σελίδα</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/about.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://theofanispapadopoulos.gr/photos/cv.webp</image:loc>
+      <image:title>Φωτογραφία ιατρού</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/procedures.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/non-invasive.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/reconstructive.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/media.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/faq.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://theofanispapadopoulos.gr/contact.html</loc>
+    <lastmod>2025-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
