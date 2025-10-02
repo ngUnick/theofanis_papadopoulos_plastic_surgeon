@@ -7,6 +7,14 @@
   <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
   <meta name="description" content="Ενημερωτικός ιστότοπος πλαστικού χειρουργού με έμφαση στην ασφάλεια, τη διαφάνεια και την ουδέτερη παρουσίαση των πράξεων.">
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="preload"
+      as="image"
+      href="photos/main-4_3.webp"
+      imagesrcset="photos/main-4_3.webp 1x, photos/main-4_3@2x.webp 2x"
+      fetchpriority="high"
+      type="image/webp">
+
 </head>
 <body>
 
@@ -58,7 +66,7 @@
         </div>
       </div>
       <div class="photo" aria-hidden="true">
-        <img src="photos/main-4_3.png" alt="Ουδέτερη φωτογραφία ιατρικού χώρου">
+        <img src="photos/main-4_3.png" alt="Ουδέτερη φωτογραφία ιατρικού χώρου" decoding="async" fetchpriority="high">
       </div>
     </div>
   </section>
@@ -257,7 +265,7 @@
     <p class="muted">© <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.</p>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </footer>
 
 </body>
