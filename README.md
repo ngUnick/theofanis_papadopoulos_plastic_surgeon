@@ -2,7 +2,7 @@
 
 A fast, accessible, static website for a plastic surgeon in Thessaloniki, Greece. Focused on helpful public information, good UX, and strong Core Web Vitals.
 
-> Greek version of the README: see **[README.el.md](./README.el.md)** (optional).
+> Greek version of the README: see **[README.el.md](./README.el.md)**.
 
 ---
 
@@ -20,7 +20,7 @@ A fast, accessible, static website for a plastic surgeon in Thessaloniki, Greece
 - **Hosting:** cPanel
 - **SEO:** `sitemap.xml`, `robots.txt`
 - **Accessibility:** WCAG-AA contrast, keyboard focus, reduced motion, alt texts
-- **Core Web Vitals:** LCP prioritization, CLS-safe sizing, `defer` scripts, lean CSS
+- **Core Web Vitals:** LCP prioritization, `defer` scripts, lean CSS
 
 ### Project Structure
 ```
@@ -76,16 +76,13 @@ Sitemap: https://theofanispapadopoulos.gr/sitemap.xml
 
 * Visible focus ring
 * Consistent color contrast (WCAG-AA)
-* `alt` text on images; heading hierarchy
+* `alt` text on images
 * `prefers-reduced-motion` support
 
 ### Performance Notes
 
-* Inline small critical CSS or use `<link rel="preload" as="style">`
 * `defer` non-critical JS
-* Explicit image `width`/`height` for zero CLS
 * Lazy-load all non-LCP images
-* Use local “YouTube Lite embed” pattern (thumb + load iframe on click)
 
 ---
 
