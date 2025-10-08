@@ -178,13 +178,18 @@
         ]
       }
     </script>
-    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="preload"
+      href="styles.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="styles.css" /></noscript>
 
     <link
       rel="preload"
       as="image"
       href="photos/main-4_3.webp"
-      imagesrcset="photos/main-4_3.webp 1x, photos/main-4_3@2x.webp 2x"
       fetchpriority="high"
       type="image/webp"
     />
