@@ -1,205 +1,425 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
-  <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
-  <meta name="description" content="Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος (Φάληρο Θεσσαλονίκη) και το προσωπικό ιατρείο του Δρ. Θ. Παπαδόπουλου (Μητροπόλεως 96, Θεσσαλονίκη). Χάρτης, ωράριο και τρόποι επικοινωνίας για ραντεβού ή ιατρικές ερωτήσεις.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
+    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
+    <meta
+      name="description"
+      content="Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος (Φάληρο Θεσσαλονίκη) και το προσωπικό ιατρείο του Δρ. Θ. Παπαδόπουλου (Μητροπόλεως 96, Θεσσαλονίκη). Χάρτης, ωράριο και τρόποι επικοινωνίας για ραντεβού ή ιατρικές ερωτήσεις."
+    />
 
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Αρχική">
-      <img src="photos/logo.webp" alt="Λογότυπο ιατρείου">
-      <strong>Δρ. Θ. Παπαδόπουλος</strong>
-      <span class="badge">Plastic Surgeon</span>
-    </a>
-    <nav class="navlinks" aria-label="Κύρια πλοήγηση">
-      <button id="menuToggle" class="menu-toggle button secondary" aria-label="Μενού">
-        <!-- menu icon -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
-      <div class="links">
-        <a href="index.html">Αρχική</a>
-        <a href="about.html">Ο Γιατρός</a>
-        <a href="procedures.html">Επεμβάσεις</a>
-        <a href="non-invasive.html">Μη Επεμβατικές</a>
-        <a href="reconstructive.html">Επανορθωτική</a>
-        <a href="media.html">Video</a>
-        <a href="faq.html">Συχνές Ερωτήσεις</a>
-        <a href="contact.html" aria-current="page">Επικοινωνία</a>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://theofanispapadopoulos.gr/#website",
+            "url": "https://theofanispapadopoulos.gr/",
+            "name": "Theofanis Papadopoulos — Plastic Surgeon",
+            "inLanguage": "el",
+            "publisher": { "@id": "https://theofanispapadopoulos.gr/#practice" }
+          },
+
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://theofanispapadopoulos.gr/#practice",
+            "name": "Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου",
+            "url": "https://theofanispapadopoulos.gr/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
+            },
+            "image": [
+              "https://theofanispapadopoulos.gr/photos/main-4_3.webp",
+              "https://theofanispapadopoulos.gr/photos/cv.webp"
+            ],
+            "medicalSpecialty": "PlasticSurgery",
+            "telephone": "+302310836600",
+            "email": "mailto:papfanis2003@yahoo.gr",
+            "areaServed": "GR",
+            "availableLanguage": ["el", "en"],
+            "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" },
+
+            "department": [
+              {
+                "@id": "https://theofanispapadopoulos.gr/#clinic-agias-triados"
+              },
+              { "@id": "https://theofanispapadopoulos.gr/#clinic-mitropoleos" }
+            ]
+          },
+
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://theofanispapadopoulos.gr/#clinic-agias-triados",
+            "name": "Ιατρεία Αγίας Τριάδος",
+            "branchCode": "Agias-Triados",
+            "url": "https://theofanispapadopoulos.gr/contact.html",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Λεωφ. Βασιλέως Γεωργίου 44",
+              "addressLocality": "Θεσσαλονίκη",
+              "postalCode": "54640",
+              "addressCountry": "GR"
+            },
+            "telephone": "+302310836600",
+            "faxNumber": "+302310836600",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "08:00",
+                "closes": "20:00"
+              }
+            ],
+            "hasMap": "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
+            "parentOrganization": {
+              "@id": "https://theofanispapadopoulos.gr/#practice"
+            }
+          },
+
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://theofanispapadopoulos.gr/#clinic-mitropoleos",
+            "name": "Ιδιωτικό ιατρείο",
+            "branchCode": "Mitropoleos-96",
+            "url": "https://theofanispapadopoulos.gr/contact.html",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Μητροπόλεως 96",
+              "addressLocality": "Θεσσαλονίκη",
+              "postalCode": "54622",
+              "addressCountry": "GR"
+            },
+            "telephone": "+302310261039",
+            "email": "mailto:papfanis2003@yahoo.gr",
+            "byAppointmentOnly": true,
+            "hasMap": "https://maps.app.goo.gl/8r3NDAri43ABkKHD9",
+            "parentOrganization": {
+              "@id": "https://theofanispapadopoulos.gr/#practice"
+            }
+          },
+
+          {
+            "@type": "Physician",
+            "@id": "https://theofanispapadopoulos.gr/#physician",
+            "name": "Θεοφάνης Ι. Παπαδόπουλος",
+            "medicalSpecialty": "PlasticSurgery",
+            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#practice" }
+          },
+
+          {
+            "@type": "ContactPage",
+            "@id": "https://theofanispapadopoulos.gr/contact.html#webpage",
+            "url": "https://theofanispapadopoulos.gr/contact.html",
+            "name": "Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
+            "description": "Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος και το ιδιωτικό ιατρείο (Μητροπόλεως 96). Χάρτης, ωράριο και τρόποι επικοινωνίας.",
+            "inLanguage": "el",
+            "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
+            "about": { "@id": "https://theofanispapadopoulos.gr/#practice" },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+            },
+            "mainEntity": [
+              {
+                "@id": "https://theofanispapadopoulos.gr/#clinic-agias-triados"
+              },
+              { "@id": "https://theofanispapadopoulos.gr/#clinic-mitropoleos" }
+            ],
+            "dateModified": "2025-09-21"
+          },
+
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://theofanispapadopoulos.gr/contact.html#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Αρχική",
+                "item": "https://theofanispapadopoulos.gr/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Επικοινωνία",
+                "item": "https://theofanispapadopoulos.gr/contact.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Αρχική">
+          <img src="photos/logo.webp" alt="Λογότυπο ιατρείου" />
+          <strong>Δρ. Θ. Παπαδόπουλος</strong>
+          <span class="badge">Plastic Surgeon</span>
+        </a>
+        <nav class="navlinks" aria-label="Κύρια πλοήγηση">
+          <button
+            id="menuToggle"
+            class="menu-toggle button secondary"
+            aria-label="Μενού"
+          >
+            <!-- menu icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 6h18M3 12h18M3 18h18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="links">
+            <a href="index.html">Αρχική</a>
+            <a href="about.html">Ο Γιατρός</a>
+            <a href="procedures.html">Επεμβάσεις</a>
+            <a href="non-invasive.html">Μη Επεμβατικές</a>
+            <a href="reconstructive.html">Επανορθωτική</a>
+            <a href="media.html">Video</a>
+            <a href="faq.html">Συχνές Ερωτήσεις</a>
+            <a href="contact.html" aria-current="page">Επικοινωνία</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
+    </header>
 
-<main>
-  <!-- Intro / Guidance -->
-  <section class="hero">
-    <div class="container wrap">
-      <div>
-        <h1>Επικοινωνία</h1>
-        <p class="lead stack">
-          Για <strong>ραντεβού</strong> καλέστε τα Ιατρεία Αγίας Τριάδος.
-        </p>
-        <div class="icon-list stack">
-          <div class="icon-item"><span class="dot"></span><div>Τηλεφωνικά ραντεβού και πληροφορίες προσβασιμότητας.</div></div>
-          <div class="icon-item"><span class="dot"></span><div>Email για σύντομες διευκρινίσεις και προεγχειρητικές οδηγίες.</div></div>
+    <main>
+      <!-- Intro / Guidance -->
+      <section class="hero">
+        <div class="container wrap">
+          <div>
+            <h1>Επικοινωνία</h1>
+            <p class="lead stack">
+              Για <strong>ραντεβού</strong> καλέστε τα Ιατρεία Αγίας Τριάδος.
+            </p>
+            <div class="icon-list stack">
+              <div class="icon-item">
+                <span class="dot"></span>
+                <div>Τηλεφωνικά ραντεβού και πληροφορίες προσβασιμότητας.</div>
+              </div>
+              <div class="icon-item">
+                <span class="dot"></span>
+                <div>
+                  Email για σύντομες διευκρινίσεις και προεγχειρητικές οδηγίες.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="photo" aria-hidden="true">
+            <img
+              src="photos/main-4_3.webp"
+              alt="Ουδέτερη εικόνα χώρου υγείας"
+            />
+          </div>
         </div>
-      </div>
-      <div class="photo" aria-hidden="true">
-        <img src="photos/main-4_3.webp" alt="Ουδέτερη εικόνα χώρου υγείας">
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- Locations + Hours + Maps -->
-  <section class="alt">
-    <div class="container locations">
-      <!-- Location 1 -->
-      <article class="clinic-block" aria-labelledby="loc1-title">
-        <strong id="loc1-title">Ιατρεία Αγίας Τριάδος</strong>
-        <p class="muted stack-xs">
-          Λεωφ. Βασιλέως Γεωργίου 44, Θεσσαλονίκη 546 40<br>
-          (Περιοχή Αγίας Τριάδος – στάση Φάληρο)
-        </p>
-        <p class="stack-xs">Τηλέφωνο: 2310 836600</p>
-        <p class="stack-xs">Φαξ: 2310 836600</p>
-        <p class="stack-xs"><a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank" rel="noopener">Οδηγίες<img src="photos/new-tab.png" alt=""></a></p>
+      <!-- Locations + Hours + Maps -->
+      <section class="alt">
+        <div class="container locations">
+          <!-- Location 1 -->
+          <article class="clinic-block" aria-labelledby="loc1-title">
+            <strong id="loc1-title">Ιατρεία Αγίας Τριάδος</strong>
+            <p class="muted stack-xs">
+              Λεωφ. Βασιλέως Γεωργίου 44, Θεσσαλονίκη 546 40<br />
+              (Περιοχή Αγίας Τριάδος – στάση Φάληρο)
+            </p>
+            <p class="stack-xs">Τηλέφωνο: 2310 836600</p>
+            <p class="stack-xs">Φαξ: 2310 836600</p>
+            <p class="stack-xs">
+              <a
+                href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
+                target="_blank"
+                rel="noopener"
+                >Οδηγίες<img src="photos/new-tab.png" alt=""
+              /></a>
+            </p>
 
-        <div class="stack">
-          <div class="kicker">Ωράριο</div>
-          <ul class="muted" aria-label="Ωράριο Ιατρείου Αγίας Τριάδος">
-            <li>Δευτέρα–Παρασκευή: 08:00–20:00</li>
-            <li>Σάββατο & Κυριακή: κλειστά</li>
-          </ul>
+            <div class="stack">
+              <div class="kicker">Ωράριο</div>
+              <ul class="muted" aria-label="Ωράριο Ιατρείου Αγίας Τριάδος">
+                <li>Δευτέρα–Παρασκευή: 08:00–20:00</li>
+                <li>Σάββατο & Κυριακή: κλειστά</li>
+              </ul>
+            </div>
+
+            <div class="stack" aria-label="Χάρτης Αγίας Τριάδος">
+              <iframe
+                title="Χάρτης — Ιατρεία Αγίας Τριάδος"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="300"
+                src="https://www.google.com/maps?q=%CE%9B%CE%B5%CF%89%CF%86.+%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%AD%CF%89%CF%82+%CE%93%CE%B5%CF%89%CF%81%CE%B3%CE%AF%CE%BF%CF%85+44,+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&output=embed"
+              >
+              </iframe>
+            </div>
+          </article>
+
+          <!-- Location 2 -->
+          <article class="clinic-block" aria-labelledby="loc2-title">
+            <strong id="loc2-title">Ιδιωτικό ιατρείο</strong>
+            <p class="muted stack-xs">
+              Μητροπόλεως 96, Θεσσαλονίκη 546 22
+              <br />
+              <br />
+            </p>
+            <p class="stack-xs">Τηλέφωνο: 2310 261039</p>
+            <p class="stack-xs">Email: papfanis2003@yahoo.gr</p>
+            <p class="stack-xs">
+              <a
+                href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
+                target="_blank"
+                rel="noopener"
+                >Οδηγίες<img src="photos/new-tab.png" alt=""
+              /></a>
+            </p>
+
+            <div class="stack">
+              <div class="kicker">Ωράριο</div>
+              <ul class="muted" aria-label="Ωράριο Ιδιωτικού Ιατρείου">
+                <li>Δευτέρα–Παρασκευή: (κατόπιν συνεννόησης)</li>
+                <li>Σάββατο & Κυριακή: κλειστά</li>
+              </ul>
+            </div>
+
+            <div class="stack" aria-label="Χάρτης Ιδιωτικού Ιατρείου">
+              <iframe
+                title="Χάρτης — Ιδιωτικό ιατρείο"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                width="100%"
+                height="300"
+                src="https://www.google.com/maps?q=%CE%9C%CE%B7%CF%84%CF%81%CE%BF%CF%80%CF%8C%CE%BB%CE%B5%CF%89%CF%82+96,+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&output=embed"
+              >
+              </iframe>
+            </div>
+          </article>
         </div>
+      </section>
 
-        <div class="stack" aria-label="Χάρτης Αγίας Τριάδος">
-          <iframe
-            title="Χάρτης — Ιατρεία Αγίας Τριάδος"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            width="100%" height="300"
-            src="https://www.google.com/maps?q=%CE%9B%CE%B5%CF%89%CF%86.+%CE%92%CE%B1%CF%83%CE%B9%CE%BB%CE%AD%CF%89%CF%82+%CE%93%CE%B5%CF%89%CF%81%CE%B3%CE%AF%CE%BF%CF%85+44,+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&output=embed">
-          </iframe>
+      <!-- Advisory note -->
+      <section>
+        <div class="container">
+          <div class="card">
+            <div class="p">
+              <p class="muted">
+                📌 Το παρόν περιεχόμενο είναι ενημερωτικό. Η επικοινωνία δεν
+                υποκαθιστά ιατρική εξέταση.
+              </p>
+            </div>
+          </div>
         </div>
-      </article>
+      </section>
+    </main>
 
-      <!-- Location 2 -->
-      <article class="clinic-block" aria-labelledby="loc2-title">
-        <strong id="loc2-title">Ιδιωτικό ιατρείο</strong>
-        <p class="muted stack-xs">
-          Μητροπόλεως 96, Θεσσαλονίκη 546 22
-          <br>
-          <br>
-        </p>
-        <p class="stack-xs">Τηλέφωνο: 2310 261039</p>
-        <p class="stack-xs">Email: papfanis2003@yahoo.gr</p>
-        <p class="stack-xs"><a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank" rel="noopener">Οδηγίες<img src="photos/new-tab.png" alt=""></a></p>
-
-        <div class="stack">
-          <div class="kicker">Ωράριο</div>
-          <ul class="muted" aria-label="Ωράριο Ιδιωτικού Ιατρείου">
-            <li>Δευτέρα–Παρασκευή: (κατόπιν συνεννόησης)</li>
-            <li>Σάββατο & Κυριακή: κλειστά</li>
-          </ul>
-        </div>
-
-        <div class="stack" aria-label="Χάρτης Ιδιωτικού Ιατρείου">
-          <iframe
-            title="Χάρτης — Ιδιωτικό ιατρείο"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            width="100%" height="300"
-            src="https://www.google.com/maps?q=%CE%9C%CE%B7%CF%84%CF%81%CE%BF%CF%80%CF%8C%CE%BB%CE%B5%CF%89%CF%82+96,+%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%BF%CE%BD%CE%AF%CE%BA%CE%B7&output=embed">
-          </iframe>
-        </div>
-      </article>
-    </div>
-  </section>
-
-  <!-- Advisory note -->
-  <section>
-    <div class="container">
-      <div class="card">
-        <div class="p">
-          <p class="muted">
-            📌 Το παρόν περιεχόμενο είναι ενημερωτικό. Η επικοινωνία δεν υποκαθιστά ιατρική εξέταση.
+    <footer>
+      <div class="container footer-grid">
+        <!-- Ιατρική Φιλοσοφία -->
+        <div class="footer-col footer-desktop-only">
+          <div class="kicker">Ιατρική Φιλοσοφία</div>
+          <p class="stack-s">
+            Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη
+            και ουδέτερη πληροφόρηση για πράξεις της ειδικότητας.
           </p>
         </div>
+
+        <!-- Πλοήγηση -->
+        <div class="footer-col footer-desktop-only">
+          <div class="kicker">Πλοήγηση</div>
+          <p class="stack-xs footer-links">
+            <a href="index.html">Αρχική</a> - <a href="about.html">Ο Γιατρός</a
+            ><br />
+            <a href="procedures.html">Επεμβάσεις</a> -
+            <a href="non-invasive.html">Μη Επεμβατικές</a><br />
+            <a href="reconstructive.html">Επανορθωτική</a> -
+            <a href="media.html">Video</a><br />
+            <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a> -
+            <a href="contact.html">Επικοινωνία</a>
+          </p>
+        </div>
+
+        <!-- Location 1 -->
+        <div
+          class="footer-col clinic-block"
+          aria-label="Στοιχεία ιατρείου Αγίας Τριάδος"
+        >
+          <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
+          Λεωφ. Βασιλέως Γεωργίου 44,<br />
+          Θεσσαλονίκη 546 40<br /><br />
+          Τηλέφωνο: 2310 836600<br />
+          Fax: 2310 836600<br /><br />
+          <a
+            href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
+            target="_blank"
+            rel="noopener"
+            >Οδηγίες</a
+          >
+        </div>
+
+        <!-- Location 2 -->
+        <div
+          class="footer-col clinic-block"
+          aria-label="Στοιχεία ιδιωτικού ιατρείου"
+        >
+          <strong>Ιδιωτικό ιατρείο</strong>
+          Μητροπόλεως 96,<br />
+          Θεσσαλονίκη 546 22<br /><br />
+          Τηλέφωνο: 2310 261039<br />
+          Email: papfanis2003@yahoo.gr<br /><br />
+          <a
+            href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
+            target="_blank"
+            rel="noopener"
+            >Οδηγίες</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-</main>
 
-<footer>
-  <div class="container footer-grid">
-    <!-- Ιατρική Φιλοσοφία -->
-    <div class="footer-col footer-desktop-only">
-      <div class="kicker">Ιατρική Φιλοσοφία</div>
-      <p class="stack-s">
-        Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη και ουδέτερη πληροφόρηση
-        για πράξεις της ειδικότητας.
-      </p>
-    </div>
+      <div class="container stack-s center">
+        <p class="muted" aria-live="polite">
+          Τελευταία ενημέρωση:
+          <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
+          <br />
+          Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής
+          Δεοντολογίας (Ν.3418/2005).
+          <br />
+          Δεν υφίσταται σύγκρουση συμφερόντων.
+          <br />
+          Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη
+          ιατρική συμβουλή.
+        </p>
+        <p class="muted">
+          © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights
+          reserved.
+        </p>
+      </div>
 
-    <!-- Πλοήγηση -->
-    <div class="footer-col footer-desktop-only">
-      <div class="kicker">Πλοήγηση</div>
-      <p class="stack-xs footer-links">
-        <a href="index.html">Αρχική</a> - 
-        <a href="about.html">Ο Γιατρός</a><br>
-        <a href="procedures.html">Επεμβάσεις</a> - 
-        <a href="non-invasive.html">Μη Επεμβατικές</a><br>
-        <a href="reconstructive.html">Επανορθωτική</a> - 
-        <a href="media.html">Video</a><br>
-        <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a> - 
-        <a href="contact.html">Επικοινωνία</a>
-      </p>
-    </div>
-
-    <!-- Location 1 -->
-    <div class="footer-col clinic-block" aria-label="Στοιχεία ιατρείου Αγίας Τριάδος">
-      <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
-      Λεωφ. Βασιλέως Γεωργίου 44,<br>
-      Θεσσαλονίκη 546 40<br><br>
-      Τηλέφωνο: 2310 836600<br>
-      Fax: 2310 836600<br><br>
-      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank" rel="noopener">Οδηγίες</a>
-    </div>
-
-    <!-- Location 2 -->
-    <div class="footer-col clinic-block" aria-label="Στοιχεία ιδιωτικού ιατρείου">
-      <strong>Ιδιωτικό ιατρείο</strong>
-      Μητροπόλεως 96,<br>
-      Θεσσαλονίκη 546 22<br><br>
-      Τηλέφωνο: 2310 261039<br>
-      Email: papfanis2003@yahoo.gr<br><br>
-      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank" rel="noopener">Οδηγίες</a>
-    </div>
-  </div>
-
-  <div class="container stack-s center">
-    <p class="muted" aria-live="polite">
-      Τελευταία ενημέρωση: <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
-      <br>
-      Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής Δεοντολογίας (Ν.3418/2005).
-      <br>
-      Δεν υφίσταται σύγκρουση συμφερόντων.
-      <br>
-      Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη ιατρική συμβουλή.
-    </p>
-    <p class="muted">© <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.</p>
-  </div>
-
-  <script src="script.js" defer></script>
-</footer>
-
-</body>
+      <script src="script.js" defer></script>
+    </footer>
+  </body>
 </html>

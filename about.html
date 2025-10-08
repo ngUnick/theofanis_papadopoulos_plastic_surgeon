@@ -1,241 +1,437 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="el">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
-  <link rel="icon" type="image/x-icon" href="photos/favicon.ico">
-  <meta name="description" content="Παρουσίαση του βιογραφικού και της φιλοσοφίας προσέγγισης του Δρ. Θεοφάνη Ι. Παπαδόπουλου.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
+    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
+    <meta
+      name="description"
+      content="Παρουσίαση του βιογραφικού και της φιλοσοφίας προσέγγισης του Δρ. Θεοφάνη Ι. Παπαδόπουλου."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          /* ---------- Site-wide (can be reused on all pages) ---------- */
+          {
+            "@type": "WebSite",
+            "@id": "https://theofanispapadopoulos.gr/#website",
+            "url": "https://theofanispapadopoulos.gr/",
+            "name": "Theofanis Papadopoulos — Plastic Surgeon",
+            "inLanguage": "el",
+            "publisher": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
+          },
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://theofanispapadopoulos.gr/#clinic",
+            "name": "Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου",
+            "url": "https://theofanispapadopoulos.gr/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
+            },
+            "image": [
+              "https://theofanispapadopoulos.gr/photos/main-4_3.webp",
+              "https://theofanispapadopoulos.gr/photos/cv.webp"
+            ],
+            "medicalSpecialty": "PlasticSurgery",
+            "telephone": "+302310836600",
+            "email": "mailto:papfanis2003@yahoo.gr",
+            "address": [
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "Λεωφ. Βασιλέως Γεωργίου 44",
+                "addressLocality": "Θεσσαλονίκη",
+                "postalCode": "54640",
+                "addressCountry": "GR"
+              },
+              {
+                "@type": "PostalAddress",
+                "streetAddress": "Μητροπόλεως 96",
+                "addressLocality": "Θεσσαλονίκη",
+                "postalCode": "54622",
+                "addressCountry": "GR"
+              }
+            ],
+            "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
+          },
+          {
+            "@type": "Physician",
+            "@id": "https://theofanispapadopoulos.gr/#physician",
+            "name": "Θεοφάνης Ι. Παπαδόπουλος",
+            "jobTitle": "Plastic Surgeon",
+            "medicalSpecialty": "PlasticSurgery",
+            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
+            }
+          },
 
-<header class="header">
-  <div class="container nav">
-    <a class="brand" href="index.html" aria-label="Αρχική">
-      <img src="photos/logo.webp" alt="Λογότυπο ιατρείου">
-      <strong>Δρ. Θ. Παπαδόπουλος</strong>
-      <span class="badge">Plastic Surgeon</span>
-    </a>
-    <nav class="navlinks" aria-label="Κύρια πλοήγηση">
-      <button id="menuToggle" class="menu-toggle button secondary" aria-label="Μενού">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      </button>
-      <div class="links">
-        <a href="index.html">Αρχική</a>
-        <a href="about.html" aria-current="page">Ο Γιατρός</a>
-        <a href="procedures.html">Επεμβάσεις</a>
-        <a href="non-invasive.html">Μη Επεμβατικές</a>
-        <a href="reconstructive.html">Επανορθωτική</a>
-        <a href="media.html">Video</a>
-        <a href="faq.html">Συχνές Ερωτήσεις</a>
-        <a href="contact.html">Επικοινωνία</a>
+          /* ------------------ This page (About) ------------------ */
+          {
+            "@type": "AboutPage",
+            "@id": "https://theofanispapadopoulos.gr/about.html#webpage",
+            "url": "https://theofanispapadopoulos.gr/about.html",
+            "name": "Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
+            "description": "Παρουσίαση του βιογραφικού και της φιλοσοφίας προσέγγισης του Δρ. Θεοφάνη Ι. Παπαδόπουλου.",
+            "inLanguage": "el",
+            "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
+            "about": [
+              { "@id": "https://theofanispapadopoulos.gr/#physician" },
+              { "@id": "https://theofanispapadopoulos.gr/#clinic" }
+            ],
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
+            },
+            "dateModified": "2025-09-21"
+          },
+
+          /* ------------------ Breadcrumbs ------------------ */
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://theofanispapadopoulos.gr/about.html#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Αρχική",
+                "item": "https://theofanispapadopoulos.gr/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Ο Γιατρός",
+                "item": "https://theofanispapadopoulos.gr/about.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Αρχική">
+          <img src="photos/logo.webp" alt="Λογότυπο ιατρείου" />
+          <strong>Δρ. Θ. Παπαδόπουλος</strong>
+          <span class="badge">Plastic Surgeon</span>
+        </a>
+        <nav class="navlinks" aria-label="Κύρια πλοήγηση">
+          <button
+            id="menuToggle"
+            class="menu-toggle button secondary"
+            aria-label="Μενού"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 6h18M3 12h18M3 18h18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="links">
+            <a href="index.html">Αρχική</a>
+            <a href="about.html" aria-current="page">Ο Γιατρός</a>
+            <a href="procedures.html">Επεμβάσεις</a>
+            <a href="non-invasive.html">Μη Επεμβατικές</a>
+            <a href="reconstructive.html">Επανορθωτική</a>
+            <a href="media.html">Video</a>
+            <a href="faq.html">Συχνές Ερωτήσεις</a>
+            <a href="contact.html">Επικοινωνία</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
+    </header>
 
-<main>
-  <!-- Hero: ουδέτερη εισαγωγή + CTA προς επικοινωνία -->
-  <section class="hero">
-    <div class="container wrap">
-      <div>
-        <h1>Γνωρίστε τον ιατρό</h1>
-        <p class="lead stack">
-          Plastic Surgeon με ιδιωτικό ιατρείο στη Θεσσαλονίκη από το 1991.
-          Η παρούσα σελίδα παρουσιάζει με ουδέτερο τρόπο στοιχεία εκπαίδευσης, κλινικής εμπειρίας και φιλοσοφίας προσέγγισης.
-        </p>
-        <div class="icon-list stack">
-          <div class="icon-item"><span class="dot"></span><div>Πτυχίο Ιατρικής & αναγνωρισμένη ειδικότητα</div></div>
-          <div class="icon-item"><span class="dot"></span><div>Κλινική εμπειρία σε αισθητική & επανορθωτική χειρουργική</div></div>
-          <div class="icon-item"><span class="dot"></span><div>Συμμετοχή σε μετεκπαιδεύσεις και επιστημονικές δραστηριότητες</div></div>
-        </div>
-        <a class="button stack" href="contact.html" aria-label="Μετάβαση στη σελίδα επικοινωνίας">Επικοινωνία</a>
-      </div>
-      <div class="photo" aria-hidden="true">
-        <img src="photos/cv.webp" alt="Ουδέτερη φωτογραφία σχετική με το ιατρικό προφίλ">
-      </div>
-    </div>
-  </section>
-
-  <!-- Εκπαίδευση & Διαδρομή -->
-  <section class="alt">
-    <div class="container">
-      <h2>Εκπαίδευση & Επαγγελματική Διαδρομή</h2>
-
-      <div class="grid cols-2 stack">
-        <article class="card"><div class="p">
-          <h3>Σπουδές & Ειδικότητα</h3>
-          <p class="muted">
-            Πτυχίο Ιατρικής. Εκπαίδευση στη Γενική Χειρουργική και στη συνέχεια αναγνώριση ειδικότητας Πλαστικής Χειρουργικής.
-            Κλινικές τοποθετήσεις σε νοσοκομεία με αντικείμενο εγκαύματα, μικροχειρουργική και ογκολογία δέρματος.
-          </p>
-        </div></article>
-
-        <article class="card"><div class="p">
-          <h3>Κλινική Εμπειρία</h3>
-          <p class="muted">
-            Ιδιωτικό ιατρείο στη Θεσσαλονίκη από το 1991.
-            <br>
-            Αντικείμενα: αισθητική χειρουργική
-            (πρόσωπο, μαστός, σώμα), επανορθωτική χειρουργική, χειρουργική χεριού και δερματικοί όγκοι.
-          </p>
-        </div></article>
-      </div>
-
-      <div class="grid cols-3 stack">
-        <article class="card"><div class="p">
-          <h3>Μετεκπαιδεύσεις</h3>
-          <p class="muted">
-            Επισκέψεις/παρακολούθηση τμημάτων Πλαστικής & Εγκαυμάτων σε κέντρα του εξωτερικού.
-            Συνεχής επιμόρφωση σε σύγχρονες τεχνικές αισθητικής και επανορθωτικής χειρουργικής.
-          </p>
-        </div></article>
-
-        <article class="card"><div class="p">
-          <h3>Επιστημονική Δραστηριότητα</h3>
-          <p class="muted">
-            Συμμετοχή σε συνέδρια και σεμινάρια. Ενδιαφέρον για τεκμηριωμένη κλινική πρακτική και ανταλλαγή γνώσης με την ιατρική κοινότητα.
-          </p>
-        </div></article>
-
-        <article class="card"><div class="p">
-          <h3>Περιοχές Ενασχόλησης</h3>
-          <p class="muted">
-            Πρόσωπο (βλεφαροπλαστική, ρινοπλαστική, λίφτινγκ), μαστός (αυξητική, ανόρθωση, μειωτική),
-            σώμα (λιποαναρρόφηση, κοιλιοπλαστική), καθώς και μη επεμβατικές θεραπείες όπου ενδείκνυνται.
-          </p>
-        </div></article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Φιλοσοφία προσέγγισης -->
-  <section>
-    <div class="container">
-      <h2>Φιλοσοφία Προσέγγισης</h2>
-      <div class="grid cols-2 stack">
-        <article class="card"><div class="p">
-          <h3>Ασφάλεια & Ειλικρίνεια</h3>
-          <p class="muted">
-            Η ενημέρωση γίνεται με απλή γλώσσα και ρεαλιστικές προσδοκίες. Συζητούνται κίνδυνοι,
-            πιθανές επιπλοκές και εναλλακτικές λύσεις πριν από κάθε απόφαση.
-          </p>
-        </div></article>
-
-        <article class="card"><div class="p">
-          <h3>Φυσικό Αποτέλεσμα</h3>
-          <p class="muted">
-            Στόχος είναι η αρμονία και η διακριτική βελτίωση. Κάθε σχέδιο φροντίδας εξατομικεύεται,
-            λαμβάνοντας υπόψη την ανατομία και τις ανάγκες του/της ασθενούς.
-          </p>
-        </div></article>
-      </div>
-      <div class="stack">
-        <a class="button" href="procedures.html">Δείτε τις επεμβάσεις</a>
-        <a class="button secondary" href="non-invasive.html">Μη επεμβατικές θεραπείες</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Μήνυμα ιατρού / Προσωπική προσέγγιση -->
-  <section class="alt">
-    <div class="container">
-      <h2>Μήνυμα</h2>
-      <article class="card">
-        <div class="p">
-          <p class="muted">
-            Καλώς ήλθατε στην ιστοσελίδα μου.
-          </p>
-          <p class="muted stack-s">
-            Είναι γεγονός ότι σε ορισμένα άτομα η ασυμμετρία και η δυσαρμονία του σώματός τους, τους δημιουργεί ανασφάλεια και άγχος.
-          </p>
-          <p class="muted stack-s">
-            Ο ενδιαφερόμενος που γνωρίζει το πρόβλημά του και έχει ρεαλιστικές προσδοκίες, είναι κατάλληλος για μια αισθητική επέμβαση.
-          </p>
-          <p class="muted stack-s">
-            Έτσι λοιπόν οι "θεραπείες" είναι αποτελεσματικές εφόσον τεθούν οι σωστές ενδείξεις και προβλεφθεί το αναμενόμενο αποτέλεσμα από τον εκπαιδευμένο γιατρό, που πρέπει να είναι ανθρώπινος, προσιτός και να εμπνέει εμπιστοσύνη.
-          </p>
-          <p class="muted stack-s">
-            Η σύγχρονη τάση είναι να εφαρμόζεται σε επιλεγμένα περιστατικά η χειρουργική ελάχιστης επεμβατικότητας, με χειρουργικές τεχνικές που ενισχύουν την φυσικότητα του χειρουργικού αποτελέσματος και περιορίζουν τον κίνδυνο των μετεγχειρητικών επιπλοκών.
-          </p>
-          
-          <div class="stack-l">
-            <strong>Θεοφάνης Παπαδόπουλος</strong><br>
-            <span class="muted">Plastic Surgeon</span>
+    <main>
+      <!-- Hero: ουδέτερη εισαγωγή + CTA προς επικοινωνία -->
+      <section class="hero">
+        <div class="container wrap">
+          <div>
+            <h1>Γνωρίστε τον ιατρό</h1>
+            <p class="lead stack">
+              Plastic Surgeon με ιδιωτικό ιατρείο στη Θεσσαλονίκη από το 1991. Η
+              παρούσα σελίδα παρουσιάζει με ουδέτερο τρόπο στοιχεία εκπαίδευσης,
+              κλινικής εμπειρίας και φιλοσοφίας προσέγγισης.
+            </p>
+            <div class="icon-list stack">
+              <div class="icon-item">
+                <span class="dot"></span>
+                <div>Πτυχίο Ιατρικής & αναγνωρισμένη ειδικότητα</div>
+              </div>
+              <div class="icon-item">
+                <span class="dot"></span>
+                <div>
+                  Κλινική εμπειρία σε αισθητική & επανορθωτική χειρουργική
+                </div>
+              </div>
+              <div class="icon-item">
+                <span class="dot"></span>
+                <div>
+                  Συμμετοχή σε μετεκπαιδεύσεις και επιστημονικές δραστηριότητες
+                </div>
+              </div>
+            </div>
+            <a
+              class="button stack"
+              href="contact.html"
+              aria-label="Μετάβαση στη σελίδα επικοινωνίας"
+              >Επικοινωνία</a
+            >
+          </div>
+          <div class="photo" aria-hidden="true">
+            <img
+              src="photos/cv.webp"
+              alt="Ουδέτερη φωτογραφία σχετική με το ιατρικό προφίλ"
+            />
           </div>
         </div>
-      </article>
-    </div>
-  </section>
+      </section>
 
+      <!-- Εκπαίδευση & Διαδρομή -->
+      <section class="alt">
+        <div class="container">
+          <h2>Εκπαίδευση & Επαγγελματική Διαδρομή</h2>
 
-</main>
+          <div class="grid cols-2 stack">
+            <article class="card">
+              <div class="p">
+                <h3>Σπουδές & Ειδικότητα</h3>
+                <p class="muted">
+                  Πτυχίο Ιατρικής. Εκπαίδευση στη Γενική Χειρουργική και στη
+                  συνέχεια αναγνώριση ειδικότητας Πλαστικής Χειρουργικής.
+                  Κλινικές τοποθετήσεις σε νοσοκομεία με αντικείμενο εγκαύματα,
+                  μικροχειρουργική και ογκολογία δέρματος.
+                </p>
+              </div>
+            </article>
 
-<footer>
-  <div class="container footer-grid">
-    <!-- Ιατρική Φιλοσοφία -->
-    <div class="footer-col footer-desktop-only">
-      <div class="kicker">Ιατρική Φιλοσοφία</div>
-      <p class="stack-s">
-        Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη και ουδέτερη πληροφόρηση
-        για πράξεις της ειδικότητας.
-      </p>
-    </div>
+            <article class="card">
+              <div class="p">
+                <h3>Κλινική Εμπειρία</h3>
+                <p class="muted">
+                  Ιδιωτικό ιατρείο στη Θεσσαλονίκη από το 1991.
+                  <br />
+                  Αντικείμενα: αισθητική χειρουργική (πρόσωπο, μαστός, σώμα),
+                  επανορθωτική χειρουργική, χειρουργική χεριού και δερματικοί
+                  όγκοι.
+                </p>
+              </div>
+            </article>
+          </div>
 
-    <!-- Πλοήγηση -->
-    <div class="footer-col footer-desktop-only">
-      <div class="kicker">Πλοήγηση</div>
-      <p class="stack-xs footer-links">
-        <a href="index.html">Αρχική</a> - 
-        <a href="about.html">Ο Γιατρός</a><br>
-        <a href="procedures.html">Επεμβάσεις</a> - 
-        <a href="non-invasive.html">Μη Επεμβατικές</a><br>
-        <a href="reconstructive.html">Επανορθωτική</a> - 
-        <a href="media.html">Video</a><br>
-        <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a> - 
-        <a href="contact.html">Επικοινωνία</a>
-      </p>
-    </div>
+          <div class="grid cols-3 stack">
+            <article class="card">
+              <div class="p">
+                <h3>Μετεκπαιδεύσεις</h3>
+                <p class="muted">
+                  Επισκέψεις/παρακολούθηση τμημάτων Πλαστικής & Εγκαυμάτων σε
+                  κέντρα του εξωτερικού. Συνεχής επιμόρφωση σε σύγχρονες
+                  τεχνικές αισθητικής και επανορθωτικής χειρουργικής.
+                </p>
+              </div>
+            </article>
 
-    <!-- Location 1 -->
-    <div class="footer-col clinic-block" aria-label="Στοιχεία ιατρείου Αγίας Τριάδος">
-      <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
-      Λεωφ. Βασιλέως Γεωργίου 44,<br>
-      Θεσσαλονίκη 546 40<br><br>
-      Τηλέφωνο: 2310 836600<br>
-      Fax: 2310 836600<br><br>
-      <a href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6" target="_blank" rel="noopener">Οδηγίες</a>
-    </div>
+            <article class="card">
+              <div class="p">
+                <h3>Επιστημονική Δραστηριότητα</h3>
+                <p class="muted">
+                  Συμμετοχή σε συνέδρια και σεμινάρια. Ενδιαφέρον για
+                  τεκμηριωμένη κλινική πρακτική και ανταλλαγή γνώσης με την
+                  ιατρική κοινότητα.
+                </p>
+              </div>
+            </article>
 
-    <!-- Location 2 -->
-    <div class="footer-col clinic-block" aria-label="Στοιχεία ιδιωτικού ιατρείου">
-      <strong>Ιδιωτικό ιατρείο</strong>
-      Μητροπόλεως 96,<br>
-      Θεσσαλονίκη 546 22<br><br>
-      Τηλέφωνο: 2310 261039<br>
-      Email: papfanis2003@yahoo.gr<br><br>
-      <a href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9" target="_blank" rel="noopener">Οδηγίες</a>
-    </div>
-  </div>
+            <article class="card">
+              <div class="p">
+                <h3>Περιοχές Ενασχόλησης</h3>
+                <p class="muted">
+                  Πρόσωπο (βλεφαροπλαστική, ρινοπλαστική, λίφτινγκ), μαστός
+                  (αυξητική, ανόρθωση, μειωτική), σώμα (λιποαναρρόφηση,
+                  κοιλιοπλαστική), καθώς και μη επεμβατικές θεραπείες όπου
+                  ενδείκνυνται.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-  <div class="container stack-s center">
-    <p class="muted" aria-live="polite">
-      Τελευταία ενημέρωση: <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
-      <br>
-      Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής Δεοντολογίας (Ν.3418/2005).
-      <br>
-      Δεν υφίσταται σύγκρουση συμφερόντων.
-      <br>
-      Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη ιατρική συμβουλή.
-    </p>
-    <p class="muted">© <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights reserved.</p>
-  </div>
+      <!-- Φιλοσοφία προσέγγισης -->
+      <section>
+        <div class="container">
+          <h2>Φιλοσοφία Προσέγγισης</h2>
+          <div class="grid cols-2 stack">
+            <article class="card">
+              <div class="p">
+                <h3>Ασφάλεια & Ειλικρίνεια</h3>
+                <p class="muted">
+                  Η ενημέρωση γίνεται με απλή γλώσσα και ρεαλιστικές προσδοκίες.
+                  Συζητούνται κίνδυνοι, πιθανές επιπλοκές και εναλλακτικές
+                  λύσεις πριν από κάθε απόφαση.
+                </p>
+              </div>
+            </article>
 
-  <script src="script.js" defer></script>
-</footer>
+            <article class="card">
+              <div class="p">
+                <h3>Φυσικό Αποτέλεσμα</h3>
+                <p class="muted">
+                  Στόχος είναι η αρμονία και η διακριτική βελτίωση. Κάθε σχέδιο
+                  φροντίδας εξατομικεύεται, λαμβάνοντας υπόψη την ανατομία και
+                  τις ανάγκες του/της ασθενούς.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="stack">
+            <a class="button" href="procedures.html">Δείτε τις επεμβάσεις</a>
+            <a class="button secondary" href="non-invasive.html"
+              >Μη επεμβατικές θεραπείες</a
+            >
+          </div>
+        </div>
+      </section>
 
-</body>
+      <!-- Μήνυμα ιατρού / Προσωπική προσέγγιση -->
+      <section class="alt">
+        <div class="container">
+          <h2>Μήνυμα</h2>
+          <article class="card">
+            <div class="p">
+              <p class="muted">Καλώς ήλθατε στην ιστοσελίδα μου.</p>
+              <p class="muted stack-s">
+                Είναι γεγονός ότι σε ορισμένα άτομα η ασυμμετρία και η
+                δυσαρμονία του σώματός τους, τους δημιουργεί ανασφάλεια και
+                άγχος.
+              </p>
+              <p class="muted stack-s">
+                Ο ενδιαφερόμενος που γνωρίζει το πρόβλημά του και έχει
+                ρεαλιστικές προσδοκίες, είναι κατάλληλος για μια αισθητική
+                επέμβαση.
+              </p>
+              <p class="muted stack-s">
+                Έτσι λοιπόν οι "θεραπείες" είναι αποτελεσματικές εφόσον τεθούν
+                οι σωστές ενδείξεις και προβλεφθεί το αναμενόμενο αποτέλεσμα από
+                τον εκπαιδευμένο γιατρό, που πρέπει να είναι ανθρώπινος,
+                προσιτός και να εμπνέει εμπιστοσύνη.
+              </p>
+              <p class="muted stack-s">
+                Η σύγχρονη τάση είναι να εφαρμόζεται σε επιλεγμένα περιστατικά η
+                χειρουργική ελάχιστης επεμβατικότητας, με χειρουργικές τεχνικές
+                που ενισχύουν την φυσικότητα του χειρουργικού αποτελέσματος και
+                περιορίζουν τον κίνδυνο των μετεγχειρητικών επιπλοκών.
+              </p>
+
+              <div class="stack-l">
+                <strong>Θεοφάνης Παπαδόπουλος</strong><br />
+                <span class="muted">Plastic Surgeon</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <!-- Ιατρική Φιλοσοφία -->
+        <div class="footer-col footer-desktop-only">
+          <div class="kicker">Ιατρική Φιλοσοφία</div>
+          <p class="stack-s">
+            Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη
+            και ουδέτερη πληροφόρηση για πράξεις της ειδικότητας.
+          </p>
+        </div>
+
+        <!-- Πλοήγηση -->
+        <div class="footer-col footer-desktop-only">
+          <div class="kicker">Πλοήγηση</div>
+          <p class="stack-xs footer-links">
+            <a href="index.html">Αρχική</a> - <a href="about.html">Ο Γιατρός</a
+            ><br />
+            <a href="procedures.html">Επεμβάσεις</a> -
+            <a href="non-invasive.html">Μη Επεμβατικές</a><br />
+            <a href="reconstructive.html">Επανορθωτική</a> -
+            <a href="media.html">Video</a><br />
+            <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a> -
+            <a href="contact.html">Επικοινωνία</a>
+          </p>
+        </div>
+
+        <!-- Location 1 -->
+        <div
+          class="footer-col clinic-block"
+          aria-label="Στοιχεία ιατρείου Αγίας Τριάδος"
+        >
+          <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
+          Λεωφ. Βασιλέως Γεωργίου 44,<br />
+          Θεσσαλονίκη 546 40<br /><br />
+          Τηλέφωνο: 2310 836600<br />
+          Fax: 2310 836600<br /><br />
+          <a
+            href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
+            target="_blank"
+            rel="noopener"
+            >Οδηγίες</a
+          >
+        </div>
+
+        <!-- Location 2 -->
+        <div
+          class="footer-col clinic-block"
+          aria-label="Στοιχεία ιδιωτικού ιατρείου"
+        >
+          <strong>Ιδιωτικό ιατρείο</strong>
+          Μητροπόλεως 96,<br />
+          Θεσσαλονίκη 546 22<br /><br />
+          Τηλέφωνο: 2310 261039<br />
+          Email: papfanis2003@yahoo.gr<br /><br />
+          <a
+            href="https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
+            target="_blank"
+            rel="noopener"
+            >Οδηγίες</a
+          >
+        </div>
+      </div>
+
+      <div class="container stack-s center">
+        <p class="muted" aria-live="polite">
+          Τελευταία ενημέρωση:
+          <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
+          <br />
+          Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής
+          Δεοντολογίας (Ν.3418/2005).
+          <br />
+          Δεν υφίσταται σύγκρουση συμφερόντων.
+          <br />
+          Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη
+          ιατρική συμβουλή.
+        </p>
+        <p class="muted">
+          © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights
+          reserved.
+        </p>
+      </div>
+
+      <script src="script.js" defer></script>
+    </footer>
+  </body>
 </html>
