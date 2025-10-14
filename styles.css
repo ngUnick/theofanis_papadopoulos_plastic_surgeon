@@ -17,9 +17,9 @@
   --field: #0f1218; /* inputs, textareas */
 
   /* 10% — Brand & accents */
-  --brand: #2bb673; /* clinician green (trust/safety) */
+  --brand: #73A6F7; /* clinician green (trust/safety) */
   --on-brand: #031c12; /* text on brand surfaces (high contrast on green) */
-  --accent: #4aa3ff; /* calm blue for links/minor accents */
+  --accent: #5EA9F8; /* calm blue for links/minor accents */
 
   /* States & effects */
   --danger: #e14d5b;
@@ -46,9 +46,9 @@
     --field: #f9fbfd;
 
     /* 10% — Brand & accents */
-    --brand: #1f9e62;
+    --brand: #2351AE;
     --on-brand: #ffffff;
-    --accent: #2a84ff;
+    --accent: #0655AD;
 
     /* States & effects */
     --danger: #c93f4e;
@@ -328,7 +328,7 @@ button.button.secondary {
 }
 
 /* Mid/tighten before mobile */
-@media (max-width: 1315px) {
+@media (max-width: 1325px) {
   .nav {
     padding: 0.75rem 0.5rem;
   }
@@ -349,7 +349,7 @@ button.button.secondary {
 }
 
 /* Convert to burger earlier for nav crowding */
-@media (max-width: 1150px) {
+@media (max-width: 1160px) {
   .navlinks .menu-toggle {
     display: inline-flex;
     cursor: pointer;
