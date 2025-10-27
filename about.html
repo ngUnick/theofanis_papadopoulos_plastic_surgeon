@@ -3,17 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
     <title>Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
-    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
     <meta
       name="description"
-      content="Παρουσίαση του βιογραφικού και της φιλοσοφίας του Δρ. Θεοφάνη Ι. Παπαδόπουλου."
+      content="Βιογραφικό, εκπαίδευση, κλινική εμπειρία και φιλοσοφία προσέγγισης του Δρ. Θεοφάνη Ι. Παπαδόπουλου, Πλαστικού Χειρουργού στη Θεσσαλονίκη."
     />
+
+    <link rel="icon" type="image/x-icon" href="/photos/favicon.ico" />
+    <link rel="canonical" href="https://theofanispapadopoulos.gr/about" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="el_GR" />
+    <meta
+      property="og:title"
+      content="Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      property="og:description"
+      content="Γνωρίστε τον ιατρό: σπουδές, ειδικότητα, εμπειρία και φιλοσοφία φροντίδας."
+    />
+    <meta property="og:url" content="https://theofanispapadopoulos.gr/about" />
+    <meta
+      property="og:site_name"
+      content="Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου"
+    />
+    <meta
+      property="og:image"
+      content="https://theofanispapadopoulos.gr/photos/cv.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Ιατρικό προφίλ — Δρ. Θ. Παπαδόπουλος"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      name="twitter:description"
+      content="Γνωρίστε τον ιατρό: σπουδές, ειδικότητα, εμπειρία και φιλοσοφία φροντίδας."
+    />
+    <meta
+      name="twitter:image"
+      content="https://theofanispapadopoulos.gr/photos/cv.webp"
+    />
+    <meta name="twitter:url" content="https://theofanispapadopoulos.gr/about" />
+
+    <!-- JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@graph": [
-          /* ---------- Site-wide (can be reused on all pages) ---------- */
           {
             "@type": "WebSite",
             "@id": "https://theofanispapadopoulos.gr/#website",
@@ -37,7 +83,7 @@
             ],
             "medicalSpecialty": "PlasticSurgery",
             "telephone": "+302310836600",
-            "email": "mailto:papfanis2003@yahoo.gr",
+            "email": "papfanis2003@yahoo.gr",
             "address": [
               {
                 "@type": "PostalAddress",
@@ -54,6 +100,10 @@
                 "addressCountry": "GR"
               }
             ],
+            "hasMap": [
+              "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
+              "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
+            ],
             "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
           },
           {
@@ -68,14 +118,12 @@
               "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
             }
           },
-
-          /* ------------------ This page (About) ------------------ */
           {
             "@type": "AboutPage",
-            "@id": "https://theofanispapadopoulos.gr/about.html#webpage",
-            "url": "https://theofanispapadopoulos.gr/about.html",
+            "@id": "https://theofanispapadopoulos.gr/about#webpage",
+            "url": "https://theofanispapadopoulos.gr/about",
             "name": "Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
-            "description": "Παρουσίαση του βιογραφικού και της φιλοσοφίας προσέγγισης του Δρ. Θεοφάνη Ι. Παπαδόπουλου.",
+            "description": "Παρουσίαση του βιογραφικού, της εμπειρίας και της φιλοσοφίας προσέγγισης.",
             "inLanguage": "el",
             "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
             "about": [
@@ -86,13 +134,14 @@
               "@type": "ImageObject",
               "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
             },
-            "dateModified": "2025-09-21"
+            "breadcrumb": {
+              "@id": "https://theofanispapadopoulos.gr/about#breadcrumbs"
+            },
+            "dateModified": "2025-09-21T00:00:00+03:00"
           },
-
-          /* ------------------ Breadcrumbs ------------------ */
           {
             "@type": "BreadcrumbList",
-            "@id": "https://theofanispapadopoulos.gr/about.html#breadcrumbs",
+            "@id": "https://theofanispapadopoulos.gr/about#breadcrumbs",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -104,7 +153,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Ο Γιατρός",
-                "item": "https://theofanispapadopoulos.gr/about.html"
+                "item": "https://theofanispapadopoulos.gr/about"
               }
             ]
           }
@@ -112,9 +161,50 @@
       }
     </script>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="canonical" href="https://theofanispapadopoulos.gr/about.html" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Preload key image -->
+    <link rel="preload" as="image" href="/photos/cv.webp" type="image/webp" />
+
+    <!-- App icons / PWA -->
+    <link
+      rel="apple-touch-icon"
+      href="/photos/icons/apple-touch-icon-180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/photos/icons/safari-pinned-tab.svg"
+      color="#2bb673"
+    />
+    <meta name="theme-color" content="#0f1813" />
+    <meta name="msapplication-TileColor" content="#0f1813" />
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://img.youtube.com" crossorigin />
+    <link rel="preconnect" href="https://www.google.com" crossorigin />
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
+    />
   </head>
+
   <body>
     <header class="header">
       <div class="container nav">

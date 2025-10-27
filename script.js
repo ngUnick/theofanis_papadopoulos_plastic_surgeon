@@ -174,5 +174,5 @@
 
   // Keep machine-readable datetime in sync (human text already printed in HTML)
   const dt = document.getElementById("lastUpdated");
-  if (dt) dt.setAttribute("datetime", "2025-09-21");
+  if (dt) dt.setAttribute("datetime", "2025-10-27");
 })();

@@ -3,14 +3,63 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
     <title>
       Βίντεο & Συνεντεύξεις — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)
     </title>
-    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
     <meta
       name="description"
-      content="Ενημερωτικά βίντεο και συνεντεύξεις για πλαστικές επεμβάσεις και μη-επεμβατικές θεραπείες."
+      content="Ενημερωτικά βίντεο και συνεντεύξεις για πλαστικές επεμβάσεις και μη επεμβατικές θεραπείες, συγκεντρωμένα σε μία σελίδα για εύκολη αναζήτηση."
     />
+
+    <link rel="icon" type="image/x-icon" href="/photos/favicon.ico" />
+    <link rel="canonical" href="https://theofanispapadopoulos.gr/media" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="el_GR" />
+    <meta
+      property="og:title"
+      content="Βίντεο & Συνεντεύξεις — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      property="og:description"
+      content="Συγκεντρωτικό αρχείο ενημερωτικών βίντεο/συνεντεύξεων για επεμβάσεις και μη επεμβατικές θεραπείες."
+    />
+    <meta property="og:url" content="https://theofanispapadopoulos.gr/media" />
+    <meta
+      property="og:site_name"
+      content="Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου"
+    />
+    <meta
+      property="og:image"
+      content="https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+    />
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="720" />
+    <meta
+      property="og:image:alt"
+      content="Ιατρείο Πλαστικής Χειρουργικής — Θεσσαλονίκη"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Βίντεο & Συνεντεύξεις — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      name="twitter:description"
+      content="Συγκεντρωτικό αρχείο ενημερωτικών βίντεο/συνεντεύξεων για επεμβάσεις και μη επεμβατικές θεραπείες."
+    />
+    <meta
+      name="twitter:image"
+      content="https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+    />
+    <meta name="twitter:url" content="https://theofanispapadopoulos.gr/media" />
+
+    <!-- JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -32,7 +81,10 @@
               "@type": "ImageObject",
               "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
             },
-            "image": ["https://theofanispapadopoulos.gr/photos/main-4_3.webp"],
+            "image": [
+              "https://theofanispapadopoulos.gr/photos/main-4_3.webp",
+              "https://theofanispapadopoulos.gr/photos/cv.webp"
+            ],
             "medicalSpecialty": "PlasticSurgery",
             "telephone": "+302310836600",
             "email": "papfanis2003@yahoo.gr",
@@ -52,6 +104,10 @@
                 "addressCountry": "GR"
               }
             ],
+            "hasMap": [
+              "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
+              "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
+            ],
             "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
           },
           {
@@ -63,10 +119,10 @@
           },
           {
             "@type": "CollectionPage",
-            "@id": "https://theofanispapadopoulos.gr/media.html#webpage",
-            "url": "https://theofanispapadopoulos.gr/media.html",
-            "name": "Βίντεο & Συνεντεύξεις – Ενημερωτικό Υλικό — Δρ. Θ. Παπαδόπουλος",
-            "description": "Συγκεντρωτικό αρχείο ενημερωτικών βίντεο/συνεντεύξεων για πλαστικές επεμβάσεις και μη-επεμβατικές θεραπείες.",
+            "@id": "https://theofanispapadopoulos.gr/media#webpage",
+            "url": "https://theofanispapadopoulos.gr/media",
+            "name": "Βίντεο & Συνεντεύξεις — Ενημερωτικό Υλικό",
+            "description": "Συγκεντρωτικό αρχείο ενημερωτικών βίντεο/συνεντεύξεων για πλαστικές επεμβάσεις και μη επεμβατικές θεραπείες.",
             "inLanguage": "el",
             "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
             "about": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
@@ -74,11 +130,17 @@
               "@type": "ImageObject",
               "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
             },
-            "dateModified": "2025-09-21T00:00:00+03:00"
+            "breadcrumb": {
+              "@id": "https://theofanispapadopoulos.gr/media#breadcrumbs"
+            },
+            "dateModified": "2025-09-21T00:00:00+03:00",
+            "hasPart": {
+              "@id": "https://theofanispapadopoulos.gr/media#videolist"
+            }
           },
           {
             "@type": "BreadcrumbList",
-            "@id": "https://theofanispapadopoulos.gr/media.html#breadcrumbs",
+            "@id": "https://theofanispapadopoulos.gr/media#breadcrumbs",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -89,40 +151,65 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Video",
-                "item": "https://theofanispapadopoulos.gr/media.html"
+                "name": "Βίντεο & Συνεντεύξεις",
+                "item": "https://theofanispapadopoulos.gr/media"
               }
             ]
           },
           {
             "@type": "ItemList",
-            "@id": "https://theofanispapadopoulos.gr/media.html#videolist",
-            "name": "Λίστα βίντεο (εξωτερικοί σύνδεσμοι στο YouTube)",
+            "@id": "https://theofanispapadopoulos.gr/media#videolist",
+            "name": "Λίστα βίντεο (YouTube)",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
-                "url": "https://www.youtube.com/watch?v=F-q1wVqq3cs"
+                "item": {
+                  "@type": "VideoObject",
+                  "name": "Υγρό Λίφτινγκ Προσώπου — 15/02/2020",
+                  "url": "https://www.youtube.com/watch?v=F-q1wVqq3cs",
+                  "thumbnailUrl": "https://img.youtube.com/vi/F-q1wVqq3cs/hqdefault.jpg"
+                }
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "url": "https://www.youtube.com/watch?v=v4uOgpRsZPk"
+                "item": {
+                  "@type": "VideoObject",
+                  "name": "Ρινοπλαστική & Ωτοπλαστική — 14/01/2015",
+                  "url": "https://www.youtube.com/watch?v=v4uOgpRsZPk",
+                  "thumbnailUrl": "https://img.youtube.com/vi/v4uOgpRsZPk/hqdefault.jpg"
+                }
               },
               {
                 "@type": "ListItem",
                 "position": 3,
-                "url": "https://www.youtube.com/watch?v=bG_Wzcy-d40"
+                "item": {
+                  "@type": "VideoObject",
+                  "name": "Γυναικομαστία — 11/12/2014",
+                  "url": "https://www.youtube.com/watch?v=bG_Wzcy-d40",
+                  "thumbnailUrl": "https://img.youtube.com/vi/bG_Wzcy-d40/hqdefault.jpg"
+                }
               },
               {
                 "@type": "ListItem",
                 "position": 4,
-                "url": "https://www.youtube.com/watch?v=pvlCpRWu6PQ"
+                "item": {
+                  "@type": "VideoObject",
+                  "name": "Μη επεμβατικές θεραπείες — 23/02/2014",
+                  "url": "https://www.youtube.com/watch?v=pvlCpRWu6PQ",
+                  "thumbnailUrl": "https://img.youtube.com/vi/pvlCpRWu6PQ/hqdefault.jpg"
+                }
               },
               {
                 "@type": "ListItem",
                 "position": 5,
-                "url": "https://www.youtube.com/watch?v=x-_XIjeoQGc"
+                "item": {
+                  "@type": "VideoObject",
+                  "name": "Ρυτίδες προσώπου — 12/05/2011",
+                  "url": "https://www.youtube.com/watch?v=x-_XIjeoQGc",
+                  "thumbnailUrl": "https://img.youtube.com/vi/x-_XIjeoQGc/hqdefault.jpg"
+                }
               }
             ]
           }
@@ -130,9 +217,47 @@
       }
     </script>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="canonical" href="https://theofanispapadopoulos.gr/media.html" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- App icons / PWA -->
+    <link
+      rel="apple-touch-icon"
+      href="/photos/icons/apple-touch-icon-180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/photos/icons/safari-pinned-tab.svg"
+      color="#2bb673"
+    />
+    <meta name="theme-color" content="#0f1813" />
+    <meta name="msapplication-TileColor" content="#0f1813" />
+
+    <!-- Performance hints for external thumbnails -->
+    <link rel="preconnect" href="https://img.youtube.com" crossorigin />
+    <link rel="preconnect" href="https://www.youtube.com" crossorigin />
+
+    <!-- Google Site Verification (same as homepage) -->
+    <meta
+      name="google-site-verification"
+      content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
+    />
   </head>
+
   <body>
     <header class="header">
       <div class="container nav">

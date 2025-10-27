@@ -3,13 +3,67 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
     <title>Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
-    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
     <meta
       name="description"
-      content="Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος (Φάληρο Θεσσαλονίκη) και το προσωπικό ιατρείο του Δρ. Θ. Παπαδόπουλου (Μητροπόλεως 96, Θεσσαλονίκη). Χάρτης, ωράριο και τρόποι επικοινωνίας για ραντεβού ή ιατρικές ερωτήσεις."
+      content="Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος (Φάληρο, Θεσσαλονίκη) και το ιδιωτικό ιατρείο στη Μητροπόλεως 96. Χάρτες, ωράριο και τρόποι επικοινωνίας."
     />
 
+    <link rel="icon" type="image/x-icon" href="/photos/favicon.ico" />
+    <link rel="canonical" href="https://theofanispapadopoulos.gr/contact" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="el_GR" />
+    <meta
+      property="og:title"
+      content="Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      property="og:description"
+      content="Διευθύνσεις, τηλέφωνα, ωράρια και χάρτες για τα ιατρεία στη Θεσσαλονίκη."
+    />
+    <meta
+      property="og:url"
+      content="https://theofanispapadopoulos.gr/contact"
+    />
+    <meta
+      property="og:site_name"
+      content="Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου"
+    />
+    <meta
+      property="og:image"
+      content="https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+    />
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="720" />
+    <meta
+      property="og:image:alt"
+      content="Ιατρείο Πλαστικής Χειρουργικής — Θεσσαλονίκη"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      name="twitter:description"
+      content="Διευθύνσεις, τηλέφωνα, ωράρια και χάρτες για τα ιατρεία στη Θεσσαλονίκη."
+    />
+    <meta
+      name="twitter:image"
+      content="https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+    />
+    <meta
+      name="twitter:url"
+      content="https://theofanispapadopoulos.gr/contact"
+    />
+
+    <!-- JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -20,12 +74,11 @@
             "url": "https://theofanispapadopoulos.gr/",
             "name": "Theofanis Papadopoulos — Plastic Surgeon",
             "inLanguage": "el",
-            "publisher": { "@id": "https://theofanispapadopoulos.gr/#practice" }
+            "publisher": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
           },
-
           {
             "@type": "MedicalClinic",
-            "@id": "https://theofanispapadopoulos.gr/#practice",
+            "@id": "https://theofanispapadopoulos.gr/#clinic",
             "name": "Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου",
             "url": "https://theofanispapadopoulos.gr/",
             "logo": {
@@ -38,11 +91,14 @@
             ],
             "medicalSpecialty": "PlasticSurgery",
             "telephone": "+302310836600",
-            "email": "mailto:papfanis2003@yahoo.gr",
+            "email": "papfanis2003@yahoo.gr",
             "areaServed": "GR",
             "availableLanguage": ["el", "en"],
+            "hasMap": [
+              "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
+              "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
+            ],
             "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" },
-
             "department": [
               {
                 "@id": "https://theofanispapadopoulos.gr/#clinic-agias-triados"
@@ -50,13 +106,13 @@
               { "@id": "https://theofanispapadopoulos.gr/#clinic-mitropoleos" }
             ]
           },
-
           {
             "@type": "MedicalClinic",
             "@id": "https://theofanispapadopoulos.gr/#clinic-agias-triados",
             "name": "Ιατρεία Αγίας Τριάδος",
             "branchCode": "Agias-Triados",
-            "url": "https://theofanispapadopoulos.gr/contact.html",
+            "branchOf": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
+            "url": "https://theofanispapadopoulos.gr/contact",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Λεωφ. Βασιλέως Γεωργίου 44",
@@ -80,18 +136,15 @@
                 "closes": "20:00"
               }
             ],
-            "hasMap": "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
-            "parentOrganization": {
-              "@id": "https://theofanispapadopoulos.gr/#practice"
-            }
+            "hasMap": "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
           },
-
           {
             "@type": "MedicalClinic",
             "@id": "https://theofanispapadopoulos.gr/#clinic-mitropoleos",
             "name": "Ιδιωτικό ιατρείο",
             "branchCode": "Mitropoleos-96",
-            "url": "https://theofanispapadopoulos.gr/contact.html",
+            "branchOf": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
+            "url": "https://theofanispapadopoulos.gr/contact",
             "address": {
               "@type": "PostalAddress",
               "streetAddress": "Μητροπόλεως 96",
@@ -100,31 +153,26 @@
               "addressCountry": "GR"
             },
             "telephone": "+302310261039",
-            "email": "mailto:papfanis2003@yahoo.gr",
+            "email": "papfanis2003@yahoo.gr",
             "byAppointmentOnly": true,
-            "hasMap": "https://maps.app.goo.gl/8r3NDAri43ABkKHD9",
-            "parentOrganization": {
-              "@id": "https://theofanispapadopoulos.gr/#practice"
-            }
+            "hasMap": "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
           },
-
           {
             "@type": "Physician",
             "@id": "https://theofanispapadopoulos.gr/#physician",
             "name": "Θεοφάνης Ι. Παπαδόπουλος",
             "medicalSpecialty": "PlasticSurgery",
-            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#practice" }
+            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
           },
-
           {
             "@type": "ContactPage",
-            "@id": "https://theofanispapadopoulos.gr/contact.html#webpage",
-            "url": "https://theofanispapadopoulos.gr/contact.html",
+            "@id": "https://theofanispapadopoulos.gr/contact#webpage",
+            "url": "https://theofanispapadopoulos.gr/contact",
             "name": "Επικοινωνία — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
-            "description": "Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος και το ιδιωτικό ιατρείο (Μητροπόλεως 96). Χάρτης, ωράριο και τρόποι επικοινωνίας.",
+            "description": "Στοιχεία επικοινωνίας για τα Ιατρεία Αγίας Τριάδος και το ιδιωτικό ιατρείο (Μητροπόλεως 96) στη Θεσσαλονίκη. Χάρτες, ωράρια και τρόποι επικοινωνίας.",
             "inLanguage": "el",
             "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
-            "about": { "@id": "https://theofanispapadopoulos.gr/#practice" },
+            "about": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
             "primaryImageOfPage": {
               "@type": "ImageObject",
               "url": "https://theofanispapadopoulos.gr/photos/main-4_3.webp"
@@ -135,12 +183,14 @@
               },
               { "@id": "https://theofanispapadopoulos.gr/#clinic-mitropoleos" }
             ],
-            "dateModified": "2025-09-21"
+            "breadcrumb": {
+              "@id": "https://theofanispapadopoulos.gr/contact#breadcrumbs"
+            },
+            "dateModified": "2025-09-21T00:00:00+03:00"
           },
-
           {
             "@type": "BreadcrumbList",
-            "@id": "https://theofanispapadopoulos.gr/contact.html#breadcrumbs",
+            "@id": "https://theofanispapadopoulos.gr/contact#breadcrumbs",
             "itemListElement": [
               {
                 "@type": "ListItem",
@@ -152,7 +202,7 @@
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Επικοινωνία",
-                "item": "https://theofanispapadopoulos.gr/contact.html"
+                "item": "https://theofanispapadopoulos.gr/contact"
               }
             ]
           }
@@ -160,9 +210,47 @@
       }
     </script>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="canonical" href="https://theofanispapadopoulos.gr/contact.html" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- App icons / PWA -->
+    <link
+      rel="apple-touch-icon"
+      href="/photos/icons/apple-touch-icon-180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/photos/icons/safari-pinned-tab.svg"
+      color="#2bb673"
+    />
+    <meta name="theme-color" content="#0f1813" />
+    <meta name="msapplication-TileColor" content="#0f1813" />
+
+    <!-- Performance hints (embeds & assets) -->
+    <link rel="preconnect" href="https://www.google.com" crossorigin />
+    <link rel="preconnect" href="https://img.youtube.com" crossorigin />
+
+    <!-- Google Site Verification -->
+    <meta
+      name="google-site-verification"
+      content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
+    />
   </head>
+
   <body>
     <header class="header">
       <div class="container nav">

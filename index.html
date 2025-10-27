@@ -3,12 +3,66 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+
     <title>Αρχική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)</title>
-    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
     <meta
       name="description"
-      content="Ενημερωτικός ιστότοπος πλαστικού χειρουργού με έδρα τη Θεσσαλονίκη με έμφαση στην ασφάλεια και τη διαφάνεια."
+      content="Ενημερωτικός ιστότοπος πλαστικού χειρουργού με έδρα τη Θεσσαλονίκη. Πληροφορίες για επεμβάσεις και μη επεμβατικές θεραπείες, με έμφαση στην ασφάλεια και τη διαφάνεια."
     />
+
+    <link rel="icon" type="image/x-icon" href="photos/favicon.ico" />
+    <link rel="canonical" href="https://theofanispapadopoulos.gr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="el_GR" />
+    <meta
+      property="og:title"
+      content="Αρχική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      property="og:description"
+      content="Ενημερωτικός ιστότοπος πλαστικού χειρουργού στη Θεσσαλονίκη. Πληροφορίες για επεμβάσεις, ανάρρωση και συχνές ερωτήσεις."
+    />
+    <meta property="og:url" content="https://theofanispapadopoulos.gr/" />
+    <meta
+      property="og:site_name"
+      content="Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου"
+    />
+    <meta
+      property="og:image"
+      content="https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+    />
+    <meta property="og:image:width" content="960" />
+    <meta property="og:image:height" content="720" />
+    <meta
+      property="og:image:alt"
+      content="Ιατρείο Πλαστικής Χειρουργικής — Θεσσαλονίκη"
+    />
+    <!-- Optional: Facebook App ID for Sharing Debugger analytics -->
+    <!-- <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID" /> -->
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Αρχική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)"
+    />
+    <meta
+      name="twitter:description"
+      content="Ενημερωτικός ιστότοπος πλαστικού χειρουργού στη Θεσσαλονίκη. Πληροφορίες για επεμβάσεις, ανάρρωση και συχνές ερωτήσεις."
+    />
+    <meta
+      name="twitter:image"
+      content="https://theofanispapadopoulos.gr/photos/main-4_3.webp"
+    />
+    <meta name="twitter:url" content="https://theofanispapadopoulos.gr/" />
+    <!-- Optional: show handles on cards -->
+    <!-- <meta name="twitter:site" content="@YourClinicHandle" /> -->
+    <!-- <meta name="twitter:creator" content="@DoctorHandle" /> -->
+
+    <!-- JSON-LD (extensionless URLs) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -117,31 +171,31 @@
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Επεμβάσεις",
-                "url": "https://theofanispapadopoulos.gr/procedures.html"
+                "url": "https://theofanispapadopoulos.gr/procedures"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Μη Επεμβατικές",
-                "url": "https://theofanispapadopoulos.gr/non-invasive.html"
+                "url": "https://theofanispapadopoulos.gr/non-invasive"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Επανορθωτική",
-                "url": "https://theofanispapadopoulos.gr/reconstructive.html"
+                "url": "https://theofanispapadopoulos.gr/reconstructive"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
                 "name": "Συχνές Ερωτήσεις",
-                "url": "https://theofanispapadopoulos.gr/faq.html"
+                "url": "https://theofanispapadopoulos.gr/faq"
               },
               {
                 "@type": "ListItem",
                 "position": 5,
                 "name": "Επικοινωνία",
-                "url": "https://theofanispapadopoulos.gr/contact.html"
+                "url": "https://theofanispapadopoulos.gr/contact"
               }
             ]
           },
@@ -173,8 +227,11 @@
         ]
       }
     </script>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- Preload hero image -->
     <link
       rel="preload"
       as="image"
@@ -183,7 +240,32 @@
       type="image/webp"
     />
 
-    <link rel="canonical" href="https://theofanispapadopoulos.gr/" />
+    <!-- App icons / PWA polish (optional but recommended) -->
+    <link
+      rel="apple-touch-icon"
+      href="/photos/icons/apple-touch-icon-180.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/photos/icons/favicon-16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/photos/icons/safari-pinned-tab.svg"
+      color="#2bb673"
+    />
+    <meta name="theme-color" content="#0f1813" />
+    <meta name="msapplication-TileColor" content="#0f1813" />
 
     <!-- Google Site Verification -->
     <meta
@@ -191,6 +273,7 @@
       content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
     />
   </head>
+
   <body>
     <header class="header">
       <div class="container nav">
