@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Don’t crawl site-search URLs (both ?s=... and &s=...)
+Disallow: /*?s=
+Disallow: /*&s=
+
 Sitemap: https://theofanispapadopoulos.gr/sitemap.xml
