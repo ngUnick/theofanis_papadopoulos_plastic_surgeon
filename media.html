@@ -108,6 +108,12 @@
               "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
               "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
             ],
+            "sameAs": [
+              "https://www.instagram.com/dr_theofanis_papadopoulos/",
+              "https://www.tiktok.com/@dr_theofanis_papa",
+              "https://www.youtube.com/@drtheofanispapadopoulos",
+              "https://www.facebook.com/DrTheofanisPapadopoulos"
+            ],
             "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
           },
           {
@@ -115,17 +121,24 @@
             "@id": "https://theofanispapadopoulos.gr/#physician",
             "name": "Θεοφάνης Ι. Παπαδόπουλος",
             "medicalSpecialty": "PlasticSurgery",
-            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
+            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
+            "sameAs": [
+              "https://www.instagram.com/dr_theofanis_papadopoulos/",
+              "https://www.tiktok.com/@dr_theofanis_papa",
+              "https://www.youtube.com/@drtheofanispapadopoulos",
+              "https://www.facebook.com/DrTheofanisPapadopoulos"
+            ]
           },
           {
             "@type": "CollectionPage",
             "@id": "https://theofanispapadopoulos.gr/media#webpage",
             "url": "https://theofanispapadopoulos.gr/media",
-            "name": "Βίντεο & Συνεντεύξεις — Ενημερωτικό Υλικό",
-            "description": "Συγκεντρωτικό αρχείο ενημερωτικών βίντεο/συνεντεύξεων για πλαστικές επεμβάσεις και μη επεμβατικές θεραπείες.",
+            "name": "Κοινωνικά & Βίντεο — Ενημερωτικό Υλικό",
+            "description": "Σε μία σελίδα συγκεντρωμένα τα επίσημα κοινωνικά προφίλ (Instagram, TikTok, YouTube, Facebook) και ένα αρχείο με ενημερωτικά βίντεο/συνεντεύξεις.",
             "inLanguage": "el",
             "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
             "about": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
+            "publisher": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
             "primaryImageOfPage": {
               "@type": "ImageObject",
               "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
@@ -133,10 +146,11 @@
             "breadcrumb": {
               "@id": "https://theofanispapadopoulos.gr/media#breadcrumbs"
             },
-            "dateModified": "2025-09-21T00:00:00+03:00",
-            "hasPart": {
-              "@id": "https://theofanispapadopoulos.gr/media#videolist"
-            }
+            "dateModified": "2025-10-31T00:00:00+02:00",
+            "hasPart": [
+              { "@id": "https://theofanispapadopoulos.gr/media#socials" },
+              { "@id": "https://theofanispapadopoulos.gr/media#videos" }
+            ]
           },
           {
             "@type": "BreadcrumbList",
@@ -151,65 +165,76 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Βίντεο & Συνεντεύξεις",
+                "name": "Κοινωνικά & Βίντεο",
                 "item": "https://theofanispapadopoulos.gr/media"
               }
             ]
           },
           {
             "@type": "ItemList",
-            "@id": "https://theofanispapadopoulos.gr/media#videolist",
-            "name": "Λίστα βίντεο (YouTube)",
+            "@id": "https://theofanispapadopoulos.gr/media#socials",
+            "name": "Επίσημα κοινωνικά προφίλ",
             "itemListElement": [
               {
                 "@type": "ListItem",
                 "position": 1,
-                "item": {
-                  "@type": "VideoObject",
-                  "name": "Υγρό Λίφτινγκ Προσώπου — 15/02/2020",
-                  "url": "https://www.youtube.com/watch?v=F-q1wVqq3cs",
-                  "thumbnailUrl": "https://img.youtube.com/vi/F-q1wVqq3cs/hqdefault.jpg"
-                }
+                "name": "Instagram",
+                "url": "https://www.instagram.com/dr_theofanis_papadopoulos/"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
-                "item": {
-                  "@type": "VideoObject",
-                  "name": "Ρινοπλαστική & Ωτοπλαστική — 14/01/2015",
-                  "url": "https://www.youtube.com/watch?v=v4uOgpRsZPk",
-                  "thumbnailUrl": "https://img.youtube.com/vi/v4uOgpRsZPk/hqdefault.jpg"
-                }
+                "name": "TikTok",
+                "url": "https://www.tiktok.com/@dr_theofanis_papa"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
-                "item": {
-                  "@type": "VideoObject",
-                  "name": "Γυναικομαστία — 11/12/2014",
-                  "url": "https://www.youtube.com/watch?v=bG_Wzcy-d40",
-                  "thumbnailUrl": "https://img.youtube.com/vi/bG_Wzcy-d40/hqdefault.jpg"
-                }
+                "name": "YouTube",
+                "url": "https://www.youtube.com/@drtheofanispapadopoulos"
               },
               {
                 "@type": "ListItem",
                 "position": 4,
-                "item": {
-                  "@type": "VideoObject",
-                  "name": "Μη επεμβατικές θεραπείες — 23/02/2014",
-                  "url": "https://www.youtube.com/watch?v=pvlCpRWu6PQ",
-                  "thumbnailUrl": "https://img.youtube.com/vi/pvlCpRWu6PQ/hqdefault.jpg"
-                }
+                "name": "Facebook",
+                "url": "https://www.facebook.com/DrTheofanisPapadopoulos"
+              }
+            ]
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://theofanispapadopoulos.gr/media#videos",
+            "name": "Σύνδεσμοι προς YouTube",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Υγρό Λίφτινγκ Προσώπου — 15/02/2020",
+                "url": "https://www.youtube.com/watch?v=F-q1wVqq3cs"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Ρινοπλαστική & Ωτοπλαστική — 14/01/2015",
+                "url": "https://www.youtube.com/watch?v=v4uOgpRsZPk"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Γυναικομαστία — 11/12/2014",
+                "url": "https://www.youtube.com/watch?v=bG_Wzcy-d40"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Μη επεμβατικές θεραπείες — 23/02/2014",
+                "url": "https://www.youtube.com/watch?v=pvlCpRWu6PQ"
               },
               {
                 "@type": "ListItem",
                 "position": 5,
-                "item": {
-                  "@type": "VideoObject",
-                  "name": "Ρυτίδες προσώπου — 12/05/2011",
-                  "url": "https://www.youtube.com/watch?v=x-_XIjeoQGc",
-                  "thumbnailUrl": "https://img.youtube.com/vi/x-_XIjeoQGc/hqdefault.jpg"
-                }
+                "name": "Ρυτίδες προσώπου — 12/05/2011",
+                "url": "https://www.youtube.com/watch?v=x-_XIjeoQGc"
               }
             ]
           }
@@ -260,8 +285,105 @@
 
   <body>
     <header class="header">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="container topbar-row">
+          <!-- Left: τηλέφωνο + email -->
+          <div class="topbar-left">
+            <a
+              class="topbar-item"
+              href="tel:+302310261039"
+              aria-label="Τηλέφωνο 2310 261039"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1.3 1.3 0 011.3-.32c1.4.47 2.9.72 4.3.72a1.3 1.3 0 011.3 1.3v3.5a1.3 1.3 0 01-1.3 1.3C10.8 21.7 2.3 13.2 2.3 2.3A1.3 1.3 0 013.6 1h3.5a1.3 1.3 0 011.3 1.3c0 1.5.25 2.9.72 4.3.13.45.02.94-.32 1.3L6.6 10.8z"
+                />
+              </svg>
+              <span>2310 261039</span>
+            </a>
+
+            <a
+              class="topbar-item"
+              href="mailto:papfanis2003@yahoo.gr"
+              aria-label="Email papfanis2003@yahoo.gr"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M2 6a2 2 0 012-2h16a2 2 0 012 2v.4l-10 6.2L2 6.4V6zm20 3.2V18a2 2 0 01-2 2H4a2 2 0 01-2-2V9.2l9.3 5.7a2 2 0 002.1 0L22 9.2z"
+                />
+              </svg>
+              <span>papfanis2003@yahoo.gr</span>
+            </a>
+          </div>
+
+          <!-- Right: social -->
+          <nav class="topbar-right" aria-label="Κοινωνικά δίκτυα">
+            <!-- (Προαιρετικό) Linktree — άστο εκτός αν το χρειαστείς -->
+            <!-- <a class="soc" href="https://linktr.ee/xxxx" target="_blank" rel="noopener">LT</a> -->
+
+            <a
+              class="soc"
+              href="https://www.instagram.com/dr_theofanis_papadopoulos/"
+              target="_blank"
+              rel="me noopener"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18.5 5.5 5.5 0 0112 7.5zm0 2A3.5 3.5 0 1015.5 13 3.5 3.5 0 0012 9.5zM18.3 6a1 1 0 110 2 1 1 0 010-2z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="soc"
+              href="https://www.tiktok.com/@dr_theofanis_papa"
+              target="_blank"
+              rel="me noopener"
+              aria-label="TikTok"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14 3c1.2 1.5 2.7 2.4 4.7 2.5V9c-1.8 0-3.3-.5-4.7-1.5V15a6 6 0 11-6-6c.4 0 .8 0 1.2.1V11a3.6 3.6 0 00-1.2-.2 3.6 3.6 0 103.6 3.6V3h2.4z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="soc"
+              href="https://www.youtube.com/@drtheofanispapadopoulos"
+              target="_blank"
+              rel="me noopener"
+              aria-label="YouTube"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5 31 31 0 001 12a31 31 0 000 4.5 3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4A3 3 0 0023 16.5 31 31 0 0023 12a31 31 0 000-4.5zM10 15.2V8.8l6 3.2-6 3.2z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="soc"
+              href="https://www.facebook.com/DrTheofanisPapadopoulos"
+              target="_blank"
+              rel="me noopener"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M13 22v-8h3l.5-3H13V9a1.5 1.5 0 011.7-1.5H17V4.3A23.5 23.5 0 0014.6 4C12.4 4 11 5.6 11 8.2V11H8v3h3v8h2z"
+                />
+              </svg>
+            </a>
+          </nav>
+        </div>
+      </div>
+
+      <!-- NAVBAR -->
       <div class="container nav">
-        <a class="brand" href="index.html" aria-label="Αρχική">
+        <a class="brand" href="/" aria-label="Αρχική">
           <img src="photos/logo.webp" alt="Λογότυπο ιατρείου" />
           <strong>Δρ. Θ. Παπαδόπουλος</strong>
           <span class="badge">Plastic Surgeon</span>
@@ -289,14 +411,14 @@
             </svg>
           </button>
           <div class="links">
-            <a href="index.html">Αρχική</a>
-            <a href="about.html">Ο Γιατρός</a>
-            <a href="procedures.html">Επεμβάσεις</a>
-            <a href="non-invasive.html">Μη Επεμβατικές</a>
-            <a href="reconstructive.html">Επανορθωτική</a>
-            <a href="media.html" aria-current="page">Video</a>
-            <a href="faq.html">Συχνές Ερωτήσεις</a>
-            <a href="contact.html">Επικοινωνία</a>
+            <a href="/">Αρχική</a>
+            <a href="/about">Ο Γιατρός</a>
+            <a href="/procedures">Επεμβάσεις</a>
+            <a href="/non-invasive">Μη Επεμβατικές</a>
+            <a href="/reconstructive">Επανορθωτική</a>
+            <a href="/media" aria-current="page">Socials</a>
+            <a href="/faq">Συχνές Ερωτήσεις</a>
+            <a href="/contact">Επικοινωνία</a>
           </div>
         </nav>
       </div>
@@ -306,48 +428,127 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container">
-          <h1>Βίντεο & Συνεντεύξεις – Ενημερωτικό Υλικό</h1>
+          <h1>Κοινωνικά & Βίντεο</h1>
           <p class="lead">
-            Η ενότητα αυτή συγκεντρώνει τηλεοπτικές εμφανίσεις και
-            βιντεοσκοπημένες συζητήσεις με καθαρά ενημερωτικό χαρακτήρα για
-            θέματα πλαστικής και επανορθωτικής χειρουργικής.
+            Καλώς ήρθατε! Εδώ θα βρείτε τα επίσημα κοινωνικά μας προφίλ για
+            σύντομες ενημερώσεις, stories και αναρτήσεις, και αμέσως μετά ένα
+            αρχείο με τηλεοπτικές εμφανίσεις και βίντεο.
           </p>
           <p class="muted stack-s">
-            Το περιεχόμενο δεν υποκαθιστά ιατρική εξέταση ή εξατομικευμένη
-            ιατρική συμβουλή.
+            Το περιεχόμενο είναι ενημερωτικό και δεν υποκαθιστά ιατρική
+            εκτίμηση.
           </p>
         </div>
       </section>
 
-      <!-- Live Search (like procedures) -->
-      <!-- <section class="proc-search-wrap">
-    <div class="container">
-      <div class="proc-searchbar" role="search">
-        <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input id="mediaSearch" class="proc-input" type="search" placeholder="Αναζήτηση βίντεο..." aria-label="Αναζήτηση σε τίτλους, θέματα και περιγραφές βίντεο">
-      </div>
-      <div class="proc-search-meta" aria-live="polite">
-        <span id="mediaCount">Εμφάνιση όλων των βίντεο</span>
-      </div>
-    </div>
-  </section> -->
+      <!-- SOCIALS FIRST (icon strip, όχι κάρτες) -->
+      <section class="alt" id="socials">
+        <div class="container">
+          <h2 class="stack-s">Επίσημα Κοινωνικά Προφίλ</h2>
+          <div class="chipbar" role="navigation" aria-label="Κοινωνικά δίκτυα">
+            <!-- Instagram -->
+            <a
+              class="chip social-chip"
+              href="https://www.instagram.com/dr_theofanis_papadopoulos/"
+              target="_blank"
+              rel="noopener me"
+              aria-label="Instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                aria-hidden="true"
+                style="margin-right: 8px"
+              >
+                <path
+                  d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm0 2a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H7zm5 3.5A5.5 5.5 0 1112 18.5 5.5 5.5 0 0112 7.5zm6.3-1.5a1 1 0 110 2 1 1 0 010-2z"
+                  fill="currentColor"
+                />
+              </svg>
+              Instagram
+            </a>
 
-      <!-- Optional category filter -->
-      <!-- <section class="media-filter">
-    <div class="container">
-      <div class="chipbar" role="tablist" aria-label="Φίλτρο θεματικών">
-        <button class="chip is-active" data-media-filter="all" role="tab" aria-selected="true">Όλα</button>
-        <button class="chip" data-media-filter="face" role="tab">Πρόσωπο</button>
-        <button class="chip" data-media-filter="noninvasive" role="tab">Μη Επεμβατικές</button>
-        <button class="chip" data-media-filter="breast" role="tab">Στήθος</button>
-        <button class="chip" data-media-filter="body" role="tab">Σώμα</button>
-        <button class="chip" data-media-filter="recon" role="tab">Επανορθωτική</button>
-      </div>
-    </div>
-  </section> -->
+            <!-- TikTok -->
+            <a
+              class="chip social-chip"
+              href="https://www.tiktok.com/@dr_theofanis_papa"
+              target="_blank"
+              rel="noopener me"
+              aria-label="TikTok"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                aria-hidden="true"
+                style="margin-right: 8px"
+              >
+                <path
+                  d="M14 3c1.2 1.5 2.7 2.4 4.7 2.5V9c-1.8 0-3.3-.5-4.7-1.5V15a6 6 0 11-6-6c.4 0 .8 0 1.2.1V11a3.6 3.6 0 00-1.2-.2 3.6 3.6 0 103.6 3.6V3h2.4z"
+                  fill="currentColor"
+                />
+              </svg>
+              TikTok
+            </a>
 
-      <!-- Media Grid -->
-      <section class="alt">
+            <!-- YouTube -->
+            <a
+              class="chip social-chip"
+              href="https://www.youtube.com/@drtheofanispapadopoulos"
+              target="_blank"
+              rel="noopener me"
+              aria-label="YouTube"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                aria-hidden="true"
+                style="margin-right: 8px"
+              >
+                <path
+                  d="M23 7.5a3 3 0 00-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 001 7.5 31 31 0 001 12a31 31 0 000 4.5 3 3 0 002.1 2.1C5 19 12 19 12 19s7 0 8.9-.4A3 3 0 0023 16.5 31 31 0 0023 12a31 31 0 000-4.5zM10 15.2V8.8l6 3.2-6 3.2z"
+                  fill="currentColor"
+                />
+              </svg>
+              YouTube
+            </a>
+
+            <!-- Facebook -->
+            <a
+              class="chip social-chip"
+              href="https://www.facebook.com/DrTheofanisPapadopoulos"
+              target="_blank"
+              rel="noopener me"
+              aria-label="Facebook"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="18"
+                height="18"
+                aria-hidden="true"
+                style="margin-right: 8px"
+              >
+                <path
+                  d="M13 22v-8h3l.5-3H13V9a1.5 1.5 0 011.7-1.5H17V4.3A23.5 23.5 0 0014.6 4C12.4 4 11 5.6 11 8.2V11H8v3h3v8h2z"
+                  fill="currentColor"
+                />
+              </svg>
+              Facebook
+            </a>
+          </div>
+
+          <p class="muted stack-s">Ακολουθήστε μας και στα κοινωνικά δίκτυα!</p>
+        </div>
+      </section>
+
+      <!-- VIDEOS (as archive) -->
+      <section class="alt" id="videos">
+        <div class="container">
+          <h2>Αρχείο Βίντεο & Συνεντεύξεων</h2>
+        </div>
+
         <div class="container media-grid" id="mediaGrid">
           <!-- 15 · 2020-02-15 · Liquid Facelift -->
           <article
@@ -370,9 +571,8 @@
                 Υγρό Λίφτινγκ Προσώπου | Agenta με την Πωλίνα - 15/02/2020
               </h3>
               <p class="muted">
-                Θέμα: Liquid Facelift (ενέσιμες τεχνικές όγκου/αναζωογόνησης).
-                Εισαγωγική ενημέρωση για επιλογές ενέσιμων,
-                ενδείξεις/περιορισμούς και γενικούς παράγοντες ασφάλειας.
+                Θέμα: ενέσιμες τεχνικές όγκου/αναζωογόνησης. Ενδείξεις,
+                περιορισμοί και γενικοί παράγοντες ασφάλειας.
               </p>
               <a
                 class="button"
@@ -405,9 +605,8 @@
                 Ρινοπλαστική - Ωτοπλαστική | Agenta με την Πωλίνα - 14/01/2015
               </h3>
               <p class="muted">
-                Θέμα: Ρινοπλαστική & Ωτοπλαστική. Βασικές αρχές και στόχοι,
-                ενδείξεις, συνοπτική περιγραφή διαδικασίας και γενικές
-                μετεγχειρητικές οδηγίες.
+                Βασικές αρχές και στόχοι, ενδείξεις, συνοπτική περιγραφή
+                διαδικασίας και γενικές μετεγχειρητικές οδηγίες.
               </p>
               <a
                 class="button"
@@ -440,9 +639,8 @@
                 Γυναικομαστία στους άνδρες | Agenta με την Πωλίνα - 11/12/2014
               </h3>
               <p class="muted">
-                Θέμα: Γυναικομαστία στους άνδρες. Ορισμός, συνηθισμένες αιτίες
-                και γενικές θεραπευτικές επιλογές (λιποαναρρόφηση ή και εκτομή
-                του μαζικού αδένα), με συνοπτική αναφορά στην ανάρρωση.
+                Ορισμός, συνηθισμένες αιτίες και επιλογές (λιποαναρρόφηση/εκτομή
+                αδένα), με συνοπτική αναφορά στην ανάρρωση.
               </p>
               <a
                 class="button"
@@ -472,13 +670,11 @@
             </div>
             <div class="p">
               <h3 class="proc-title">
-                LASER Μη επεμβατικές θεραπείες | Agenta με την Πωλίνα -
-                23/2/2014
+                LASER Μη επεμβατικές θεραπείες | Agenta - 23/2/2014
               </h3>
               <p class="muted">
-                Θέμα: Μη επεμβατικές θεραπείες. Επισκόπηση ενέσιμων, laser και
-                peels· γενικές ενδείξεις, περιορισμοί και σημεία προσοχής για
-                την ασφάλεια.
+                Ενέσιμα, laser και peels, γενικές ενδείξεις, περιορισμοί και
+                σημεία προσοχής για την ασφάλεια.
               </p>
               <a
                 class="button"
@@ -511,9 +707,8 @@
                 Ρυτίδες προσώπου | Μαζί με την Πωλίνα - 12/5/2011
               </h3>
               <p class="muted">
-                Θέμα: Ρυτίδες προσώπου. Αίτια και διαθέσιμες επιλογές (μη
-                επεμβατικές/επεμβατικές), με οδηγίες για το τι να ρωτήσει κανείς
-                πριν αποφασίσει.
+                Αίτια και διαθέσιμες επιλογές (μη επεμβατικές/επεμβατικές). Τι
+                να ρωτήσετε πριν αποφασίσετε.
               </p>
               <a
                 class="button"
@@ -543,14 +738,13 @@
         <div class="footer-col footer-desktop-only">
           <div class="kicker">Πλοήγηση</div>
           <p class="stack-xs footer-links">
-            <a href="index.html">Αρχική</a> - <a href="about.html">Ο Γιατρός</a
-            ><br />
-            <a href="procedures.html">Επεμβάσεις</a> -
-            <a href="non-invasive.html">Μη Επεμβατικές</a><br />
-            <a href="reconstructive.html">Επανορθωτική</a> -
-            <a href="media.html">Video</a><br />
-            <a href="faq.html">Συχνές Ερωτήσεις (FAQ)</a> -
-            <a href="contact.html">Επικοινωνία</a>
+            <a href="/">Αρχική</a> - <a href="/about">Ο Γιατρός</a><br />
+            <a href="/procedures">Επεμβάσεις</a> -
+            <a href="/non-invasive">Μη Επεμβατικές</a><br />
+            <a href="/reconstructive">Επανορθωτική</a> -
+            <a href="/media">Socials</a><br />
+            <a href="/faq">Συχνές Ερωτήσεις (FAQ)</a> -
+            <a href="/contact">Επικοινωνία</a>
           </p>
         </div>
 
