@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Don’t crawl site-search URLs (both ?s=... and &s=...)
+# Exclude site-search query variants; normal public pages remain crawlable.
 Disallow: /*?s=
 Disallow: /*&s=
 

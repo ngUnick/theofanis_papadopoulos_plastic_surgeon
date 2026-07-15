@@ -1,98 +1,51 @@
-# Θεοφάνης Παπαδόπουλος — Πλαστικός Χειρουργός (Ενημερωτική Ιστοσελίδα)
+# Θεοφάνης Παπαδόπουλος — ενημερωτική ιατρική ιστοσελίδα
 
-Γρήγορος, προσβάσιμος, στατικός ιστότοπος για πλαστικό χειρουργό στη Θεσσαλονίκη. Έμφαση στη σαφή ενημέρωση, στο καλό UX και στα Core Web Vitals.
+Το αποθετήριο περιέχει τον πηγαίο κώδικα μιας ελληνόφωνης, στατικής ιστοσελίδας πολλαπλών σελίδων για τον πλαστικό χειρουργό Θεοφάνη Παπαδόπουλο. Χρησιμοποιεί απλό HTML, CSS και JavaScript, χωρίς framework, package manager, build step, templates ή client-side router.
 
-> English version: see **[README.md](./README.md)**.
+Πριν από οποιαδήποτε αλλαγή, διαβάστε τα [AGENTS.md](./AGENTS.md) και [CODEX_GUARDRAILS.md](./CODEX_GUARDRAILS.md). Η αναλυτική τεχνική τεκμηρίωση βρίσκεται στο [docs/MAINTENANCE.md](./docs/MAINTENANCE.md). Η αγγλική επισκόπηση βρίσκεται στο [README.md](./README.md).
 
----
+## Δημόσιες σελίδες
 
-## Γενικές Πληροφορίες
-- **Ιατρός:** Δρ. Θεοφάνης Παπαδόπουλος, Πλαστικός Χειρουργός (Θεσσαλονίκη).
-- **Σκοπός:** Καθαρά, εκπαιδευτικά κείμενα για επεμβάσεις/μη επεμβατικές θεραπείες, τοποθεσίες ιατρείων και στοιχεία επικοινωνίας.
-- **Σημείωση:** Το περιεχόμενο είναι ενημερωτικό (χωρίς προωθητικές πρακτικές). Κάθε ιατρική σελίδα περιλαμβάνει «Κίνδυνοι & Επιπλοκές», «Εναλλακτικές» και «Τελευταία ενημέρωση».
+| Αρχείο | Κανονικό δημόσιο URL |
+| --- | --- |
+| `index.html` | `https://theofanispapadopoulos.gr/` |
+| `about.html` | `https://theofanispapadopoulos.gr/about` |
+| `procedures.html` | `https://theofanispapadopoulos.gr/procedures` |
+| `non-invasive.html` | `https://theofanispapadopoulos.gr/non-invasive` |
+| `reconstructive.html` | `https://theofanispapadopoulos.gr/reconstructive` |
+| `media.html` | `https://theofanispapadopoulos.gr/media` |
+| `faq.html` | `https://theofanispapadopoulos.gr/faq` |
+| `contact.html` | `https://theofanispapadopoulos.gr/contact` |
 
----
+Τα canonical URLs χρησιμοποιούν HTTPS, apex domain, διαδρομές χωρίς `.html` και χωρίς τελική κάθετο, εκτός από την αρχική σελίδα. Το αποθετήριο δεν περιέχει το production Apache configuration ή αρχείο `.htaccess`. Επομένως, τα redirects και rewrites των clean URLs δεν μπορούν να αναπαραχθούν ή να επαληθευτούν μόνο από αυτό το checkout.
 
-## Τεχνική Επισκόπηση
+## Δομή
 
-### Stack
-- **Static** HTML/CSS/JS (χωρίς framework) για απλότητα και ταχύτητα
-- **Hosting:** cPanel
-- **SEO:** `sitemap.xml`, `robots.txt`
-- **Προσβασιμότητα:** WCAG-AA αντίθεση, ορατό focus, reduced-motion, alt texts
-- **Core Web Vitals:** προτεραιοποίηση LCP, `defer` σε scripts, λιτό CSS
+- Τα οκτώ αρχεία HTML είναι ανεξάρτητα έγγραφα και αποτελούν την πηγή αλήθειας για το ορατό περιεχόμενο, τα metadata, τα breadcrumbs και το page-specific JSON-LD.
+- Το `styles.css` περιέχει design tokens, dark/light themes, layout, responsive κανόνες και accessibility states.
+- Το `script.js` προσθέτει προοδευτικά το mobile menu, την αναζήτηση επεμβάσεων και τα footer metadata.
+- Ο φάκελος `photos/` περιέχει τα τοπικά assets.
+- Τα `sitemap.xml` και `robots.txt` ορίζουν τα canonical URLs και τις οδηγίες crawling.
+- Το `googlee2185726589adaa8.html` είναι αρχείο επαλήθευσης Google και πρέπει να διατηρεί ακριβώς το όνομα και το περιεχόμενό του.
 
-### Δομή Έργου
+## Τοπική προεπισκόπηση
+
+Δεν απαιτείται εγκατάσταση. Από τη ρίζα του αποθετηρίου:
+
+```powershell
+python -m http.server 8000
 ```
 
-/
-├─ index.html
-├─ about.html
-├─ procedures.html
-├─ non-invasive.html
-├─ reconstructive.html
-├─ faq.html
-├─ contact.html
-├─ styles.css
-├─ script.js
-├─ photos/
-├─ robots.txt
-└─ sitemap.xml
+Ανοίξτε το `http://localhost:8000/index.html`. Ο απλός Python server δεν εφαρμόζει τα production rewrites, οπότε στην τοπική προεπισκόπηση χρησιμοποιήστε τα `.html` filenames. Μην προσθέσετε client-side routing ή fallback προς το `index.html` για να προσομοιώσετε τα clean URLs.
 
-```
+## Συντήρηση
 
-### Sitemap & robots
+Οι αλλαγές routes πρέπει να συγχρονίζουν server redirects, canonical και Open Graph URLs, εσωτερικούς συνδέσμους, breadcrumbs, JSON-LD, `sitemap.xml` και, όπου χρειάζεται, `robots.txt`. Τα στοιχεία επικοινωνίας πρέπει επίσης να συμφωνούν στο ορατό κείμενο, στα links, στα metadata και στο structured data.
 
-**robots.txt**
-```
+Το ιατρικό περιεχόμενο πρέπει να παραμένει ουδέτερο, εκπαιδευτικό και μη προωθητικό. Μια τεχνική αλλαγή δεν δικαιολογεί αλλαγή ημερομηνίας ιατρικής ανασκόπησης. Νέες ή ουσιωδώς τροποποιημένες ιατρικές διατυπώσεις απαιτούν έλεγχο από τον ιατρό.
 
-User-agent: *
-Allow: /
+Για selectors, themes, responsive και accessibility απαιτήσεις, deployment περιορισμούς και regression checks, δείτε το [docs/MAINTENANCE.md](./docs/MAINTENANCE.md).
 
-Sitemap: [https://theofanispapadopoulos.gr/sitemap.xml](https://theofanispapadopoulos.gr/sitemap.xml)
+## Άδεια χρήσης
 
-````
-
-**sitemap.xml** (μικρό παράδειγμα)
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://theofanispapadopoulos.gr/</loc>
-    <lastmod>2025-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://theofanispapadopoulos.gr/photos/main-4_3.webp</image:loc>
-      <image:title>Ουδέτερη φωτογραφία ιατρικού χώρου</image:title>
-    </image:image>
-  </url>
-  <!-- + add about, procedures, non-invasive, reconstructive, media, faq, contact -->
-</urlset>
-````
-
-### Προσβασιμότητα & UX
-
-* Ορατός δακτύλιος focus
-* Σταθερή αντίθεση χρωμάτων (WCAG-AA)
-* Alt στις εικόνες
-* `prefers-reduced-motion`
-
-### Σημειώσεις Απόδοσης
-
-* `defer` για μη κρίσιμη JS
-* Lazy-load σε όλες τις μη-LCP εικόνες
-
----
-
-## Contributing
-
-PRs για βελτιώσεις προσβασιμότητας, CWV και SEO είναι ευπρόσδεκτα. Κρατάμε το περιεχόμενο καθαρά ενημερωτικό.
-
-## License
-
-Κώδικας: MIT.
-Κείμενα/εικόνες: © αντίστοιχοι δημιουργοί (βλ. `LICENSE` / σημειώσεις).
-
-```
+Δεν υπάρχει αρχείο `LICENSE` στο αποθετήριο. Μην θεωρείτε ότι ο κώδικας, τα κείμενα ή οι εικόνες επιτρέπεται να αναδιανεμηθούν χωρίς επιβεβαίωση της ιδιοκτησίας και των δικαιωμάτων από τον υπεύθυνο της ιστοσελίδας.

@@ -53,7 +53,8 @@
     }
   });
 
-  // Close if we resize back above burger breakpoint (1120px)
+  // Clear stale mobile state by the time navigation returns to its desktop layout.
+  // This threshold must not exceed the 1160px burger breakpoint in styles.css.
   const closeIfDesktop = () => {
     if (window.innerWidth > 1120 && nav.classList.contains("open")) {
       nav.classList.remove("open");
@@ -62,12 +63,12 @@
   };
   window.addEventListener("resize", closeIfDesktop);
 
-  // Highlight active link (by file name)
+  // Mark the navigation link whose final path segment matches the current URL.
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".links a").forEach((a) => {
     const href = a.getAttribute("href");
     if (!href) return;
-    // Match exact file (ignoring query/hash)
+    // Ignore query strings and fragments so they do not affect route matching.
     const file = href.split("/").pop().split("?")[0].split("#")[0];
     if (file === path) a.classList.add("active");
   });
@@ -83,7 +84,7 @@
   const sections = Array.from(document.querySelectorAll(".proc-section"));
   const resultCount = document.getElementById("resultCount");
 
-  // Build cache of all cards once
+  // Cache original plain text once because highlighting temporarily rewrites innerHTML.
   const cards = [];
   sections.forEach((section) => {
     section.querySelectorAll(".proc-grid .proc-card").forEach((card) => {
@@ -172,7 +173,8 @@
   const yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  // Keep machine-readable datetime in sync (human text already printed in HTML)
+  // This updates only the machine-readable value; the visible review text is authored
+  // in each HTML file and must not be advanced for a purely technical change.
   const dt = document.getElementById("lastUpdated");
   if (dt) dt.setAttribute("datetime", "2025-11-03");
 })();
