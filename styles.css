@@ -17,8 +17,8 @@
   --field: #0f1218; /* inputs, textareas */
 
   /* 10% — Brand & accents */
-  --brand: #73A6F7; /* clinician green (trust/safety) */
-  --on-brand: #031c12; /* text on brand surfaces (high contrast on green) */
+  --brand: #73A6F7; /* primary blue brand color */
+  --on-brand: #031c12; /* high-contrast text on brand surfaces */
   --accent: #5EA9F8; /* calm blue for links/minor accents */
 
   /* States & effects */

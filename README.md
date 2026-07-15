@@ -1,96 +1,52 @@
-# Theofanis Papadopoulos — Plastic Surgeon (Informational Website)
+# Theofanis Papadopoulos — informational clinic website
 
-A fast, accessible, static website for a plastic surgeon in Thessaloniki, Greece. Focused on helpful public information, good UX, and strong Core Web Vitals.
+This repository contains the source for a Greek-language, static, multi-page website for plastic surgeon Theofanis Papadopoulos. It uses plain HTML, CSS, and JavaScript; there is no framework, package manager, build step, template system, or client-side router.
 
-> Greek version of the README: see **[README.el.md](./README.el.md)**.
+Read [AGENTS.md](./AGENTS.md) and the preservation contract in [CODEX_GUARDRAILS.md](./CODEX_GUARDRAILS.md) before making any change. The Greek overview is in [README.el.md](./README.el.md), and detailed maintenance guidance is in [docs/MAINTENANCE.md](./docs/MAINTENANCE.md).
 
----
+## Public pages
 
-## General Info
-- **Doctor:** Dr. Theofanis Papadopoulos, Plastic Surgeon (Thessaloniki).
-- **Purpose:** Clear, educational pages about procedures and non-invasive treatments, clinic locations, and contact info.
-- **Notes:** Content is written to be informative (no promotions/testimonials). Each medical page lists “Risks & Complications,” “Alternatives,” and “Last updated” date.
+| Source file | Canonical public URL |
+| --- | --- |
+| `index.html` | `https://theofanispapadopoulos.gr/` |
+| `about.html` | `https://theofanispapadopoulos.gr/about` |
+| `procedures.html` | `https://theofanispapadopoulos.gr/procedures` |
+| `non-invasive.html` | `https://theofanispapadopoulos.gr/non-invasive` |
+| `reconstructive.html` | `https://theofanispapadopoulos.gr/reconstructive` |
+| `media.html` | `https://theofanispapadopoulos.gr/media` |
+| `faq.html` | `https://theofanispapadopoulos.gr/faq` |
+| `contact.html` | `https://theofanispapadopoulos.gr/contact` |
 
----
+Canonical URLs use HTTPS, the apex domain, extensionless internal paths, and no trailing slash except for the homepage. The repository does not contain the production Apache configuration or `.htaccess`; therefore, clean-URL redirects and rewrites cannot be reproduced or verified from this checkout alone.
 
-## Technical Overview
+## Repository layout
 
-### Stack
-- **Static** HTML/CSS/JS (no framework) for speed and simplicity
-- **Hosting:** cPanel
-- **SEO:** `sitemap.xml`, `robots.txt`
-- **Accessibility:** WCAG-AA contrast, keyboard focus, reduced motion, alt texts
-- **Core Web Vitals:** LCP prioritization, `defer` scripts, lean CSS
+- The eight HTML files are independent documents and the authoritative source for visible content, page metadata, breadcrumbs, and page-specific JSON-LD.
+- `styles.css` contains the shared design tokens, dark and light themes, layout, responsive rules, and accessibility states.
+- `script.js` progressively enhances the mobile navigation, procedure filtering and highlighting, and footer date metadata.
+- `photos/` contains local content, social-preview, icon, and favicon assets.
+- `sitemap.xml` lists the canonical public pages and selected images.
+- `robots.txt` allows normal crawling, excludes site-search query variants, and declares the sitemap.
+- `googlee2185726589adaa8.html` is the Google site-verification file and must retain its exact name and contents.
 
-### Project Structure
+## Local preview
+
+No installation is required. From the repository root, run:
+
+```powershell
+python -m http.server 8000
 ```
 
-/
-├─ index.html
-├─ about.html
-├─ procedures.html
-├─ non-invasive.html
-├─ reconstructive.html
-├─ faq.html
-├─ contact.html
-├─ styles.css
-├─ script.js
-├─ photos/
-├─ robots.txt
-└─ sitemap.xml
+Then open `http://localhost:8000/index.html`. Python's basic server does not implement the production clean-URL rewrite rules, so use the `.html` filenames during local preview. Do not add client-side routing or an `index.html` fallback to compensate.
 
-````
+## Making changes
 
-### Sitemap & robots
+Keep changes narrow and use the implementation as the source of truth. A route-related change is a synchronized change across redirects/server configuration, canonical and Open Graph URLs, internal links, breadcrumbs, JSON-LD, `sitemap.xml`, and `robots.txt` where relevant. Contact data similarly appears in visible text, links, metadata, and structured data and must remain consistent.
 
-**robots.txt**
+Medical content must remain neutral, educational, and non-promotional. A technical edit does not justify changing a medical-review date. New or materially revised medical statements require physician review.
 
-```
-User-agent: *
-Allow: /
+See [docs/MAINTENANCE.md](./docs/MAINTENANCE.md) for selectors that JavaScript depends on, theme and responsive conventions, accessibility requirements, deployment constraints, and the regression checklist.
 
-Sitemap: https://theofanispapadopoulos.gr/sitemap.xml
-```
+## Licensing
 
-**sitemap.xml** (minimal example)
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://theofanispapadopoulos.gr/</loc>
-    <lastmod>2025-10-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://theofanispapadopoulos.gr/photos/main-4_3.webp</image:loc>
-      <image:title>Ουδέτερη φωτογραφία ιατρικού χώρου</image:title>
-    </image:image>
-  </url>
-  <!-- + add about, procedures, non-invasive, reconstructive, media, faq, contact -->
-</urlset>
-```
-
-### Accessibility & UX
-
-* Visible focus ring
-* Consistent color contrast (WCAG-AA)
-* `alt` text on images
-* `prefers-reduced-motion` support
-
-### Performance Notes
-
-* `defer` non-critical JS
-* Lazy-load all non-LCP images
-
----
-
-## Contributing
-
-PRs for accessibility, CWV, and SEO improvements are welcome. Keep content neutral/informative and avoid promotional claims.
-
-## License
-
-Code: MIT.
-Content and images: © respective authors.
+No `LICENSE` file is present in this repository. Do not assume that the code, text, or images may be redistributed; confirm ownership and licensing with the site owner before reuse.
