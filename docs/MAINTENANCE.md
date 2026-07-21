@@ -8,7 +8,7 @@ The site is a static, Greek-language, multi-page application: each public route 
 
 The HTML documents are authoritative for visible content, canonical tags, Open Graph metadata, breadcrumbs, and JSON-LD. `sitemap.xml` is the crawl inventory, not a generator for those values. There is no template or shared data layer, so repeated navigation, footer, identity, and schema values must be updated carefully in every affected file.
 
-The production server configuration is not versioned. No `.htaccess` exists in this checkout even though production depends on server-side canonicalization and extensionless-to-file rewriting. Obtain and review the deployed Apache/cPanel rules before changing or claiming to validate redirect behavior.
+The production server configuration is not versioned. No tracked `.htaccess` exists in this checkout even though production depends on server-side canonicalization and extensionless-to-file rewriting. Obtain and review the deployed Apache/cPanel rules before changing or claiming to validate redirect behavior.
 
 ## Routing, SEO, and structured data
 
@@ -63,13 +63,13 @@ No dependency or build configuration exists. Do not add a framework, documentati
 
 ## Safe preview and validation
 
-For a local file-based preview, start a basic server from the repository root:
+For a local preview with extensionless page URLs, start the repository helper from the project root:
 
 ```powershell
-python -m http.server 8000
+py tools/serve_local.py 8000
 ```
 
-Use `.html` paths locally because this server does not reproduce Apache rewrites. For markup or style changes, manually check representative pages in dark and light mode at 1440, 1280, 1024, 768, 640, and 360 pixels. Verify keyboard navigation, Escape behavior, procedure search, focus visibility, contact links, images, and the browser console.
+Use extensionless paths such as `http://localhost:8000/about`. The helper internally maps them to matching HTML files, but it does not reproduce Apache's HTTPS, hostname, `.html`, or trailing-slash redirects. For markup or style changes, manually check representative pages in dark and light mode at 1440, 1280, 1024, 768, 640, and 360 pixels. Verify keyboard navigation, Escape behavior, procedure search, focus visibility, contact links, images, and the browser console.
 
 Useful repository checks that require no new dependency include:
 

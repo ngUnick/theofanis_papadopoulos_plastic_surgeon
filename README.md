@@ -17,7 +17,7 @@ Read [AGENTS.md](./AGENTS.md) and the preservation contract in [CODEX_GUARDRAILS
 | `faq.html` | `https://theofanispapadopoulos.gr/faq` |
 | `contact.html` | `https://theofanispapadopoulos.gr/contact` |
 
-Canonical URLs use HTTPS, the apex domain, extensionless internal paths, and no trailing slash except for the homepage. The repository does not contain the production Apache configuration or `.htaccess`; therefore, clean-URL redirects and rewrites cannot be reproduced or verified from this checkout alone.
+Canonical URLs use HTTPS, the apex domain, extensionless internal paths, and no trailing slash except for the homepage. The repository does not contain the production Apache configuration or a tracked `.htaccess`; therefore, production clean-URL redirects cannot be verified from this checkout alone. The local preview helper reproduces only extensionless-to-HTML mapping.
 
 ## Repository layout
 
@@ -34,10 +34,10 @@ Canonical URLs use HTTPS, the apex domain, extensionless internal paths, and no 
 No installation is required. From the repository root, run:
 
 ```powershell
-python -m http.server 8000
+py tools/serve_local.py 8000
 ```
 
-Then open `http://localhost:8000/index.html`. Python's basic server does not implement the production clean-URL rewrite rules, so use the `.html` filenames during local preview. Do not add client-side routing or an `index.html` fallback to compensate.
+Then open `http://localhost:8000/`. Extensionless page URLs such as `http://localhost:8000/about` map internally to their matching HTML files, so the site's canonical navigation links work locally. This helper does not emulate HTTPS, host canonicalization, `.html` redirects, or trailing-slash redirects; verify those production behaviors against Apache. Do not add client-side routing or an `index.html` fallback to compensate.
 
 ## Making changes
 

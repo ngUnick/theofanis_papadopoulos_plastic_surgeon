@@ -2,3 +2,4 @@
 AGENTS.md
 CODEX_GUARDRAILS.md
 .htaccess
+*.py

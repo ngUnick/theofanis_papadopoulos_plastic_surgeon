@@ -17,7 +17,7 @@
 | `faq.html` | `https://theofanispapadopoulos.gr/faq` |
 | `contact.html` | `https://theofanispapadopoulos.gr/contact` |
 
-Τα canonical URLs χρησιμοποιούν HTTPS, apex domain, διαδρομές χωρίς `.html` και χωρίς τελική κάθετο, εκτός από την αρχική σελίδα. Το αποθετήριο δεν περιέχει το production Apache configuration ή αρχείο `.htaccess`. Επομένως, τα redirects και rewrites των clean URLs δεν μπορούν να αναπαραχθούν ή να επαληθευτούν μόνο από αυτό το checkout.
+Τα canonical URLs χρησιμοποιούν HTTPS, apex domain, διαδρομές χωρίς `.html` και χωρίς τελική κάθετο, εκτός από την αρχική σελίδα. Το αποθετήριο δεν περιέχει το production Apache configuration ή tracked αρχείο `.htaccess`, επομένως τα production clean-URL redirects δεν μπορούν να επαληθευτούν μόνο από αυτό το checkout. Ο helper τοπικής προεπισκόπησης αναπαράγει μόνο το extensionless-to-HTML mapping.
 
 ## Δομή
 
@@ -33,10 +33,10 @@
 Δεν απαιτείται εγκατάσταση. Από τη ρίζα του αποθετηρίου:
 
 ```powershell
-python -m http.server 8000
+py tools/serve_local.py 8000
 ```
 
-Ανοίξτε το `http://localhost:8000/index.html`. Ο απλός Python server δεν εφαρμόζει τα production rewrites, οπότε στην τοπική προεπισκόπηση χρησιμοποιήστε τα `.html` filenames. Μην προσθέσετε client-side routing ή fallback προς το `index.html` για να προσομοιώσετε τα clean URLs.
+Ανοίξτε το `http://localhost:8000/`. Οι extensionless διαδρομές, όπως `http://localhost:8000/about`, αντιστοιχίζονται εσωτερικά στα αντίστοιχα HTML αρχεία, ώστε τα canonical links της ιστοσελίδας να λειτουργούν τοπικά. Ο helper δεν προσομοιώνει HTTPS, host canonicalization, redirects από `.html` ή redirects τελικής καθέτου· αυτά πρέπει να ελέγχονται στον Apache. Μην προσθέσετε client-side routing ή fallback προς το `index.html`.
 
 ## Συντήρηση
 
