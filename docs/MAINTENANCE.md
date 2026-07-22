@@ -8,7 +8,7 @@ The site is a static, Greek-language, multi-page application: each public route 
 
 The HTML documents are authoritative for visible content, canonical tags, Open Graph metadata, breadcrumbs, and JSON-LD. `sitemap.xml` is the crawl inventory, not a generator for those values. There is no template or shared data layer, so repeated navigation, footer, identity, and schema values must be updated carefully in every affected file.
 
-The production server configuration is not versioned. No tracked `.htaccess` exists in this checkout even though production depends on server-side canonicalization and extensionless-to-file rewriting. Obtain and review the deployed Apache/cPanel rules before changing or claiming to validate redirect behavior.
+The production Apache rules are versioned in `.htaccess`. They define canonical host/scheme redirects, root `.html` cleanup, trailing-slash cleanup, flat-source redirects for the five guides, and internal nested-route mapping. Production behavior must still be verified after the provider nginx cache is purged.
 
 ## Routing, SEO, and structured data
 
@@ -26,7 +26,7 @@ Treat a route as a synchronized system. Review all of the following whenever a p
 
 Structured data is intentionally page-specific. Preserve stable entity `@id` values and validate each page's graph against visible content. Do not copy one page's graph to another, infer credentials or services, add unsupported review/rating claims, or treat external media links as hosted videos without complete supporting metadata.
 
-The sitemap currently contains eight canonical URLs. Its `<lastmod>` values are editorial signals; do not update them mechanically for comment-only or technical work. `robots.txt` permits the public site, excludes query URLs containing `s=`, and declares the production sitemap.
+The sitemap contains the eight established canonical URLs plus five guides. `/privacy` and `/image-credits` are `noindex` and stay outside it. Its `<lastmod>` values are editorial signals; do not update them mechanically for comment-only or technical work. `robots.txt` separates search/user-request crawling from model-training controls and declares the production sitemap; review vendor rules only when intentionally editing that file.
 
 ## Contact and medical content
 
@@ -41,7 +41,6 @@ The following selectors and state values are functional contracts, even when the
 - `.navlinks`, `.navlinks .links`, `#menuToggle`, `.open`, and `.active` control the responsive navigation.
 - `#procSearch`, `#resultCount`, `.proc-section`, `.proc-grid`, `.proc-card`, `.proc-title`, `.proc-desc`, `.hl`, `.is-hidden`, and `data-hidden` control procedure filtering and highlighting.
 - `#year` receives the current year.
-- `#lastUpdated` receives a machine-readable `datetime`; its visible text remains authored in HTML.
 
 Do not rename or remove these hooks without updating and testing HTML, CSS, and JavaScript together. The search temporarily replaces the title and description elements' `innerHTML` with escaped, highlighted versions derived from their original text. Preserve those elements as text-only content unless that behavior is deliberately redesigned.
 
@@ -69,7 +68,7 @@ For a local preview with extensionless page URLs, start the repository helper fr
 py tools/serve_local.py 8000
 ```
 
-Use extensionless paths such as `http://localhost:8000/about`. The helper internally maps them to matching HTML files, but it does not reproduce Apache's HTTPS, hostname, `.html`, or trailing-slash redirects. For markup or style changes, manually check representative pages in dark and light mode at 1440, 1280, 1024, 768, 640, and 360 pixels. Verify keyboard navigation, Escape behavior, procedure search, focus visibility, contact links, images, and the browser console.
+Use extensionless paths such as `http://localhost:8000/about` and nested guide paths such as `http://localhost:8000/non-invasive/botouliniki-toxini`. The helper maps them to matching HTML files, but it does not reproduce Apache's HTTPS, hostname, `.html`, or trailing-slash redirects. For markup or style changes, manually check representative pages in dark and light mode at 1440, 1280, 1024, 768, 640, and 360 pixels. Verify keyboard navigation, Escape behavior, procedure search, focus visibility, contact links, images, guide contents links, and the browser console.
 
 Useful repository checks that require no new dependency include:
 
@@ -78,7 +77,7 @@ git diff --check
 git diff -- AGENTS.md CODEX_GUARDRAILS.md
 rg -n 'href="[^"]+\.html' -g '*.html'
 rg -n 'https?://(www\.)?theofanispapadopoulos\.gr' -g '*.html' -g '*.xml' -g '*.txt'
-rg -n 'procSearch|proc-title|proc-desc|menuToggle|lastUpdated' -g '*.html' -g '*.js' -g '*.css'
+rg -n 'procSearch|proc-title|proc-desc|menuToggle' -g '*.html' -g '*.js' -g '*.css'
 ```
 
 The `.html`-link search should be reviewed rather than blindly replaced: local or verification references may be intentional. Parse every JSON-LD block as JSON, confirm one canonical per indexable page, compare each canonical with `og:url`, inspect breadcrumb agreement, and confirm that the sitemap contains only canonical pages.

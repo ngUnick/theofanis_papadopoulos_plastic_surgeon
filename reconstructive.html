@@ -68,282 +68,63 @@
 
     <!-- JSON-LD (extensionless URLs + breadcrumbs + section anchors) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://theofanispapadopoulos.gr/#website",
-            "url": "https://theofanispapadopoulos.gr/",
-            "name": "Theofanis Papadopoulos — Plastic Surgeon",
-            "inLanguage": "el",
-            "description": "Ουδέτερη, τεκμηριωμένη ενημέρωση για αισθητικές & επανορθωτικές πράξεις πλαστικής χειρουργικής.",
-            "publisher": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
-          },
-          {
-            "@type": "MedicalClinic",
-            "@id": "https://theofanispapadopoulos.gr/#clinic",
-            "name": "Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου",
-            "url": "https://theofanispapadopoulos.gr/",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
-            },
-            "image": [
-              "https://theofanispapadopoulos.gr/photos/logo.webp",
-              "https://theofanispapadopoulos.gr/photos/cleft-lip.webp"
-            ],
-            "medicalSpecialty": "PlasticSurgery",
-            "telephone": "+302310836600",
-            "email": "papfanis2003@yahoo.gr",
-            "address": [
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "Λεωφ. Βασιλέως Γεωργίου 44",
-                "addressLocality": "Θεσσαλονίκη",
-                "postalCode": "54640",
-                "addressCountry": "GR"
-              },
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "Μητροπόλεως 96",
-                "addressLocality": "Θεσσαλονίκη",
-                "postalCode": "54622",
-                "addressCountry": "GR"
-              }
-            ],
-            "hasMap": [
-              "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
-              "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
-            ],
-            "sameAs": [
-              "https://www.instagram.com/dr_theofanis_papadopoulos/",
-              "https://www.tiktok.com/@dr_theofanis_papa",
-              "https://www.youtube.com/@drtheofanispapadopoulos",
-              "https://www.facebook.com/DrTheofanisPapadopoulos"
-            ],
-            "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
-          },
-          {
-            "@type": "Physician",
-            "@id": "https://theofanispapadopoulos.gr/#physician",
-            "name": "Θεοφάνης Ι. Παπαδόπουλος",
-            "medicalSpecialty": "PlasticSurgery",
-            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
-            "sameAs": [
-              "https://www.instagram.com/dr_theofanis_papadopoulos/",
-              "https://www.tiktok.com/@dr_theofanis_papa",
-              "https://www.youtube.com/@drtheofanispapadopoulos",
-              "https://www.facebook.com/DrTheofanisPapadopoulos"
-            ]
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://theofanispapadopoulos.gr/reconstructive#webpage",
-            "url": "https://theofanispapadopoulos.gr/reconstructive",
-            "name": "Επανορθωτική Χειρουργική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
-            "description": "Παρουσίαση επανορθωτικής χειρουργικής: εγκαύματα, όγκοι δέρματος, ελκωτικές βλάβες/κατακλίσεις, συγγενείς ανωμαλίες, χειρουργική χεριού. Ενδείξεις, διαδικασία, κίνδυνοι και εναλλακτικές.",
-            "inLanguage": "el",
-            "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
-            },
-            "breadcrumb": {
-              "@id": "https://theofanispapadopoulos.gr/reconstructive#breadcrumbs"
-            },
-            "dateModified": "2025-09-21T00:00:00+03:00",
-            "lastReviewed": "2025-09-21",
-            "hasPart": {
-              "@id": "https://theofanispapadopoulos.gr/reconstructive#itemlist"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://theofanispapadopoulos.gr/reconstructive#breadcrumbs",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Αρχική",
-                "item": "https://theofanispapadopoulos.gr/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Επανορθωτική",
-                "item": "https://theofanispapadopoulos.gr/reconstructive"
-              }
-            ]
-          },
-          {
-            "@type": "ItemList",
-            "@id": "https://theofanispapadopoulos.gr/reconstructive#itemlist",
-            "name": "Κατάλογος πράξεων επανορθωτικής χειρουργικής",
-            "numberOfItems": 13,
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Εγκαύματα — Αρχική διαχείριση & εκτίμηση",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#burns-initial",
-                  "procedureType": "TherapeuticProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Εγκαύματα — Χειρουργική κάλυψη (μοσχεύματα/κρημνοί)",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#burns-coverage",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Εγκαύματα — Αποκατάσταση ουλών & ρικνώσεων",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#burns-scars",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Όγκοι δέρματος — Χειρουργική εκτομή",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#lesion-excision",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 5,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Όγκοι δέρματος — Αποκατάσταση μετά από εκτομή",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#post-excision-recon",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 6,
-                "item": {
-                  "@type": "ListItem",
-                  "name": "Διερεύνηση λεμφαδένων (όπου ενδείκνυται)",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#nodes"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 7,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Κατακλίσεις — Σταδιοποίηση & συντηρητική αγωγή",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#ulcers-staging",
-                  "procedureType": "TherapeuticProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 8,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Κατακλίσεις — Χειρουργικός καθαρισμός & κάλυψη",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#ulcers-coverage",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 9,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Συγγενείς — Αποκατάσταση λαγόχειλου (Cleft-Lip)",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#cleft-lip",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 10,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Συγγενείς — Αποκατάσταση σχιστίας υπερώας",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#cleft-palate",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 11,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Χείρ — Σύνδρομο καρπιαίου σωλήνα",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#carpal-tunnel",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 12,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Χείρ — Νόσος Dupuytren",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#dupuytren",
-                  "procedureType": "SurgicalProcedure"
-                }
-              },
-              {
-                "@type": "ListItem",
-                "position": 13,
-                "item": {
-                  "@type": "MedicalProcedure",
-                  "name": "Χείρ — Τραύμα & μικροχειρουργική",
-                  "url": "https://theofanispapadopoulos.gr/reconstructive#hand-trauma",
-                  "procedureType": "SurgicalProcedure"
-                }
-              }
-            ]
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://theofanispapadopoulos.gr/#physician",
+      "name": "Θεοφάνης Ι. Παπαδόπουλος",
+      "medicalSpecialty": "PlasticSurgery",
+      "sameAs": [
+        "https://www.instagram.com/dr_theofanis_papadopoulos/",
+        "https://www.tiktok.com/@dr_theofanis_papa",
+        "https://www.youtube.com/@drtheofanispapadopoulos",
+        "https://www.facebook.com/DrTheofanisPapadopoulos"
+      ],
+      "url": "https://theofanispapadopoulos.gr/about"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theofanispapadopoulos.gr/reconstructive#webpage",
+      "url": "https://theofanispapadopoulos.gr/reconstructive",
+      "name": "Επανορθωτική Χειρουργική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
+      "description": "Παρουσίαση επανορθωτικής χειρουργικής: εγκαύματα, όγκοι δέρματος, ελκωτικές βλάβες/κατακλίσεις, συγγενείς ανωμαλίες, χειρουργική χεριού. Ενδείξεις, διαδικασία, κίνδυνοι και εναλλακτικές.",
+      "inLanguage": "el",
+      "breadcrumb": {
+        "@id": "https://theofanispapadopoulos.gr/reconstructive#breadcrumbs"
+      },
+      "lastReviewed": "2025-09-21",
+      "hasPart": {
+        "@id": "https://theofanispapadopoulos.gr/reconstructive#itemlist"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://theofanispapadopoulos.gr/reconstructive#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Αρχική",
+          "item": "https://theofanispapadopoulos.gr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Επανορθωτική",
+          "item": "https://theofanispapadopoulos.gr/reconstructive"
+        }
+      ]
+    }
+  ]
+}
     </script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="/styles.css" />
 
     <!-- App icons / PWA -->
-    <link
-      rel="apple-touch-icon"
-      href="/photos/icons/apple-touch-icon-180.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/photos/icons/favicon-32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/photos/icons/favicon-16.png"
-      sizes="16x16"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/photos/icons/safari-pinned-tab.svg"
-      color="#2bb673"
-    />
     <meta name="theme-color" content="#0f1813" />
     <meta name="msapplication-TileColor" content="#0f1813" />
 
@@ -352,6 +133,7 @@
       name="google-site-verification"
       content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
     />
+      <link rel="icon" href="/photos/favicon.ico" />
   </head>
 
   <body>
@@ -457,7 +239,7 @@
         <a class="brand" href="/" aria-label="Αρχική">
           <img src="photos/logo.webp" alt="Λογότυπο ιατρείου" />
           <strong>Δρ. Θ. Παπαδόπουλος</strong>
-          <span class="badge">Plastic Surgeon</span>
+          <span class="badge">Πλαστικός Χειρουργός</span>
         </a>
         <nav class="navlinks" aria-label="Κύρια πλοήγηση">
           <button
@@ -487,7 +269,7 @@
             <a href="/procedures">Επεμβάσεις</a>
             <a href="/non-invasive">Μη Επεμβατικές</a>
             <a href="/reconstructive" aria-current="page">Επανορθωτική</a>
-            <a href="/media">Socials</a>
+            <a href="/media">Βίντεο</a>
             <a href="/faq">Συχνές Ερωτήσεις</a>
             <a href="/contact">Επικοινωνία</a>
           </div>
@@ -509,14 +291,12 @@
           <div class="stack">
             <a class="button" href="/contact">Επικοινωνήστε για ραντεβού</a>
           </div>
-          <p class="muted stack-s">
-            Σημείωση: Οι πληροφορίες είναι γενικές και δεν υποκαθιστούν
-            εξατομικευμένη ιατρική συμβουλή.
-          </p>
         </div>
       </section>
 
       <!-- Live Search -->
+      <section class="guide-scope-note"><div class="container"><p>Οι χειρουργικές πράξεις που απαιτούν χειρουργείο πραγματοποιούνται σε κατάλληλο αδειοδοτημένο κλινικό περιβάλλον. Η καταλληλότητα και ο περιεγχειρητικός κίνδυνος αξιολογούνται εξατομικευμένα.</p></div></section>
+
       <section class="proc-search-wrap">
         <div class="container">
           <div class="proc-searchbar" role="search">
@@ -549,71 +329,16 @@
           <h2 class="proc-heading">Εγκαύματα</h2>
           <div class="grid cols-3 proc-grid">
             <!-- Αρχική αντιμετώπιση εγκαυμάτων -->
-            <article class="card proc-card" id="burns-initial">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://i.ytimg.com/vi/4hcPn9f2gNY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDgXzlIbCSDlYD-zrX6H9RYgjGGAQ"
-                  alt="Διάγραμμα βαθμών εγκαύματος"
-                />
-              </div>
-              <div class="p">
-                <h3 class="proc-title">Αρχική διαχείριση & εκτίμηση</h3>
-                <p class="muted proc-desc">
-                  <strong>Ενδείξεις:</strong> θερμικά/χημικά/ηλεκτρικά
-                  εγκαύματα.<br />
-                  <strong>Διαδικασία:</strong> ψύξη περιοχής, εκτίμηση
-                  βάθους/έκτασης, αντισηψία, επίδεση, έλεγχος πόνου, παραπομπή
-                  σε κέντρο εγκαυμάτων όταν απαιτείται.<br />
-                  <strong>Κίνδυνοι:</strong> λοίμωξη, αφυδάτωση, ουλοποίηση.<br />
-                  <strong>Εναλλακτικές/Συμπληρωματικά:</strong> τοπική φροντίδα,
-                  ενυδάτωση, φυσικοθεραπεία.
-                </p>
-              </div>
+            <article class="card proc-card safety-card" id="burns-acute">
+              <div class="p"><h3 class="proc-title">Οξύ έγκαυμα: επείγουσα νοσοκομειακή φροντίδα</h3><p class="muted proc-desc">Η αρχική αντιμετώπιση νέου, βαθιού, εκτεταμένου, χημικού ή ηλεκτρικού εγκαύματος δεν αποτελεί υπηρεσία του ιατρού. Απαιτείται άμεση αξιολόγηση σε τμήμα επειγόντων περιστατικών. Η επανορθωτική εκτίμηση αφορά μεταγενέστερα προβλήματα ουλής και ρίκνωσης μετά την οξεία φροντίδα.</p></div>
             </article>
 
             <!-- Χειρουργική κάλυψη -->
-            <article class="card proc-card" id="burns-coverage">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://content.ca.healthwise.net/resources/14.3/en-ca/media/medical/hw/aci4032_368x240.jpg"
-                  alt="Σχηματικό δερματικού μοσχεύματος"
-                />
-              </div>
-              <div class="p">
-                <h3 class="proc-title">
-                  Χειρουργική κάλυψη (μοσχεύματα/κρημνοί)
-                </h3>
-                <p class="muted proc-desc">
-                  <strong>Ενδείξεις:</strong> βαθιά εγκαύματα με απώλεια
-                  δέρματος.<br />
-                  <strong>Διαδικασία:</strong> καθαρισμός/νεκρεκτομή και κάλυψη
-                  με δερματικά μοσχεύματα ή τοπικούς κρημνούς.<br />
-                  <strong>Κίνδυνοι:</strong> απόρριψη μοσχεύματος, λοιμώξεις.<br />
-                  <strong>Εναλλακτικές:</strong> συντηρητική επούλωση σε
-                  επιλεγμένα επιφανειακά εγκαύματα.
-                </p>
-              </div>
-            </article>
 
             <!-- Αποκατάσταση ουλών εγκαυμάτων -->
             <article class="card proc-card" id="burns-scars">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://www.wikihow.com/images/thumb/5/5c/Get-Rid-of-Burn-Scars-Step-11.jpg/v4-460px-Get-Rid-of-Burn-Scars-Step-11.jpg"
-                  alt="Διάγραμμα Z-plasty για ουλές"
-                />
-              </div>
               <div class="p">
-                <h3 class="proc-title">Αποκατάσταση ουλών & ρικνώσεων</h3>
+                <h3 class="proc-title">Αποκατάσταση ουλών και ρικνώσεων</h3>
                 <p class="muted proc-desc">
                   <strong>Ενδείξεις:</strong> ουλές που περιορίζουν την
                   κίνηση/αισθητική.<br />
@@ -623,7 +348,7 @@
                   πολλαπλών σταδίων.<br />
                   <strong>Εναλλακτικές:</strong> πίεση/σιλικόνη, laser, ενέσιμα
                   κορτικοστεροειδή.
-                </p>
+                </p><p class="card-link"><a href="/reconstructive/oules-egkavmaton">Αναλυτικός οδηγός ουλών μετά από έγκαυμα</a></p>
               </div>
             </article>
           </div>
@@ -637,15 +362,6 @@
           <div class="grid cols-3 proc-grid">
             <!-- Εκτομή βλαβών -->
             <article class="card proc-card" id="lesion-excision">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://mydoctor.kaiserpermanente.org/ncal/Images/thumbnail_large_Nonmelanoma%20MOSH%20incision_tcm75-1604080.png"
-                  alt="Ελλειπτική εκτομή δερματικής βλάβης — διάγραμμα"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">Χειρουργική εκτομή</h3>
                 <p class="muted proc-desc">
@@ -663,15 +379,6 @@
 
             <!-- Αποκατάσταση μετά εκτομή -->
             <article class="card proc-card" id="post-excision-recon">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://www.researchgate.net/publication/378171764/figure/fig4/AS:11431281223607037@1707834785562/A-The-excision-of-the-malignant-tumor-is-the-extraction-of-skin-cancer-which-typically.png"
-                  alt="Τοπικός κρημνός — διάγραμμα"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">Αποκατάσταση μετά από εκτομή</h3>
                 <p class="muted proc-desc">
@@ -689,15 +396,6 @@
 
             <!-- Sentinel/λεμφαδένες (γενική αναφορά όπου ενδείκνυται) -->
             <article class="card proc-card" id="nodes">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://www.cancer.gov/sites/g/files/xnrzdm211/files/styles/cgov_social_media/public/cgov_image/media_image/100/800/2/files/sentinel-lymph-node-biopsy-melanoma-enlarge.jpg"
-                  alt="Εικονίδιο λεμφαδένα — εκπαιδευτικό"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">
                   Διερεύνηση λεμφαδένων (όπου ενδείκνυται)
@@ -719,19 +417,10 @@
         <div class="container">
           <h2 class="proc-heading">Ελκωτικές βλάβες (κατακλίσεις)</h2>
           <div class="grid cols-3 proc-grid">
-            <!-- Σταδιοποίηση & συντηρητική αγωγή -->
+            <!-- Σταδιοποίηση και συντηρητική αγωγή -->
             <article class="card proc-card" id="ulcers-staging">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://www.verywellhealth.com/thmb/ppzAtl4VXq8mErwZlXbfleCIaLc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/VWH-MiraNorian-StagesofaPressureUlcer-Standard-27c3b9a3c4d94bf2a7c6fd1e90f4e81a.jpg"
-                  alt="Στάδια κατακλίσεων — διάγραμμα"
-                />
-              </div>
               <div class="p">
-                <h3 class="proc-title">Σταδιοποίηση & συντηρητική αγωγή</h3>
+                <h3 class="proc-title">Σταδιοποίηση και συντηρητική αγωγή</h3>
                 <p class="muted proc-desc">
                   <strong>Διαχείριση:</strong> αποφόρτιση, φροντίδα τραύματος,
                   έλεγχος λοίμωξης, ειδικά επιθέματα, διατροφική υποστήριξη.<br />
@@ -743,19 +432,10 @@
               </div>
             </article>
 
-            <!-- Χειρουργικός καθαρισμός & κάλυψη -->
+            <!-- Χειρουργικός καθαρισμός και κάλυψη -->
             <article class="card proc-card" id="ulcers-coverage">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://therapywestpt.com/wp-content/uploads/2020/12/PressureUlcerSores.png"
-                  alt="Σχήμα κρημνού περιστροφής"
-                />
-              </div>
               <div class="p">
-                <h3 class="proc-title">Χειρουργικός καθαρισμός & κάλυψη</h3>
+                <h3 class="proc-title">Χειρουργικός καθαρισμός και κάλυψη</h3>
                 <p class="muted proc-desc">
                   <strong>Ενδείξεις:</strong> κατακλίσεις σταδίου III–IV/επίμονα
                   έλκη.<br />
@@ -779,16 +459,10 @@
           <h2 class="proc-heading">Συγγενείς ανωμαλίες</h2>
           <div class="grid cols-3 proc-grid">
             <!-- Λαγόχειλο -->
+            <article class="card proc-card" id="reconstructive-phalloplasty">
+              <div class="p"><h3 class="proc-title">Επανορθωτική φαλλοπλαστική</h3><p class="muted proc-desc"><strong>Πεδίο:</strong> αποκατάσταση ανατομίας μετά από τραυματική απώλεια, συγγενή, ογκολογική ή άλλη επίκτητη βλάβη. Δεν περιγράφεται ως αισθητική αύξηση ούτε ως υπηρεσία επιβεβαίωσης φύλου.<br /><strong>Αξιολόγηση:</strong> σύνθετος σχεδιασμός σε κατάλληλο κλινικό περιβάλλον, συχνά με διεπιστημονική συνεργασία και σταδιακές επεμβάσεις.<br /><strong>Κίνδυνοι:</strong> υψηλός κίνδυνος επιπλοκών, απώλεια ιστού, συρίγγιο ή στένωση όπου αφορά ουρήθρα, λοίμωξη και ανάγκη αναθεωρήσεων.</p></div>
+            </article>
             <article class="card proc-card" id="cleft-lip">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="photos/cleft-lip.webp"
-                  alt="Διάγραμμα αποκατάστασης λαγόχειλου"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">Αποκατάσταση λαγόχειλου (Cleft-Lip)</h3>
                 <p class="muted proc-desc">
@@ -807,15 +481,6 @@
 
             <!-- Λυκόστομα (σχιστία υπερώας) -->
             <article class="card proc-card" id="cleft-palate">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://kidshealth.org/content/dam/patientinstructions/en/images/cleftPalate_a_enIL.jpg"
-                  alt="Διάγραμμα αποκατάστασης σχιστίας υπερώας"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">Αποκατάσταση σχιστίας υπερώας</h3>
                 <p class="muted proc-desc">
@@ -841,15 +506,6 @@
           <div class="grid cols-3 proc-grid">
             <!-- Καρπιαίος σωλήνας -->
             <article class="card proc-card" id="carpal-tunnel">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://www.hopkinsmedicine.org/-/media/images/health/2_-treatment/orthopedics/carpal-tunnel.jpg?h=404&w=600&hash=DA92614178DBE305EDA3B3D0082443E4"
-                  alt="Καρπιαίος σωλήνας — διάγραμμα"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">Σύνδρομο καρπιαίου σωλήνα</h3>
                 <p class="muted proc-desc">
@@ -866,15 +522,6 @@
 
             <!-- Dupuytren -->
             <article class="card proc-card" id="dupuytren">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://media.healthdirect.org.au/images/inline/original/dupuytrens-fasciectomy-illustration-36b43c.png"
-                  alt="Σύσπαση Dupuytren — διάγραμμα"
-                />
-              </div>
               <div class="p">
                 <h3 class="proc-title">Νόσος Dupuytren</h3>
                 <p class="muted proc-desc">
@@ -892,17 +539,8 @@
 
             <!-- Τραύμα/μικροχειρουργική -->
             <article class="card proc-card" id="hand-trauma">
-              <div class="card-media">
-                <img
-                  loading="lazy"
-                  class="card-img"
-                  decoding="async"
-                  src="https://www.donaldsammut.com/wp-content/uploads/2014/02/Opposition-of-the-thumbx600h.jpg"
-                  alt="Μικροχειρουργική — εικονίδιο"
-                />
-              </div>
               <div class="p">
-                <h3 class="proc-title">Τραύμα & μικροχειρουργική</h3>
+                <h3 class="proc-title">Τραύμα και μικροχειρουργική</h3>
                 <p class="muted proc-desc">
                   <strong>Πεδίο:</strong> αγγεία, νεύρα, τένοντες,
                   επανασυγκολλήσεις.<br />
@@ -917,7 +555,7 @@
             </article>
           </div>
           <p class="muted stack">
-            📌 Το τελικό αποτέλεσμα ποικίλλει ανάλογα με τον οργανισμό.
+            Το τελικό αποτέλεσμα ποικίλλει ανάλογα με τον οργανισμό.
           </p>
         </div>
       </section>
@@ -925,12 +563,12 @@
 
     <footer>
       <div class="container footer-grid">
-        <!-- Ιατρική Φιλοσοφία -->
+        <!-- Πληροφορίες -->
         <div class="footer-col footer-desktop-only">
-          <div class="kicker">Ιατρική Φιλοσοφία</div>
+          <div class="kicker">Πληροφορίες</div>
           <p class="stack-s">
-            Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη
-            και ουδέτερη πληροφόρηση για πράξεις της ειδικότητας.
+            Κατανοητές πληροφορίες για επεμβάσεις, μη επεμβατικές θεραπείες
+            και επανορθωτική χειρουργική.
           </p>
         </div>
 
@@ -942,8 +580,8 @@
             <a href="/procedures">Επεμβάσεις</a> -
             <a href="/non-invasive">Μη Επεμβατικές</a><br />
             <a href="/reconstructive">Επανορθωτική</a> -
-            <a href="/media">Socials</a><br />
-            <a href="/faq">Συχνές Ερωτήσεις (FAQ)</a> -
+            <a href="/media">Βίντεο</a><br />
+            <a href="/faq">Συχνές Ερωτήσεις</a> -
             <a href="/contact">Επικοινωνία</a>
           </p>
         </div>
@@ -953,11 +591,11 @@
           class="footer-col clinic-block"
           aria-label="Στοιχεία ιατρείου Αγίας Τριάδος"
         >
-          <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
+          <strong>ΧΩΡΟΣ ΕΠΙΣΚΕΨΕΩΝ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
           Λεωφ. Βασιλέως Γεωργίου 44,<br />
           Θεσσαλονίκη 546 40<br /><br />
           Τηλέφωνο: 2310 836600<br />
-          Fax: 2310 836600<br /><br />
+          Κατόπιν συνεννόησης<br /><br />
           <a
             href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
             target="_blank"
@@ -971,7 +609,7 @@
           class="footer-col clinic-block"
           aria-label="Στοιχεία ιδιωτικού ιατρείου"
         >
-          <strong>Ιδιωτικό ιατρείο</strong>
+          <strong>Κύριο ιδιωτικό ιατρείο</strong>
           Μητροπόλεως 96,<br />
           Θεσσαλονίκη 546 22<br /><br />
           Τηλέφωνο: 2310 261039<br />
@@ -986,21 +624,13 @@
       </div>
 
       <div class="container stack-s center">
-        <p class="muted" aria-live="polite">
-          Τελευταία ενημέρωση:
-          <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
-          <br />
-          Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής
-          Δεοντολογίας (Ν.3418/2005).
-          <br />
-          Δεν υφίσταται σύγκρουση συμφερόντων.
-          <br />
-          Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη
-          ιατρική συμβουλή.
+        <p class="muted medical-site-notice">
+          Οι πληροφορίες του ιστοτόπου είναι γενικές και δεν αντικαθιστούν την ιατρική εξέταση ή την εξατομικευμένη συμβουλή.
+          <br /><a href="/privacy">Πολιτική απορρήτου</a> · <a href="/image-credits">Πιστώσεις εικόνων</a>
         </p>
         <p class="muted">
-          © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights
-          reserved.
+          © <span id="year"></span> Δρ. Θεοφάνης Ι. Παπαδόπουλος.
+          Με την επιφύλαξη παντός δικαιώματος.
         </p>
       </div>
 

@@ -33,10 +33,16 @@
 Δεν απαιτείται εγκατάσταση. Από τη ρίζα του αποθετηρίου:
 
 ```powershell
+.\preview-site.cmd
+```
+
+Εναλλακτικά, εκτελέστε απευθείας τον server προεπισκόπησης του έργου:
+
+```powershell
 py tools/serve_local.py 8000
 ```
 
-Ανοίξτε το `http://localhost:8000/`. Οι extensionless διαδρομές, όπως `http://localhost:8000/about`, αντιστοιχίζονται εσωτερικά στα αντίστοιχα HTML αρχεία, ώστε τα canonical links της ιστοσελίδας να λειτουργούν τοπικά. Ο helper δεν προσομοιώνει HTTPS, host canonicalization, redirects από `.html` ή redirects τελικής καθέτου· αυτά πρέπει να ελέγχονται στον Apache. Μην προσθέσετε client-side routing ή fallback προς το `index.html`.
+Ανοίξτε το `http://localhost:8000/`. Μη χρησιμοποιείτε `python -m http.server`: ο βασικός server της Python επιστρέφει `404` για τις καθαρές nested διαδρομές των οδηγών. Ο server του έργου αντιστοιχίζει σωστά τις extensionless διαδρομές στα αντίστοιχα HTML αρχεία. Δεν προσομοιώνει HTTPS, host canonicalization, redirects από `.html` ή redirects τελικής καθέτου· αυτά πρέπει να ελέγχονται στον Apache. Μην προσθέσετε client-side routing ή fallback προς το `index.html`.
 
 ## Συντήρηση
 

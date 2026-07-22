@@ -3,7 +3,6 @@
    Sections:
    1) NAVIGATION (mobile toggle, active link)
    2) PROCEDURES SEARCH (live filter + highlighting)
-   3) FOOTER METADATA (year + lastUpdated datetime)
    ========================================================= */
 
 /* =========================================================
@@ -54,9 +53,9 @@
   });
 
   // Clear stale mobile state by the time navigation returns to its desktop layout.
-  // This threshold must not exceed the 1160px burger breakpoint in styles.css.
+  // Keep this synchronized with the 1160px burger breakpoint in styles.css.
   const closeIfDesktop = () => {
-    if (window.innerWidth > 1120 && nav.classList.contains("open")) {
+    if (window.innerWidth > 1160 && nav.classList.contains("open")) {
       nav.classList.remove("open");
       setExpanded(false);
     }
@@ -164,17 +163,4 @@
 
   // Initial render (no filter)
   onSearch();
-})();
-
-/* =========================================================
-   3) FOOTER METADATA — Year & machine-readable last updated
-   ========================================================= */
-(() => {
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-  // This updates only the machine-readable value; the visible review text is authored
-  // in each HTML file and must not be advanced for a purely technical change.
-  const dt = document.getElementById("lastUpdated");
-  if (dt) dt.setAttribute("datetime", "2025-11-03");
 })();

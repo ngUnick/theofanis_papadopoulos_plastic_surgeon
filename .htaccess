@@ -1,0 +1,50 @@
+# Enable rewrite engine once
+RewriteEngine On
+
+# Canonical host and HTTPS in one hop
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^theofanispapadopoulos\.gr$ [NC]
+RewriteRule ^ https://theofanispapadopoulos.gr%{REQUEST_URI} [R=301,L]
+
+# /index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html(?:[?\s]) [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Flat source files for nested guide URLs must never become public routes.
+RewriteCond %{THE_REQUEST} \s/+guide-botouliniki-toxini\.html(?:[?\s]) [NC]
+RewriteRule ^guide-botouliniki-toxini\.html$ /non-invasive/botouliniki-toxini [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+guide-yalouroniko-fillers\.html(?:[?\s]) [NC]
+RewriteRule ^guide-yalouroniko-fillers\.html$ /non-invasive/yalouroniko-fillers [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+guide-laser-apotrichosi\.html(?:[?\s]) [NC]
+RewriteRule ^guide-laser-apotrichosi\.html$ /non-invasive/laser-apotrichosi [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+guide-lipoanarrofisi\.html(?:[?\s]) [NC]
+RewriteRule ^guide-lipoanarrofisi\.html$ /procedures/lipoanarrofisi [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+guide-oules-egkavmaton\.html(?:[?\s]) [NC]
+RewriteRule ^guide-oules-egkavmaton\.html$ /reconstructive/oules-egkavmaton [R=301,L]
+
+# Root-level *.html -> extensionless (also covers query strings)
+RewriteCond %{THE_REQUEST} \s/+[^?\s]+\.html(?:[?\s]) [NC]
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Canonicalize trailing slashes before any internal rewrite.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+?)/$ /$1 [R=301,L]
+
+# Explicit nested public routes -> flat source files.
+RewriteRule ^non-invasive/botouliniki-toxini$ guide-botouliniki-toxini.html [L]
+RewriteRule ^non-invasive/yalouroniko-fillers$ guide-yalouroniko-fillers.html [L]
+RewriteRule ^non-invasive/laser-apotrichosi$ guide-laser-apotrichosi.html [L]
+RewriteRule ^procedures/lipoanarrofisi$ guide-lipoanarrofisi.html [L]
+RewriteRule ^reconstructive/oules-egkavmaton$ guide-oules-egkavmaton.html [L]
+
+# Internally map remaining extensionless routes to existing .html files.
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+
+# Send noindex for search-parameter pages sitewide
+<IfModule mod_headers.c>
+  SetEnvIfNoCase Query_String "(^|&)s=" is_search_param=1
+  Header set X-Robots-Tag "noindex, follow" env=is_search_param
+</IfModule>

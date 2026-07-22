@@ -64,180 +64,47 @@
 
     <!-- JSON-LD (extensionless URLs) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://theofanispapadopoulos.gr/#website",
-            "url": "https://theofanispapadopoulos.gr/",
-            "name": "Theofanis Papadopoulos — Plastic Surgeon",
-            "inLanguage": "el",
-            "publisher": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
-          },
-          {
-            "@type": "MedicalClinic",
-            "@id": "https://theofanispapadopoulos.gr/#clinic",
-            "name": "Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου",
-            "url": "https://theofanispapadopoulos.gr/",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
-            },
-            "image": [
-              "https://theofanispapadopoulos.gr/photos/main-4_3.webp",
-              "https://theofanispapadopoulos.gr/photos/cv.webp"
-            ],
-            "medicalSpecialty": "PlasticSurgery",
-            "address": [
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "Λεωφ. Βασιλέως Γεωργίου 44",
-                "addressLocality": "Θεσσαλονίκη",
-                "postalCode": "54640",
-                "addressCountry": "GR"
-              },
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "Μητροπόλεως 96",
-                "addressLocality": "Θεσσαλονίκη",
-                "postalCode": "54622",
-                "addressCountry": "GR"
-              }
-            ],
-            "telephone": "+302310836600",
-            "email": "papfanis2003@yahoo.gr",
-            "contactPoint": [
-              {
-                "@type": "ContactPoint",
-                "telephone": "+302310836600",
-                "contactType": "customer service",
-                "areaServed": "GR",
-                "availableLanguage": ["el", "en"],
-                "email": "papfanis2003@yahoo.gr"
-              }
-            ],
-            "hasMap": [
-              "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
-              "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
-            ],
-            "sameAs": [
-              "https://www.instagram.com/dr_theofanis_papadopoulos/",
-              "https://www.tiktok.com/@dr_theofanis_papa",
-              "https://www.youtube.com/@drtheofanispapadopoulos",
-              "https://www.facebook.com/DrTheofanisPapadopoulos"
-            ],
-            "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
-          },
-          {
-            "@type": "Physician",
-            "@id": "https://theofanispapadopoulos.gr/#physician",
-            "name": "Θεοφάνης Ι. Παπαδόπουλος",
-            "medicalSpecialty": "PlasticSurgery",
-            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
-            "sameAs": [
-              "https://www.instagram.com/dr_theofanis_papadopoulos/",
-              "https://www.tiktok.com/@dr_theofanis_papa",
-              "https://www.youtube.com/@drtheofanispapadopoulos",
-              "https://www.facebook.com/DrTheofanisPapadopoulos"
-            ]
-          },
-          {
-            "@type": "WebPage",
-            "@id": "https://theofanispapadopoulos.gr/#webpage",
-            "url": "https://theofanispapadopoulos.gr/",
-            "name": "Αρχική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
-            "description": "Ενημερωτικός ιστότοπος πλαστικού χειρουργού με έμφαση στην ασφάλεια, τη διαφάνεια και την ουδέτερη παρουσίαση των πράξεων.",
-            "inLanguage": "el",
-            "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/main-4_3.webp",
-              "width": 960,
-              "height": 720
-            },
-            "about": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
-            "breadcrumb": {
-              "@id": "https://theofanispapadopoulos.gr/#breadcrumbs"
-            },
-            "dateModified": "2025-09-21T00:00:00+03:00"
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://theofanispapadopoulos.gr/#breadcrumbs",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Αρχική",
-                "item": "https://theofanispapadopoulos.gr/"
-              }
-            ]
-          },
-          {
-            "@type": "ItemList",
-            "@id": "https://theofanispapadopoulos.gr/#homepage-sections",
-            "name": "Κύριες ενότητες",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Επεμβάσεις",
-                "url": "https://theofanispapadopoulos.gr/procedures"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Μη Επεμβατικές",
-                "url": "https://theofanispapadopoulos.gr/non-invasive"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Επανορθωτική",
-                "url": "https://theofanispapadopoulos.gr/reconstructive"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Συχνές Ερωτήσεις",
-                "url": "https://theofanispapadopoulos.gr/faq"
-              },
-              {
-                "@type": "ListItem",
-                "position": 5,
-                "name": "Επικοινωνία",
-                "url": "https://theofanispapadopoulos.gr/contact"
-              }
-            ]
-          },
-          {
-            "@type": "ItemList",
-            "@id": "https://theofanispapadopoulos.gr/#external-videos",
-            "name": "Ενημερωτικά Βίντεο (στο YouTube)",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "url": "https://www.youtube.com/watch?v=F-q1wVqq3cs",
-                "name": "Υγρό Λίφτινγκ Προσώπου — 15/02/2020"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "url": "https://www.youtube.com/watch?v=v4uOgpRsZPk",
-                "name": "Ρινοπλαστική & Ωτοπλαστική — 14/01/2015"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "url": "https://www.youtube.com/watch?v=bG_Wzcy-d40",
-                "name": "Γυναικομαστία — 11/12/2014"
-              }
-            ]
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://theofanispapadopoulos.gr/#physician",
+      "name": "Θεοφάνης Ι. Παπαδόπουλος",
+      "medicalSpecialty": "PlasticSurgery",
+      "sameAs": [
+        "https://www.instagram.com/dr_theofanis_papadopoulos/",
+        "https://www.tiktok.com/@dr_theofanis_papa",
+        "https://www.youtube.com/@drtheofanispapadopoulos",
+        "https://www.facebook.com/DrTheofanisPapadopoulos"
+      ],
+      "url": "https://theofanispapadopoulos.gr/about"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theofanispapadopoulos.gr/#webpage",
+      "url": "https://theofanispapadopoulos.gr/",
+      "name": "Αρχική — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
+      "description": "Ενημερωτικός ιστότοπος πλαστικού χειρουργού με πληροφορίες για επεμβάσεις, μη επεμβατικές θεραπείες και επανορθωτική χειρουργική.",
+      "inLanguage": "el",
+      "breadcrumb": {
+        "@id": "https://theofanispapadopoulos.gr/#breadcrumbs"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://theofanispapadopoulos.gr/#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Αρχική",
+          "item": "https://theofanispapadopoulos.gr/"
+        }
+      ]
+    }
+  ]
+}
     </script>
 
     <!-- Styles -->
@@ -253,29 +120,6 @@
     />
 
     <!-- App icons / PWA polish (optional but recommended) -->
-    <link
-      rel="apple-touch-icon"
-      href="/photos/icons/apple-touch-icon-180.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/photos/icons/favicon-32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/photos/icons/favicon-16.png"
-      sizes="16x16"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/photos/icons/safari-pinned-tab.svg"
-      color="#2bb673"
-    />
     <meta name="theme-color" content="#0f1813" />
     <meta name="msapplication-TileColor" content="#0f1813" />
 
@@ -284,6 +128,7 @@
       name="google-site-verification"
       content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
     />
+      <link rel="icon" href="/photos/favicon.ico" />
   </head>
 
   <body>
@@ -388,7 +233,7 @@
         <a class="brand" href="/" aria-label="Αρχική">
           <img src="photos/logo.webp" alt="Λογότυπο ιατρείου" />
           <strong>Δρ. Θ. Παπαδόπουλος</strong>
-          <span class="badge">Plastic Surgeon</span>
+          <span class="badge">Πλαστικός Χειρουργός</span>
         </a>
 
         <nav class="navlinks" aria-label="Κύρια πλοήγηση">
@@ -419,7 +264,7 @@
             <a href="/procedures">Επεμβάσεις</a>
             <a href="/non-invasive">Μη Επεμβατικές</a>
             <a href="/reconstructive">Επανορθωτική</a>
-            <a href="/media">Socials</a>
+            <a href="/media">Βίντεο</a>
             <a href="/faq">Συχνές Ερωτήσεις</a>
             <a href="/contact">Επικοινωνία</a>
           </div>
@@ -428,12 +273,12 @@
     </header>
 
     <main>
-      <!-- Hero: ουδέτερη ενημέρωση + σαφής CTA προς επικοινωνία -->
+      <!-- Κεντρική εισαγωγή και σύνδεσμος επικοινωνίας -->
       <section class="hero">
         <div class="container wrap">
           <div>
             <h1>
-              Ενημερωτική προσέγγιση στην Αισθητική & Επανορθωτική Χειρουργική
+              Ενημερωτική προσέγγιση στην Αισθητική και Επανορθωτική Χειρουργική
             </h1>
             <p class="lead stack">
               Από το 1991, ο Δρ. Θεοφάνης Ι. Παπαδόπουλος παρέχει ιατρική
@@ -454,7 +299,7 @@
             >
               <div class="icon-item">
                 <span class="dot"></span>
-                <div>Τεκμηριωμένη ενημέρωση χωρίς προτροπές</div>
+                <div>Σαφείς εξηγήσεις πριν από κάθε απόφαση</div>
               </div>
               <div class="icon-item">
                 <span class="dot"></span>
@@ -472,7 +317,7 @@
           <div class="photo" aria-hidden="true">
             <img
               src="photos/main-4_3.webp"
-              alt="Ουδέτερη φωτογραφία ιατρικού χώρου"
+              alt="Ιατρικός χώρος"
               decoding="async"
               fetchpriority="high"
             />
@@ -480,33 +325,35 @@
         </div>
       </section>
 
-      <!-- Ενημερωτικά blocks (playbook νόμιμου περιεχομένου) -->
+      <!-- Βασικές ενότητες του ιστοτόπου -->
       <section class="alt">
         <div class="container">
           <h2>Τι θα βρείτε στον ιστότοπο</h2>
           <p class="lead">
-            Ουδέτερες, κατανοητές πληροφορίες για πράξεις της ειδικότητας —
-            χωρίς testimonials, «πριν–μετά» ή συγκρίσεις.
+            Κατανοητές πληροφορίες για επεμβάσεις, μη επεμβατικές θεραπείες
+            και επανορθωτική χειρουργική.
           </p>
 
           <div class="grid cols-3 stack">
             <!-- Μη επεμβατικές -->
-            <article class="card">
+            <article class="card home-category-card">
               <div class="card-media">
                 <img
-                  src="https://www.shutterstock.com/image-vector/beauty-injection-design-concept-cartoon-600nw-2408494943.jpg"
-                  alt="Σχηματικό διάγραμμα μη επεμβατικών θεραπειών"
+                  src="photos/home-non-invasive.webp"
+                  alt="Ανατομικό διάγραμμα δέρματος και θύλακα τρίχας"
                   class="card-img"
+                  width="1200"
+                  height="675"
                 />
               </div>
               <div class="p">
                 <span class="pill pill--noninv" aria-hidden="true"
-                  >Μη-Επεμβατικές</span
+                  >Μη επεμβατικές</span
                 >
-                <h3>Ενέσιμα & Δερματολογικές τεχνικές</h3>
+                <h3>Ενέσιμες θεραπείες και θεραπείες δέρματος</h3>
                 <p class="muted">
-                  Botox, υαλουρονικό, peeling, skin-needling. Πότε ενδείκνυνται,
-                  περιορισμοί και συχνές απορίες.
+                  Βοτουλινική τοξίνη (Botox), υαλουρονικό οξύ, χημικό πίλινγκ
+                  και μικροβελονισμός: ενδείξεις, περιορισμοί και συχνές απορίες.
                 </p>
                 <a class="button secondary stack" href="/non-invasive"
                   >Περισσότερα</a
@@ -515,22 +362,24 @@
             </article>
 
             <!-- Επεμβάσεις -->
-            <article class="card">
+            <article class="card home-category-card">
               <div class="card-media">
                 <img
-                  src="photos/face-breast-body.webp"
-                  alt="Σχηματικό διάγραμμα επεμβατικής πράξης"
+                  src="photos/home-procedures.webp"
+                  alt="Ιατρικό διάγραμμα επιφανειακής ανατομίας του ανθρώπινου σώματος"
                   class="card-img"
+                  width="1200"
+                  height="675"
                 />
               </div>
               <div class="p">
                 <span class="pill pill--surgery" aria-hidden="true"
                   >Επεμβάσεις</span
                 >
-                <h3>Πρόσωπο, Μαστός, Σώμα</h3>
+                <h3>Πρόσωπο, μαστός και σώμα</h3>
                 <p class="muted">
-                  Ουδέτερες περιγραφές: ενδείξεις, αναισθησία, διάρκεια,
-                  ανάρρωση, κίνδυνοι & εναλλακτικές.
+                  Πληροφορίες για τις ενδείξεις, την αναισθησία, την επέμβαση,
+                  την ανάρρωση, τους κινδύνους και τις εναλλακτικές επιλογές.
                 </p>
                 <a class="button secondary stack" href="/procedures"
                   >Περισσότερα</a
@@ -539,22 +388,24 @@
             </article>
 
             <!-- Επανορθωτική -->
-            <article class="card">
+            <article class="card home-category-card">
               <div class="card-media">
                 <img
-                  src="https://www.shutterstock.com/image-vector/first-aid-hand-injury-set-600nw-2315938689.jpg"
-                  alt="Σχηματική απεικόνιση επανορθωτικής χειρουργικής"
+                  src="photos/home-reconstructive.webp"
+                  alt="Ανατομικό διάγραμμα των οστών του χεριού"
                   class="card-img"
+                  width="1200"
+                  height="675"
                 />
               </div>
               <div class="p">
                 <span class="pill pill--surgery" aria-hidden="true"
                   >Επανορθωτική</span
                 >
-                <h3>Εγκαύματα, Όγκοι Δέρματος, Χειρουργική Χεριού</h3>
+                <h3>Ουλές εγκαυμάτων, όγκοι δέρματος και χειρουργική χεριού</h3>
                 <p class="muted">
-                  Καθαρά ενημερωτική παρουσίαση θεραπευτικών πράξεων και σταδίων
-                  αποκατάστασης.
+                  Πληροφορίες για την αποκατάσταση ουλών μετά από εγκαύματα,
+                  την αντιμετώπιση όγκων δέρματος και τις παθήσεις του χεριού.
                 </p>
                 <a class="button secondary stack" href="/reconstructive"
                   >Περισσότερα</a
@@ -569,8 +420,8 @@
         <div class="container">
           <h2>Ενημερωτικά Βίντεο</h2>
           <p class="muted stack-s">
-            Συνεντεύξεις και τηλεοπτικές εμφανίσεις με καθαρά ενημερωτικό
-            χαρακτήρα.
+            Συνεντεύξεις και τηλεοπτικές εμφανίσεις για θέματα πλαστικής
+            χειρουργικής.
           </p>
 
           <div class="grid cols-3">
@@ -587,8 +438,8 @@
                   class="card-img"
                   loading="lazy"
                   decoding="async"
-                  src="https://img.youtube.com/vi/F-q1wVqq3cs/hqdefault.jpg"
-                  alt="Εικόνα προεπισκόπησης βίντεο: Liquid Facelift (ουδέτερη μικρογραφία)"
+                  src="/photos/youtube-F-q1wVqq3cs.jpg"
+                  alt="Εικόνα προεπισκόπησης βίντεο: Liquid Facelift"
                 />
               </a>
               <div class="p">
@@ -605,21 +456,21 @@
               </div>
             </article>
 
-            <!-- Card 2 · Εκπομπή 14 · 2015-01 · Ρινοπλαστική & Ωτοπλαστική -->
+            <!-- Card 2 · Εκπομπή 14 · 2015-01 · Ρινοπλαστική και Ωτοπλαστική -->
             <article class="card media-teaser">
               <a
                 class="card-media"
                 href="https://www.youtube.com/watch?v=v4uOgpRsZPk"
                 target="_blank"
                 rel="noopener"
-                aria-label="Παρακολούθηση — Εκπομπή 14 (Ρινοπλαστική & Ωτοπλαστική)"
+                aria-label="Παρακολούθηση — Εκπομπή 14 (Ρινοπλαστική και Ωτοπλαστική)"
               >
                 <img
                   class="card-img"
                   loading="lazy"
                   decoding="async"
-                  src="https://img.youtube.com/vi/v4uOgpRsZPk/hqdefault.jpg"
-                  alt="Εικόνα προεπισκόπησης βίντεο: Ρινοπλαστική & Ωτοπλαστική (ουδέτερη μικρογραφία)"
+                  src="/photos/youtube-v4uOgpRsZPk.jpg"
+                  alt="Εικόνα προεπισκόπησης βίντεο: Ρινοπλαστική και Ωτοπλαστική"
                 />
               </a>
               <div class="p">
@@ -627,7 +478,7 @@
                   Ρινοπλαστική - Ωτοπλαστική | Agenta με την Πωλίνα - 14/01/2015
                 </h3>
                 <p class="muted">
-                  Ρινοπλαστική & Ωτοπλαστική — βασικές αρχές, ενδείξεις, γενική
+                  Ρινοπλαστική και Ωτοπλαστική — βασικές αρχές, ενδείξεις, γενική
                   διαδικασία.
                 </p>
                 <a class="button secondary" href="/media"
@@ -649,8 +500,8 @@
                   class="card-img"
                   loading="lazy"
                   decoding="async"
-                  src="https://img.youtube.com/vi/bG_Wzcy-d40/hqdefault.jpg"
-                  alt="Εικόνα προεπισκόπησης βίντεο: Γυναικομαστία (ουδέτερη μικρογραφία)"
+                  src="/photos/youtube-bG_Wzcy-d40.jpg"
+                  alt="Εικόνα προεπισκόπησης βίντεο: Γυναικομαστία"
                 />
               </a>
               <div class="p">
@@ -682,13 +533,12 @@
             <div class="icon-list stack">
               <div class="icon-item">
                 <span class="dot"></span>
-                <div>Ενημέρωση για <strong>κινδύνους & επιπλοκές</strong></div>
+                <div>Ενημέρωση για <strong>κινδύνους και επιπλοκές</strong></div>
               </div>
               <div class="icon-item">
                 <span class="dot"></span>
                 <div>Παρουσίαση <strong>εναλλακτικών επιλογών</strong></div>
               </div>
-              <!-- <div class="icon-item"><span class="dot"></span><div>Ουδέτερη γλώσσα, χωρίς υποσχέσεις αποτελέσματος</div></div> -->
             </div>
             <div class="stack">
               <a class="button" href="/faq">Δείτε τις Συχνές Ερωτήσεις</a>
@@ -696,7 +546,7 @@
             </div>
           </div>
           <div class="photo" aria-hidden="true">
-            <img src="photos/cv.webp" alt="Ουδέτερη εικόνα χώρου υγείας" />
+            <img src="photos/cv.webp" alt="Χώρος υγείας" />
           </div>
         </div>
       </section>
@@ -704,12 +554,12 @@
 
     <footer>
       <div class="container footer-grid">
-        <!-- Ιατρική Φιλοσοφία -->
+        <!-- Πληροφορίες -->
         <div class="footer-col footer-desktop-only">
-          <div class="kicker">Ιατρική Φιλοσοφία</div>
+          <div class="kicker">Πληροφορίες</div>
           <p class="stack-s">
-            Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη
-            και ουδέτερη πληροφόρηση για πράξεις της ειδικότητας.
+            Κατανοητές πληροφορίες για επεμβάσεις, μη επεμβατικές θεραπείες
+            και επανορθωτική χειρουργική.
           </p>
         </div>
 
@@ -721,8 +571,8 @@
             <a href="/procedures">Επεμβάσεις</a> -
             <a href="/non-invasive">Μη Επεμβατικές</a><br />
             <a href="/reconstructive">Επανορθωτική</a> -
-            <a href="/media">Socials</a><br />
-            <a href="/faq">Συχνές Ερωτήσεις (FAQ)</a> -
+            <a href="/media">Βίντεο</a><br />
+            <a href="/faq">Συχνές Ερωτήσεις</a> -
             <a href="/contact">Επικοινωνία</a>
           </p>
         </div>
@@ -732,11 +582,11 @@
           class="footer-col clinic-block"
           aria-label="Στοιχεία ιατρείου Αγίας Τριάδος"
         >
-          <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
+          <strong>ΧΩΡΟΣ ΕΠΙΣΚΕΨΕΩΝ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
           Λεωφ. Βασιλέως Γεωργίου 44,<br />
           Θεσσαλονίκη 546 40<br /><br />
           Τηλέφωνο: 2310 836600<br />
-          Fax: 2310 836600<br /><br />
+          Κατόπιν συνεννόησης<br /><br />
           <a
             href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
             target="_blank"
@@ -750,7 +600,7 @@
           class="footer-col clinic-block"
           aria-label="Στοιχεία ιδιωτικού ιατρείου"
         >
-          <strong>Ιδιωτικό ιατρείο</strong>
+          <strong>Κύριο ιδιωτικό ιατρείο</strong>
           Μητροπόλεως 96,<br />
           Θεσσαλονίκη 546 22<br /><br />
           Τηλέφωνο: 2310 261039<br />
@@ -765,21 +615,13 @@
       </div>
 
       <div class="container stack-s center">
-        <p class="muted" aria-live="polite">
-          Τελευταία ενημέρωση:
-          <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
-          <br />
-          Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής
-          Δεοντολογίας (Ν.3418/2005).
-          <br />
-          Δεν υφίσταται σύγκρουση συμφερόντων.
-          <br />
-          Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη
-          ιατρική συμβουλή.
+        <p class="muted medical-site-notice">
+          Οι πληροφορίες του ιστοτόπου είναι γενικές και δεν αντικαθιστούν την ιατρική εξέταση ή την εξατομικευμένη συμβουλή.
+          <br /><a href="/privacy">Πολιτική απορρήτου</a> · <a href="/image-credits">Πιστώσεις εικόνων</a>
         </p>
         <p class="muted">
-          © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights
-          reserved.
+          © <span id="year"></span> Δρ. Θεοφάνης Ι. Παπαδόπουλος.
+          Με την επιφύλαξη παντός δικαιώματος.
         </p>
       </div>
 

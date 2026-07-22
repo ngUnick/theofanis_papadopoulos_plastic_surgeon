@@ -57,120 +57,58 @@
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "WebSite",
-            "@id": "https://theofanispapadopoulos.gr/#website",
-            "url": "https://theofanispapadopoulos.gr/",
-            "name": "Theofanis Papadopoulos — Plastic Surgeon",
-            "inLanguage": "el",
-            "publisher": { "@id": "https://theofanispapadopoulos.gr/#clinic" }
-          },
-          {
-            "@type": "MedicalClinic",
-            "@id": "https://theofanispapadopoulos.gr/#clinic",
-            "name": "Ιατρείο Πλαστικής Χειρουργικής Δρ. Θεοφάνη Παπαδόπουλου",
-            "url": "https://theofanispapadopoulos.gr/",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/logo.webp"
-            },
-            "image": [
-              "https://theofanispapadopoulos.gr/photos/main-4_3.webp",
-              "https://theofanispapadopoulos.gr/photos/cv.webp"
-            ],
-            "medicalSpecialty": "PlasticSurgery",
-            "telephone": "+302310836600",
-            "email": "papfanis2003@yahoo.gr",
-            "address": [
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "Λεωφ. Βασιλέως Γεωργίου 44",
-                "addressLocality": "Θεσσαλονίκη",
-                "postalCode": "54640",
-                "addressCountry": "GR"
-              },
-              {
-                "@type": "PostalAddress",
-                "streetAddress": "Μητροπόλεως 96",
-                "addressLocality": "Θεσσαλονίκη",
-                "postalCode": "54622",
-                "addressCountry": "GR"
-              }
-            ],
-            "hasMap": [
-              "https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6",
-              "https://maps.app.goo.gl/8r3NDAri43ABkKHD9"
-            ],
-            "sameAs": [
-              "https://www.instagram.com/dr_theofanis_papadopoulos/",
-              "https://www.tiktok.com/@dr_theofanis_papa",
-              "https://www.youtube.com/@drtheofanispapadopoulos",
-              "https://www.facebook.com/DrTheofanisPapadopoulos"
-            ],
-            "founder": { "@id": "https://theofanispapadopoulos.gr/#physician" }
-          },
-          {
-            "@type": "Physician",
-            "@id": "https://theofanispapadopoulos.gr/#physician",
-            "name": "Θεοφάνης Ι. Παπαδόπουλος",
-            "jobTitle": "Plastic Surgeon",
-            "medicalSpecialty": "PlasticSurgery",
-            "worksFor": { "@id": "https://theofanispapadopoulos.gr/#clinic" },
-            "image": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
-            },
-            "sameAs": [
-              "https://www.instagram.com/dr_theofanis_papadopoulos/",
-              "https://www.tiktok.com/@dr_theofanis_papa",
-              "https://www.youtube.com/@drtheofanispapadopoulos",
-              "https://www.facebook.com/DrTheofanisPapadopoulos"
-            ]
-          },
-          {
-            "@type": "AboutPage",
-            "@id": "https://theofanispapadopoulos.gr/about#webpage",
-            "url": "https://theofanispapadopoulos.gr/about",
-            "name": "Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
-            "description": "Παρουσίαση του βιογραφικού, της εμπειρίας και της φιλοσοφίας προσέγγισης.",
-            "inLanguage": "el",
-            "isPartOf": { "@id": "https://theofanispapadopoulos.gr/#website" },
-            "about": [
-              { "@id": "https://theofanispapadopoulos.gr/#physician" },
-              { "@id": "https://theofanispapadopoulos.gr/#clinic" }
-            ],
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
-            },
-            "breadcrumb": {
-              "@id": "https://theofanispapadopoulos.gr/about#breadcrumbs"
-            },
-            "dateModified": "2025-09-21T00:00:00+03:00"
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://theofanispapadopoulos.gr/about#breadcrumbs",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Αρχική",
-                "item": "https://theofanispapadopoulos.gr/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Ο Γιατρός",
-                "item": "https://theofanispapadopoulos.gr/about"
-              }
-            ]
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Physician",
+      "@id": "https://theofanispapadopoulos.gr/#physician",
+      "name": "Θεοφάνης Ι. Παπαδόπουλος",
+      "jobTitle": "Πλαστικός Χειρουργός",
+      "medicalSpecialty": "PlasticSurgery",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://theofanispapadopoulos.gr/photos/cv.webp"
+      },
+      "sameAs": [
+        "https://www.instagram.com/dr_theofanis_papadopoulos/",
+        "https://www.tiktok.com/@dr_theofanis_papa",
+        "https://www.youtube.com/@drtheofanispapadopoulos",
+        "https://www.facebook.com/DrTheofanisPapadopoulos"
+      ],
+      "url": "https://theofanispapadopoulos.gr/about"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://theofanispapadopoulos.gr/about#webpage",
+      "url": "https://theofanispapadopoulos.gr/about",
+      "name": "Ο Γιατρός — Δρ. Θ. Παπαδόπουλος (Πλαστικός Χειρουργός)",
+      "description": "Παρουσίαση του βιογραφικού, της εμπειρίας και της φιλοσοφίας προσέγγισης.",
+      "inLanguage": "el",
+      "breadcrumb": {
+        "@id": "https://theofanispapadopoulos.gr/about#breadcrumbs"
       }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://theofanispapadopoulos.gr/about#breadcrumbs",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Αρχική",
+          "item": "https://theofanispapadopoulos.gr/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ο Γιατρός",
+          "item": "https://theofanispapadopoulos.gr/about"
+        }
+      ]
+    }
+  ]
+}
     </script>
 
     <!-- Styles -->
@@ -180,41 +118,17 @@
     <link rel="preload" as="image" href="/photos/cv.webp" type="image/webp" />
 
     <!-- App icons / PWA -->
-    <link
-      rel="apple-touch-icon"
-      href="/photos/icons/apple-touch-icon-180.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/photos/icons/favicon-32.png"
-      sizes="32x32"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="/photos/icons/favicon-16.png"
-      sizes="16x16"
-    />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="/photos/icons/safari-pinned-tab.svg"
-      color="#2bb673"
-    />
     <meta name="theme-color" content="#0f1813" />
     <meta name="msapplication-TileColor" content="#0f1813" />
 
     <!-- Performance hints -->
-    <link rel="preconnect" href="https://img.youtube.com" crossorigin />
-    <link rel="preconnect" href="https://www.google.com" crossorigin />
 
     <!-- Google Site Verification -->
     <meta
       name="google-site-verification"
       content="FqgIqJ-WlffdpRlyrV-weqQSfK0WcpWyR8F3N1e89ek"
     />
+      <link rel="icon" href="/photos/favicon.ico" />
   </head>
 
   <body>
@@ -320,7 +234,7 @@
         <a class="brand" href="/" aria-label="Αρχική">
           <img src="photos/logo.webp" alt="Λογότυπο ιατρείου" />
           <strong>Δρ. Θ. Παπαδόπουλος</strong>
-          <span class="badge">Plastic Surgeon</span>
+          <span class="badge">Πλαστικός Χειρουργός</span>
         </a>
         <nav class="navlinks" aria-label="Κύρια πλοήγηση">
           <button
@@ -350,7 +264,7 @@
             <a href="/procedures">Επεμβάσεις</a>
             <a href="/non-invasive">Μη Επεμβατικές</a>
             <a href="/reconstructive">Επανορθωτική</a>
-            <a href="/media">Socials</a>
+            <a href="/media">Βίντεο</a>
             <a href="/faq">Συχνές Ερωτήσεις</a>
             <a href="/contact">Επικοινωνία</a>
           </div>
@@ -359,25 +273,26 @@
     </header>
 
     <main>
-      <!-- Hero: ουδέτερη εισαγωγή + CTA προς επικοινωνία -->
+      <!-- Εισαγωγή στο ιατρικό προφίλ -->
       <section class="hero">
         <div class="container wrap">
           <div>
             <h1>Γνωρίστε τον ιατρό</h1>
             <p class="lead stack">
-              Plastic Surgeon με ιδιωτικό ιατρείο στη Θεσσαλονίκη από το 1991. Η
-              παρούσα σελίδα παρουσιάζει με ουδέτερο τρόπο στοιχεία εκπαίδευσης,
-              κλινικής εμπειρίας και φιλοσοφίας προσέγγισης.
+              Πλαστικός χειρουργός με ιδιωτικό ιατρείο στη Θεσσαλονίκη από το
+              1991. Στη σελίδα αυτή παρουσιάζονται η εκπαίδευση, η κλινική
+              εμπειρία και η προσέγγισή του στην αισθητική και επανορθωτική
+              χειρουργική.
             </p>
             <div class="icon-list stack">
               <div class="icon-item">
                 <span class="dot"></span>
-                <div>Πτυχίο Ιατρικής & αναγνωρισμένη ειδικότητα</div>
+                <div>Πτυχίο Ιατρικής και αναγνωρισμένη ειδικότητα</div>
               </div>
               <div class="icon-item">
                 <span class="dot"></span>
                 <div>
-                  Κλινική εμπειρία σε αισθητική & επανορθωτική χειρουργική
+                  Κλινική εμπειρία σε αισθητική και επανορθωτική χειρουργική
                 </div>
               </div>
               <div class="icon-item">
@@ -397,21 +312,21 @@
           <div class="photo" aria-hidden="true">
             <img
               src="photos/cv.webp"
-              alt="Ουδέτερη φωτογραφία σχετική με το ιατρικό προφίλ"
+              alt="Φωτογραφία σχετική με το ιατρικό προφίλ"
             />
           </div>
         </div>
       </section>
 
-      <!-- Εκπαίδευση & Διαδρομή -->
+      <!-- Εκπαίδευση και Διαδρομή -->
       <section class="alt">
         <div class="container">
-          <h2>Εκπαίδευση & Επαγγελματική Διαδρομή</h2>
+          <h2>Εκπαίδευση και Επαγγελματική Διαδρομή</h2>
 
           <div class="grid cols-2 stack">
             <article class="card">
               <div class="p">
-                <h3>Σπουδές & Ειδικότητα</h3>
+                <h3>Σπουδές και Ειδικότητα</h3>
                 <p class="muted">
                   Πτυχίο Ιατρικής. Εκπαίδευση στη Γενική Χειρουργική και στη
                   συνέχεια αναγνώριση ειδικότητας Πλαστικής Χειρουργικής.
@@ -440,7 +355,7 @@
               <div class="p">
                 <h3>Μετεκπαιδεύσεις</h3>
                 <p class="muted">
-                  Επισκέψεις/παρακολούθηση τμημάτων Πλαστικής & Εγκαυμάτων σε
+                  Επισκέψεις/παρακολούθηση τμημάτων Πλαστικής και Εγκαυμάτων σε
                   κέντρα του εξωτερικού. Συνεχής επιμόρφωση σε σύγχρονες
                   τεχνικές αισθητικής και επανορθωτικής χειρουργικής.
                 </p>
@@ -480,7 +395,7 @@
           <div class="grid cols-2 stack">
             <article class="card">
               <div class="p">
-                <h3>Ασφάλεια & Ειλικρίνεια</h3>
+                <h3>Ασφάλεια και Ειλικρίνεια</h3>
                 <p class="muted">
                   Η ενημέρωση γίνεται με απλή γλώσσα και ρεαλιστικές προσδοκίες.
                   Συζητούνται κίνδυνοι, πιθανές επιπλοκές και εναλλακτικές
@@ -541,7 +456,7 @@
 
               <div class="stack-l">
                 <strong>Θεοφάνης Παπαδόπουλος</strong><br />
-                <span class="muted">Plastic Surgeon</span>
+                <span class="muted">Πλαστικός Χειρουργός</span>
               </div>
             </div>
           </article>
@@ -551,12 +466,12 @@
 
     <footer>
       <div class="container footer-grid">
-        <!-- Ιατρική Φιλοσοφία -->
+        <!-- Πληροφορίες -->
         <div class="footer-col footer-desktop-only">
-          <div class="kicker">Ιατρική Φιλοσοφία</div>
+          <div class="kicker">Πληροφορίες</div>
           <p class="stack-s">
-            Ο ιστότοπος έχει καθαρά ενημερωτικό χαρακτήρα. Στόχος είναι η έγκυρη
-            και ουδέτερη πληροφόρηση για πράξεις της ειδικότητας.
+            Κατανοητές πληροφορίες για επεμβάσεις, μη επεμβατικές θεραπείες
+            και επανορθωτική χειρουργική.
           </p>
         </div>
 
@@ -568,8 +483,8 @@
             <a href="/procedures">Επεμβάσεις</a> -
             <a href="/non-invasive">Μη Επεμβατικές</a><br />
             <a href="/reconstructive">Επανορθωτική</a> -
-            <a href="/media">Socials</a><br />
-            <a href="/faq">Συχνές Ερωτήσεις (FAQ)</a> -
+            <a href="/media">Βίντεο</a><br />
+            <a href="/faq">Συχνές Ερωτήσεις</a> -
             <a href="/contact">Επικοινωνία</a>
           </p>
         </div>
@@ -579,11 +494,11 @@
           class="footer-col clinic-block"
           aria-label="Στοιχεία ιατρείου Αγίας Τριάδος"
         >
-          <strong>ΙΑΤΡΕΙΑ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
+          <strong>ΧΩΡΟΣ ΕΠΙΣΚΕΨΕΩΝ ΑΓΙΑΣ ΤΡΙΑΔΟΣ</strong>
           Λεωφ. Βασιλέως Γεωργίου 44,<br />
           Θεσσαλονίκη 546 40<br /><br />
           Τηλέφωνο: 2310 836600<br />
-          Fax: 2310 836600<br /><br />
+          Κατόπιν συνεννόησης<br /><br />
           <a
             href="https://maps.app.goo.gl/h1tDzhqdKuWrrPnr6"
             target="_blank"
@@ -597,7 +512,7 @@
           class="footer-col clinic-block"
           aria-label="Στοιχεία ιδιωτικού ιατρείου"
         >
-          <strong>Ιδιωτικό ιατρείο</strong>
+          <strong>Κύριο ιδιωτικό ιατρείο</strong>
           Μητροπόλεως 96,<br />
           Θεσσαλονίκη 546 22<br /><br />
           Τηλέφωνο: 2310 261039<br />
@@ -612,21 +527,13 @@
       </div>
 
       <div class="container stack-s center">
-        <p class="muted" aria-live="polite">
-          Τελευταία ενημέρωση:
-          <time id="lastUpdated" datetime="2025-09-21">21/09/2025</time>
-          <br />
-          Ο ιστότοπος έχει ενημερωτικό χαρακτήρα, σύμφωνα με τον Κώδικα Ιατρικής
-          Δεοντολογίας (Ν.3418/2005).
-          <br />
-          Δεν υφίσταται σύγκρουση συμφερόντων.
-          <br />
-          Το περιεχόμενο δεν υποκαθιστά ιατρική διάγνωση ή εξατομικευμένη
-          ιατρική συμβουλή.
+        <p class="muted medical-site-notice">
+          Οι πληροφορίες του ιστοτόπου είναι γενικές και δεν αντικαθιστούν την ιατρική εξέταση ή την εξατομικευμένη συμβουλή.
+          <br /><a href="/privacy">Πολιτική απορρήτου</a> · <a href="/image-credits">Πιστώσεις εικόνων</a>
         </p>
         <p class="muted">
-          © <span id="year"></span> Dr. Theofanis J. Papadopoulos. All rights
-          reserved.
+          © <span id="year"></span> Δρ. Θεοφάνης Ι. Παπαδόπουλος.
+          Με την επιφύλαξη παντός δικαιώματος.
         </p>
       </div>
 

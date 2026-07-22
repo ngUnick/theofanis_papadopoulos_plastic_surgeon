@@ -95,4 +95,41 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://theofanispapadopoulos.gr/contact"/>
   </url>
 
+  <!-- PILOT MEDICAL GUIDES -->
+  <url>
+    <loc>https://theofanispapadopoulos.gr/non-invasive/botouliniki-toxini</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://theofanispapadopoulos.gr/non-invasive/botouliniki-toxini"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theofanispapadopoulos.gr/non-invasive/botouliniki-toxini"/>
+  </url>
+  <url>
+    <loc>https://theofanispapadopoulos.gr/non-invasive/yalouroniko-fillers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://theofanispapadopoulos.gr/non-invasive/yalouroniko-fillers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theofanispapadopoulos.gr/non-invasive/yalouroniko-fillers"/>
+  </url>
+  <url>
+    <loc>https://theofanispapadopoulos.gr/non-invasive/laser-apotrichosi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://theofanispapadopoulos.gr/non-invasive/laser-apotrichosi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theofanispapadopoulos.gr/non-invasive/laser-apotrichosi"/>
+  </url>
+  <url>
+    <loc>https://theofanispapadopoulos.gr/procedures/lipoanarrofisi</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://theofanispapadopoulos.gr/procedures/lipoanarrofisi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theofanispapadopoulos.gr/procedures/lipoanarrofisi"/>
+  </url>
+  <url>
+    <loc>https://theofanispapadopoulos.gr/reconstructive/oules-egkavmaton</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="el" href="https://theofanispapadopoulos.gr/reconstructive/oules-egkavmaton"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://theofanispapadopoulos.gr/reconstructive/oules-egkavmaton"/>
+  </url>
+
 </urlset>

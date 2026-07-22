@@ -1,5 +1,6 @@
 # Local developer/Codex notes
 AGENTS.md
 CODEX_GUARDRAILS.md
-.htaccess
 *.py
+!tools/serve_local.py
+!tools/validate_release.py
